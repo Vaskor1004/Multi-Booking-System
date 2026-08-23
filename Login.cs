@@ -37,8 +37,9 @@ namespace Multi_Booking_System
                  cmd.Parameters.AddWithValue("@password", txtboxPassl.Text);
 
                  con.Open();
+                //this is nothing commit
 
-                 int result = (int)cmd.ExecuteScalar();
+                int result = (int)cmd.ExecuteScalar();
 
                  if (result > 0)
                  {
@@ -46,7 +47,7 @@ namespace Multi_Booking_System
                  }
                  else
                  {
-                     MessageBox.Show("Invalid Name or Password!");
+                     MessageBox.Show("Incorrect Name or Password!");
                  }
              }
 
