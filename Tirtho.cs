@@ -68,8 +68,6 @@ namespace Multi_Booking_System
         {
             InitializeComponent();
         }
-
-        // ADD / SAVE
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             string query = @"INSERT INTO TirthoStore (serviceName, price)
@@ -91,9 +89,6 @@ namespace Multi_Booking_System
             txtboxServiceName.Clear();
             txtboxPrice.Clear();
         }
-
-
-        // SHOW
         private void BtnShow_Click(object sender, EventArgs e)
         {
             string query = "SELECT * FROM TirthoStore";
@@ -108,9 +103,6 @@ namespace Multi_Booking_System
                 gridviewTirtho.DataSource = table;
             }
         }
-
-
-        // UPDATE
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             if (gridviewTirtho.CurrentRow == null)
@@ -153,8 +145,6 @@ namespace Multi_Booking_System
             txtboxUD.Clear();
             txtboxUName.Clear();
             txtboxUService.Clear();
-
-            // Updated data show করবে
             BtnShow_Click(null, null);
         }
 
@@ -189,14 +179,53 @@ namespace Multi_Booking_System
             }
 
             MessageBox.Show("Data has been Deleted");
-
-            // TextBox clear
             txtboxUD.Clear();
             txtboxUName.Clear();
             txtboxUService.Clear();
-
-            // Grid refresh
             BtnShow_Click(null, null);
+        }
+
+        private void btnUserSerial_Click(object sender, EventArgs e)
+        {
+            string query = @"
+        SELECT
+            B.bookingId,
+
+            U.name AS CustomerName,
+
+            U.phone AS CustomerPhone,
+
+            T.serviceName,
+
+            T.price,
+
+            B.bookingDate,
+
+            B.status
+
+        FROM Bookings B
+
+        INNER JOIN Users U
+        ON B.customerId = U.id
+        INNER JOIN BookingDetails BD
+        ON B.bookingId = BD.bookingId
+        INNER JOIN TirthoStore T
+        ON BD.serviceId = T.id
+        ORDER BY B.bookingId ASC";
+
+            using (SqlConnection con =
+                   new SqlConnection(ConnectionString))
+            {
+                SqlDataAdapter adapter =
+                    new SqlDataAdapter(query, con);
+
+                DataTable table =
+                    new DataTable();
+
+                adapter.Fill(table);
+
+                gridViewUserSerial.DataSource = table;
+            }
         }
     }
 }

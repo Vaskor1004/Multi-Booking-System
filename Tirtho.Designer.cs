@@ -45,7 +45,10 @@
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtboxUName = new System.Windows.Forms.TextBox();
             this.txtboxUService = new System.Windows.Forms.TextBox();
+            this.gridViewUserSerial = new System.Windows.Forms.DataGridView();
+            this.btnUserSerial = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridviewTirtho)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewUserSerial)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2HtmlLabel1
@@ -111,7 +114,7 @@
             // 
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(886, 56);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(703, 19);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(163, 31);
             this.guna2HtmlLabel4.TabIndex = 6;
@@ -120,11 +123,11 @@
             // gridviewTirtho
             // 
             this.gridviewTirtho.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridviewTirtho.Location = new System.Drawing.Point(790, 93);
+            this.gridviewTirtho.Location = new System.Drawing.Point(703, 56);
             this.gridviewTirtho.Name = "gridviewTirtho";
             this.gridviewTirtho.RowHeadersWidth = 51;
             this.gridviewTirtho.RowTemplate.Height = 24;
-            this.gridviewTirtho.Size = new System.Drawing.Size(331, 267);
+            this.gridviewTirtho.Size = new System.Drawing.Size(331, 179);
             this.gridviewTirtho.TabIndex = 7;
             this.gridviewTirtho.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridviewTirtho_CellContentClick);
             // 
@@ -136,9 +139,9 @@
             this.BtnShow.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.BtnShow.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnShow.ForeColor = System.Drawing.Color.White;
-            this.BtnShow.Location = new System.Drawing.Point(886, 388);
+            this.BtnShow.Location = new System.Drawing.Point(1040, 102);
             this.BtnShow.Name = "BtnShow";
-            this.BtnShow.Size = new System.Drawing.Size(180, 45);
+            this.BtnShow.Size = new System.Drawing.Size(144, 45);
             this.BtnShow.TabIndex = 8;
             this.BtnShow.Text = "Show";
             this.BtnShow.Click += new System.EventHandler(this.BtnShow_Click);
@@ -225,11 +228,38 @@
             this.txtboxUService.Size = new System.Drawing.Size(186, 22);
             this.txtboxUService.TabIndex = 16;
             // 
+            // gridViewUserSerial
+            // 
+            this.gridViewUserSerial.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridViewUserSerial.Location = new System.Drawing.Point(637, 263);
+            this.gridViewUserSerial.Name = "gridViewUserSerial";
+            this.gridViewUserSerial.RowHeadersWidth = 51;
+            this.gridViewUserSerial.RowTemplate.Height = 24;
+            this.gridViewUserSerial.Size = new System.Drawing.Size(547, 199);
+            this.gridViewUserSerial.TabIndex = 17;
+            // 
+            // btnUserSerial
+            // 
+            this.btnUserSerial.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnUserSerial.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnUserSerial.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnUserSerial.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnUserSerial.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUserSerial.ForeColor = System.Drawing.Color.White;
+            this.btnUserSerial.Location = new System.Drawing.Point(775, 489);
+            this.btnUserSerial.Name = "btnUserSerial";
+            this.btnUserSerial.Size = new System.Drawing.Size(197, 45);
+            this.btnUserSerial.TabIndex = 18;
+            this.btnUserSerial.Text = "Show Serial";
+            this.btnUserSerial.Click += new System.EventHandler(this.btnUserSerial_Click);
+            // 
             // Tirtho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1133, 520);
+            this.ClientSize = new System.Drawing.Size(1196, 587);
+            this.Controls.Add(this.btnUserSerial);
+            this.Controls.Add(this.gridViewUserSerial);
             this.Controls.Add(this.txtboxUService);
             this.Controls.Add(this.txtboxUName);
             this.Controls.Add(this.guna2HtmlLabel7);
@@ -250,6 +280,7 @@
             this.Name = "Tirtho";
             this.Text = "Tirtho";
             ((System.ComponentModel.ISupportInitialize)(this.gridviewTirtho)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewUserSerial)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -274,5 +305,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
         private System.Windows.Forms.TextBox txtboxUName;
         private System.Windows.Forms.TextBox txtboxUService;
+        private System.Windows.Forms.DataGridView gridViewUserSerial;
+        private Guna.UI2.WinForms.Guna2Button btnUserSerial;
     }
 }

@@ -55,8 +55,6 @@ namespace Multi_Booking_System
             using (SqlConnection con = new SqlConnection(ConnectionString))
             {
                 con.Open();
-
-                // 1. First save user information
                 string userQuery = @"
             INSERT INTO Users
             (name, phone, password, username, userType)
@@ -71,12 +69,7 @@ namespace Multi_Booking_System
                 userCmd.Parameters.AddWithValue("@password", txtboxPass.Text);
                 userCmd.Parameters.AddWithValue("@username", txtboxUname.Text);
                 userCmd.Parameters.AddWithValue("@userType", txtboxCType.Text);
-
-                // Get newly created user's ID
                 int userId = Convert.ToInt32(userCmd.ExecuteScalar());
-
-
-                // 2. If user is Shopkeeper, save shop information
                 if (txtboxCType.Text == "Shopkeeper")
                 {
                     string shopQuery = @"

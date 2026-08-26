@@ -29,9 +29,12 @@
         private void InitializeComponent()
         {
             this.BtnShowServiceTirtho = new Guna.UI2.WinForms.Guna2Button();
-            this.BtnAddServiceTirtho = new Guna.UI2.WinForms.Guna2Button();
+            this.btnAddService = new Guna.UI2.WinForms.Guna2Button();
             this.gridViewTirthoStore = new System.Windows.Forms.DataGridView();
+            this.gridViewSelectedServices = new System.Windows.Forms.DataGridView();
+            this.btnBookSerial = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewTirthoStore)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewSelectedServices)).BeginInit();
             this.SuspendLayout();
             // 
             // BtnShowServiceTirtho
@@ -49,42 +52,71 @@
             this.BtnShowServiceTirtho.Text = "Show Service";
             this.BtnShowServiceTirtho.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
-            // BtnAddServiceTirtho
+            // btnAddService
             // 
-            this.BtnAddServiceTirtho.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.BtnAddServiceTirtho.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.BtnAddServiceTirtho.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.BtnAddServiceTirtho.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.BtnAddServiceTirtho.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAddServiceTirtho.ForeColor = System.Drawing.Color.White;
-            this.BtnAddServiceTirtho.Location = new System.Drawing.Point(100, 316);
-            this.BtnAddServiceTirtho.Name = "BtnAddServiceTirtho";
-            this.BtnAddServiceTirtho.Size = new System.Drawing.Size(213, 45);
-            this.BtnAddServiceTirtho.TabIndex = 1;
-            this.BtnAddServiceTirtho.Text = "Add Service";
-            this.BtnAddServiceTirtho.Click += new System.EventHandler(this.guna2Button2_Click);
+            this.btnAddService.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddService.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddService.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAddService.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAddService.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddService.ForeColor = System.Drawing.Color.White;
+            this.btnAddService.Location = new System.Drawing.Point(100, 308);
+            this.btnAddService.Name = "btnAddService";
+            this.btnAddService.Size = new System.Drawing.Size(213, 45);
+            this.btnAddService.TabIndex = 1;
+            this.btnAddService.Text = "Add Service";
+            this.btnAddService.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // gridViewTirthoStore
             // 
             this.gridViewTirthoStore.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridViewTirthoStore.Location = new System.Drawing.Point(459, 56);
+            this.gridViewTirthoStore.Location = new System.Drawing.Point(518, 60);
             this.gridViewTirthoStore.Name = "gridViewTirthoStore";
             this.gridViewTirthoStore.RowHeadersWidth = 51;
             this.gridViewTirthoStore.RowTemplate.Height = 24;
             this.gridViewTirthoStore.Size = new System.Drawing.Size(341, 176);
             this.gridViewTirthoStore.TabIndex = 2;
             // 
+            // gridViewSelectedServices
+            // 
+            this.gridViewSelectedServices.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridViewSelectedServices.Location = new System.Drawing.Point(518, 285);
+            this.gridViewSelectedServices.Name = "gridViewSelectedServices";
+            this.gridViewSelectedServices.RowHeadersWidth = 51;
+            this.gridViewSelectedServices.RowTemplate.Height = 24;
+            this.gridViewSelectedServices.Size = new System.Drawing.Size(341, 206);
+            this.gridViewSelectedServices.TabIndex = 3;
+            this.gridViewSelectedServices.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridViewSelectedServices_CellContentClick);
+            // 
+            // btnBookSerial
+            // 
+            this.btnBookSerial.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBookSerial.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBookSerial.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBookSerial.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBookSerial.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBookSerial.ForeColor = System.Drawing.Color.White;
+            this.btnBookSerial.Location = new System.Drawing.Point(100, 430);
+            this.btnBookSerial.Name = "btnBookSerial";
+            this.btnBookSerial.Size = new System.Drawing.Size(213, 45);
+            this.btnBookSerial.TabIndex = 4;
+            this.btnBookSerial.Text = "Book Serial";
+            this.btnBookSerial.Click += new System.EventHandler(this.btnBookSerial_Click_1);
+            // 
             // TirthoDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(988, 525);
+            this.Controls.Add(this.btnBookSerial);
+            this.Controls.Add(this.gridViewSelectedServices);
             this.Controls.Add(this.gridViewTirthoStore);
-            this.Controls.Add(this.BtnAddServiceTirtho);
+            this.Controls.Add(this.btnAddService);
             this.Controls.Add(this.BtnShowServiceTirtho);
             this.Name = "TirthoDashboard";
             this.Text = "TirthoDashboard";
             ((System.ComponentModel.ISupportInitialize)(this.gridViewTirthoStore)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewSelectedServices)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -92,7 +124,9 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2Button BtnShowServiceTirtho;
-        private Guna.UI2.WinForms.Guna2Button BtnAddServiceTirtho;
+        private Guna.UI2.WinForms.Guna2Button btnAddService;
         private System.Windows.Forms.DataGridView gridViewTirthoStore;
+        private System.Windows.Forms.DataGridView gridViewSelectedServices;
+        private Guna.UI2.WinForms.Guna2Button btnBookSerial;
     }
 }
