@@ -33,6 +33,7 @@
             this.gridViewTirthoStore = new System.Windows.Forms.DataGridView();
             this.gridViewSelectedServices = new System.Windows.Forms.DataGridView();
             this.btnBookSerial = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewTirthoStore)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewSelectedServices)).BeginInit();
             this.SuspendLayout();
@@ -60,7 +61,7 @@
             this.btnAddService.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnAddService.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddService.ForeColor = System.Drawing.Color.White;
-            this.btnAddService.Location = new System.Drawing.Point(100, 308);
+            this.btnAddService.Location = new System.Drawing.Point(100, 191);
             this.btnAddService.Name = "btnAddService";
             this.btnAddService.Size = new System.Drawing.Size(213, 45);
             this.btnAddService.TabIndex = 1;
@@ -96,18 +97,34 @@
             this.btnBookSerial.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnBookSerial.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBookSerial.ForeColor = System.Drawing.Color.White;
-            this.btnBookSerial.Location = new System.Drawing.Point(100, 430);
+            this.btnBookSerial.Location = new System.Drawing.Point(100, 296);
             this.btnBookSerial.Name = "btnBookSerial";
             this.btnBookSerial.Size = new System.Drawing.Size(213, 45);
             this.btnBookSerial.TabIndex = 4;
             this.btnBookSerial.Text = "Book Serial";
             this.btnBookSerial.Click += new System.EventHandler(this.btnBookSerial_Click_1);
             // 
+            // guna2Button1
+            // 
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Location = new System.Drawing.Point(100, 390);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(213, 45);
+            this.guna2Button1.TabIndex = 5;
+            this.guna2Button1.Text = "Back";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_1);
+            // 
             // TirthoDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(988, 525);
+            this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.btnBookSerial);
             this.Controls.Add(this.gridViewSelectedServices);
             this.Controls.Add(this.gridViewTirthoStore);
@@ -128,5 +145,6 @@
         private System.Windows.Forms.DataGridView gridViewTirthoStore;
         private System.Windows.Forms.DataGridView gridViewSelectedServices;
         private Guna.UI2.WinForms.Guna2Button btnBookSerial;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }

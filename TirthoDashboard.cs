@@ -430,6 +430,13 @@ namespace Multi_Booking_System
                 }
             }
         }
+
+        private void guna2Button1_Click_1(object sender, EventArgs e)
+        {
+            TirthoSelun tirthoSelect = new TirthoSelun();
+            tirthoSelect.Show();
+            this.Hide();
+        }
     }
 }
 

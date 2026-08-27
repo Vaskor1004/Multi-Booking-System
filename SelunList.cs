@@ -23,5 +23,31 @@ namespace Multi_Booking_System
             tirthoSelun.Show();
             this.Hide();
         }
+
+        private void btnShahriarStore_Click(object sender, EventArgs e)
+        {
+            ShahriarSelun shahriarSelun = new ShahriarSelun();
+            shahriarSelun.Show();
+            this.Hide();
+        }
+
+        private void btnSompodStore_Click(object sender, EventArgs e)
+        {
+            SompodSelun sompodSelun = new SompodSelun();
+            sompodSelun.Show();
+            this.Hide();
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnselunlistBack_Click(object sender, EventArgs e)
+        {
+            UserDashboard userDashboard = new UserDashboard();
+            userDashboard.Show();
+            this.Hide();
+        }
     }
 }

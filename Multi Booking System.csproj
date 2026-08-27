@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomerSerialDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerSerialDetails.Designer.cs">
+      <DependentUpon>CustomerSerialDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,11 +78,41 @@
     <Compile Include="SelunList.Designer.cs">
       <DependentUpon>SelunList.cs</DependentUpon>
     </Compile>
+    <Compile Include="ShahriarDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShahriarDashboard.Designer.cs">
+      <DependentUpon>ShahriarDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShahriarSelun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShahriarSelun.Designer.cs">
+      <DependentUpon>ShahriarSelun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sompod Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sompod Dashboard.Designer.cs">
+      <DependentUpon>Sompod Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SompodSelun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SompodSelun.Designer.cs">
+      <DependentUpon>SompodSelun.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tirtho.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Tirtho.Designer.cs">
       <DependentUpon>Tirtho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TirthoApprove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TirthoApprove.Designer.cs">
+      <DependentUpon>TirthoApprove.cs</DependentUpon>
     </Compile>
     <Compile Include="TirthoDashboard.cs">
       <SubType>Form</SubType>
@@ -96,6 +132,9 @@
     <Compile Include="UserDashboard.Designer.cs">
       <DependentUpon>UserDashboard.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CustomerSerialDetails.resx">
+      <DependentUpon>CustomerSerialDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -115,8 +154,23 @@
     <EmbeddedResource Include="SelunList.resx">
       <DependentUpon>SelunList.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ShahriarDashboard.resx">
+      <DependentUpon>ShahriarDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShahriarSelun.resx">
+      <DependentUpon>ShahriarSelun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sompod Dashboard.resx">
+      <DependentUpon>Sompod Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SompodSelun.resx">
+      <DependentUpon>SompodSelun.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tirtho.resx">
       <DependentUpon>Tirtho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TirthoApprove.resx">
+      <DependentUpon>TirthoApprove.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TirthoDashboard.resx">
       <DependentUpon>TirthoDashboard.cs</DependentUpon>
@@ -173,6 +227,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\barber-cutting-hair-in-modern-salon-with-round-mirrors-and-shelves-of-hair-products-free-photo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\looks-live-unisex-salon-vijay-nagar-indore-salons-1zc4jsdqyd shariar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %288%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %289%29.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

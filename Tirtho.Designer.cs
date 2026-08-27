@@ -45,10 +45,8 @@
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtboxUName = new System.Windows.Forms.TextBox();
             this.txtboxUService = new System.Windows.Forms.TextBox();
-            this.gridViewUserSerial = new System.Windows.Forms.DataGridView();
-            this.btnUserSerial = new Guna.UI2.WinForms.Guna2Button();
+            this.btnNext = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridviewTirtho)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewUserSerial)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2HtmlLabel1
@@ -67,9 +65,9 @@
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(29, 71);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(174, 31);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(227, 31);
             this.guna2HtmlLabel2.TabIndex = 1;
-            this.guna2HtmlLabel2.Text = "Service Name:";
+            this.guna2HtmlLabel2.Text = "Add Service Name:";
             // 
             // guna2HtmlLabel3
             // 
@@ -83,14 +81,14 @@
             // 
             // txtboxServiceName
             // 
-            this.txtboxServiceName.Location = new System.Drawing.Point(229, 80);
+            this.txtboxServiceName.Location = new System.Drawing.Point(262, 80);
             this.txtboxServiceName.Name = "txtboxServiceName";
             this.txtboxServiceName.Size = new System.Drawing.Size(206, 22);
             this.txtboxServiceName.TabIndex = 3;
             // 
             // txtboxPrice
             // 
-            this.txtboxPrice.Location = new System.Drawing.Point(229, 145);
+            this.txtboxPrice.Location = new System.Drawing.Point(262, 145);
             this.txtboxPrice.Name = "txtboxPrice";
             this.txtboxPrice.Size = new System.Drawing.Size(206, 22);
             this.txtboxPrice.TabIndex = 4;
@@ -103,7 +101,7 @@
             this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(475, 102);
+            this.guna2Button1.Location = new System.Drawing.Point(489, 155);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(180, 45);
             this.guna2Button1.TabIndex = 5;
@@ -149,12 +147,12 @@
             // guna2HtmlLabel5
             // 
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(12, 238);
+            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(222, 238);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(288, 31);
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(41, 40);
             this.guna2HtmlLabel5.TabIndex = 9;
-            this.guna2HtmlLabel5.Text = "Enter Id(Update/Delete):";
+            this.guna2HtmlLabel5.Text = " Id:";
             // 
             // txtboxUD
             // 
@@ -228,38 +226,23 @@
             this.txtboxUService.Size = new System.Drawing.Size(186, 22);
             this.txtboxUService.TabIndex = 16;
             // 
-            // gridViewUserSerial
+            // btnNext
             // 
-            this.gridViewUserSerial.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridViewUserSerial.Location = new System.Drawing.Point(637, 263);
-            this.gridViewUserSerial.Name = "gridViewUserSerial";
-            this.gridViewUserSerial.RowHeadersWidth = 51;
-            this.gridViewUserSerial.RowTemplate.Height = 24;
-            this.gridViewUserSerial.Size = new System.Drawing.Size(547, 199);
-            this.gridViewUserSerial.TabIndex = 17;
-            // 
-            // btnUserSerial
-            // 
-            this.btnUserSerial.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnUserSerial.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnUserSerial.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnUserSerial.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnUserSerial.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUserSerial.ForeColor = System.Drawing.Color.White;
-            this.btnUserSerial.Location = new System.Drawing.Point(775, 489);
-            this.btnUserSerial.Name = "btnUserSerial";
-            this.btnUserSerial.Size = new System.Drawing.Size(197, 45);
-            this.btnUserSerial.TabIndex = 18;
-            this.btnUserSerial.Text = "Show Serial";
-            this.btnUserSerial.Click += new System.EventHandler(this.btnUserSerial_Click);
+            this.btnNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNext.Location = new System.Drawing.Point(703, 382);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(75, 37);
+            this.btnNext.TabIndex = 19;
+            this.btnNext.Text = "next";
+            this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // Tirtho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1196, 587);
-            this.Controls.Add(this.btnUserSerial);
-            this.Controls.Add(this.gridViewUserSerial);
+            this.Controls.Add(this.btnNext);
             this.Controls.Add(this.txtboxUService);
             this.Controls.Add(this.txtboxUName);
             this.Controls.Add(this.guna2HtmlLabel7);
@@ -280,7 +263,6 @@
             this.Name = "Tirtho";
             this.Text = "Tirtho";
             ((System.ComponentModel.ISupportInitialize)(this.gridviewTirtho)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewUserSerial)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -305,7 +287,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
         private System.Windows.Forms.TextBox txtboxUName;
         private System.Windows.Forms.TextBox txtboxUService;
-        private System.Windows.Forms.DataGridView gridViewUserSerial;
-        private Guna.UI2.WinForms.Guna2Button btnUserSerial;
+        private System.Windows.Forms.Button btnNext;
     }
 }

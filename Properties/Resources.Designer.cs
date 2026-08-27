@@ -144,6 +144,26 @@ namespace Multi_Booking_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap images__8_ {
+            get {
+                object obj = ResourceManager.GetObject("images (8)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap images__9_ {
+            get {
+                object obj = ResourceManager.GetObject("images (9)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap istockphoto_1404460736_612x612 {
             get {
                 object obj = ResourceManager.GetObject("istockphoto-1404460736-612x612", resourceCulture);
@@ -157,6 +177,16 @@ namespace Multi_Booking_System.Properties {
         internal static System.Drawing.Bitmap istockphoto_1404460736_612x6121 {
             get {
                 object obj = ResourceManager.GetObject("istockphoto-1404460736-612x6121", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap looks_live_unisex_salon_vijay_nagar_indore_salons_1zc4jsdqyd_shariar {
+            get {
+                object obj = ResourceManager.GetObject("looks-live-unisex-salon-vijay-nagar-indore-salons-1zc4jsdqyd shariar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

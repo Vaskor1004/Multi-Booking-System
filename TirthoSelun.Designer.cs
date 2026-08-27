@@ -33,6 +33,7 @@
             this.BtnLogOut = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn4TirthoBack = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,7 +45,7 @@
             this.BtnGetSerial.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.BtnGetSerial.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnGetSerial.ForeColor = System.Drawing.Color.White;
-            this.BtnGetSerial.Location = new System.Drawing.Point(57, 206);
+            this.BtnGetSerial.Location = new System.Drawing.Point(34, 117);
             this.BtnGetSerial.Name = "BtnGetSerial";
             this.BtnGetSerial.Size = new System.Drawing.Size(180, 45);
             this.BtnGetSerial.TabIndex = 0;
@@ -59,7 +60,7 @@
             this.BtnReview.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.BtnReview.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnReview.ForeColor = System.Drawing.Color.White;
-            this.BtnReview.Location = new System.Drawing.Point(57, 312);
+            this.BtnReview.Location = new System.Drawing.Point(34, 224);
             this.BtnReview.Name = "BtnReview";
             this.BtnReview.Size = new System.Drawing.Size(180, 45);
             this.BtnReview.TabIndex = 1;
@@ -73,11 +74,12 @@
             this.BtnLogOut.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.BtnLogOut.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnLogOut.ForeColor = System.Drawing.Color.White;
-            this.BtnLogOut.Location = new System.Drawing.Point(57, 422);
+            this.BtnLogOut.Location = new System.Drawing.Point(34, 338);
             this.BtnLogOut.Name = "BtnLogOut";
             this.BtnLogOut.Size = new System.Drawing.Size(180, 45);
             this.BtnLogOut.TabIndex = 2;
             this.BtnLogOut.Text = "Log Out";
+            this.BtnLogOut.Click += new System.EventHandler(this.BtnLogOut_Click);
             // 
             // guna2HtmlLabel1
             // 
@@ -99,11 +101,27 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
+            // btn4TirthoBack
+            // 
+            this.btn4TirthoBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn4TirthoBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn4TirthoBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn4TirthoBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn4TirthoBack.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn4TirthoBack.ForeColor = System.Drawing.Color.White;
+            this.btn4TirthoBack.Location = new System.Drawing.Point(34, 438);
+            this.btn4TirthoBack.Name = "btn4TirthoBack";
+            this.btn4TirthoBack.Size = new System.Drawing.Size(180, 45);
+            this.btn4TirthoBack.TabIndex = 5;
+            this.btn4TirthoBack.Text = "Back";
+            this.btn4TirthoBack.Click += new System.EventHandler(this.btn4TirthoBack_Click);
+            // 
             // TirthoSelun
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(962, 541);
+            this.Controls.Add(this.btn4TirthoBack);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BtnLogOut);
@@ -124,5 +142,6 @@
         private Guna.UI2.WinForms.Guna2Button BtnLogOut;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2Button btn4TirthoBack;
     }
 }

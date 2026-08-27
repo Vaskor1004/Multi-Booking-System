@@ -41,6 +41,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnselunlistBack = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -117,6 +118,7 @@
             this.btnShahriarStore.Size = new System.Drawing.Size(80, 25);
             this.btnShahriarStore.TabIndex = 2;
             this.btnShahriarStore.Text = "View";
+            this.btnShahriarStore.Click += new System.EventHandler(this.btnShahriarStore_Click);
             // 
             // guna2HtmlLabel3
             // 
@@ -151,6 +153,7 @@
             this.btnSompodStore.Size = new System.Drawing.Size(81, 25);
             this.btnSompodStore.TabIndex = 2;
             this.btnSompodStore.Text = "View";
+            this.btnSompodStore.Click += new System.EventHandler(this.btnSompodStore_Click);
             // 
             // guna2HtmlLabel4
             // 
@@ -192,11 +195,24 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // btnselunlistBack
+            // 
+            this.btnselunlistBack.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnselunlistBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnselunlistBack.Location = new System.Drawing.Point(989, 12);
+            this.btnselunlistBack.Name = "btnselunlistBack";
+            this.btnselunlistBack.Size = new System.Drawing.Size(75, 30);
+            this.btnselunlistBack.TabIndex = 4;
+            this.btnselunlistBack.Text = "Back";
+            this.btnselunlistBack.UseVisualStyleBackColor = false;
+            this.btnselunlistBack.Click += new System.EventHandler(this.btnselunlistBack_Click);
+            // 
             // SelunList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1093, 559);
+            this.Controls.Add(this.btnselunlistBack);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -232,5 +248,6 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private Guna.UI2.WinForms.Guna2Button btnSompodStore;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button btnselunlistBack;
     }
 }

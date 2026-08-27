@@ -10,30 +10,30 @@ using System.Windows.Forms;
 
 namespace Multi_Booking_System
 {
-    public partial class TirthoSelun : Form
+    public partial class ShahriarSelun : Form
     {
-        public TirthoSelun()
+        public ShahriarSelun()
         {
             InitializeComponent();
         }
 
-        private void BtnGetSerial_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            TirthoDashboard tirthoDashboard = new TirthoDashboard();
-            tirthoDashboard.Show();
+            ShahriarDashboard shahriarDashboard = new ShahriarDashboard(); 
+            shahriarDashboard.Show();
             this.Hide();
         }
 
-        private void btn4TirthoBack_Click(object sender, EventArgs e)
+        private void btn4ShahriarBack_Click(object sender, EventArgs e)
         {
             SelunList selunList = new SelunList();
             selunList.Show();
             this.Hide();
         }
 
-        private void BtnLogOut_Click(object sender, EventArgs e)
+        private void btn3ShahriarLogout_Click(object sender, EventArgs e)
         {
-           Login login = new Login();
+            Login login = new Login();
             login.Show();
             this.Hide();
         }

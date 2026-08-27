@@ -23,5 +23,12 @@ namespace Multi_Booking_System
             selunList.Show();
             this.Hide();
         }
+
+        private void btnSerialdetail_Click(object sender, EventArgs e)
+        {
+            CustomerSerialDetails customerSerialDetails = new CustomerSerialDetails();
+            customerSerialDetails.Show();
+            this.Hide();
+        }
     }
 }

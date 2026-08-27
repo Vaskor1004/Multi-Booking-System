@@ -117,47 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="images (8)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\images (8).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="looks-live-unisex-salon-vijay-nagar-indore-salons-1zc4jsdqyd shariar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\looks-live-unisex-salon-vijay-nagar-indore-salons-1zc4jsdqyd shariar.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="images (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\images (4).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="istockphoto-1404460736-612x612" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\istockphoto-1404460736-612x612.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="a-hairdresser-with-a-beard-in-a-black-coat-cuts-a-client-s-hair-free-photo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\a-hairdresser-with-a-beard-in-a-black-coat-cuts-a-client-s-hair-free-photo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="images (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\images (5).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="4a0d1e9d9ec5f60ef47d920db21eb7a7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\4a0d1e9d9ec5f60ef47d920db21eb7a7.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="istockphoto-1404460736-612x6121" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\istockphoto-1404460736-612x6121.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="barber-cutting-hair-in-modern-salon-with-round-mirrors-and-shelves-of-hair-products-free-photo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\barber-cutting-hair-in-modern-salon-with-round-mirrors-and-shelves-of-hair-products-free-photo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="1679b0035e87778a245cda656bcd39a1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1679b0035e87778a245cda656bcd39a1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="360_F_469681744_FZWt6LKXLoCU4XVv8Cjx6ZFmwNlNLm7x" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\360_F_469681744_FZWt6LKXLoCU4XVv8Cjx6ZFmwNlNLm7x.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="WhatsApp-Image-2024-04-16-at-10.15.35-PM-(1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\WhatsApp-Image-2024-04-16-at-10.15.35-PM-(1).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="images (6)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\images (6).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="images (9)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\images (9).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>

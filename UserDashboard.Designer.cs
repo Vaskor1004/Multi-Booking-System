@@ -30,23 +30,24 @@
         {
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panelSelun = new System.Windows.Forms.Panel();
-            this.panelBeuaty = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.BtnSelun = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.panelBeuaty = new System.Windows.Forms.Panel();
             this.BtnBeauty = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.BtnEvent = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btnSerialdetail = new Guna.UI2.WinForms.Guna2Button();
             this.panelSelun.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelBeuaty.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2HtmlLabel1
@@ -69,36 +70,6 @@
             this.panelSelun.Size = new System.Drawing.Size(248, 371);
             this.panelSelun.TabIndex = 1;
             // 
-            // panelBeuaty
-            // 
-            this.panelBeuaty.Controls.Add(this.BtnBeauty);
-            this.panelBeuaty.Controls.Add(this.pictureBox2);
-            this.panelBeuaty.Controls.Add(this.guna2HtmlLabel3);
-            this.panelBeuaty.Location = new System.Drawing.Point(369, 94);
-            this.panelBeuaty.Name = "panelBeuaty";
-            this.panelBeuaty.Size = new System.Drawing.Size(248, 371);
-            this.panelBeuaty.TabIndex = 2;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.BtnEvent);
-            this.panel3.Controls.Add(this.pictureBox3);
-            this.panel3.Controls.Add(this.guna2HtmlLabel4);
-            this.panel3.Location = new System.Drawing.Point(695, 94);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(248, 371);
-            this.panel3.TabIndex = 3;
-            // 
-            // guna2HtmlLabel2
-            // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(98, 3);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(50, 22);
-            this.guna2HtmlLabel2.TabIndex = 0;
-            this.guna2HtmlLabel2.Text = "Selun";
-            // 
             // BtnSelun
             // 
             this.BtnSelun.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -114,15 +85,35 @@
             this.BtnSelun.Text = "View";
             this.BtnSelun.Click += new System.EventHandler(this.BtnSelun_Click);
             // 
-            // guna2HtmlLabel3
+            // pictureBox1
             // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(70, 3);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(118, 22);
-            this.guna2HtmlLabel3.TabIndex = 0;
-            this.guna2HtmlLabel3.Text = "Bueaty Parlar";
+            this.pictureBox1.Image = global::Multi_Booking_System.Properties.Resources.images__4_;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 31);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(248, 304);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(98, 3);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(50, 22);
+            this.guna2HtmlLabel2.TabIndex = 0;
+            this.guna2HtmlLabel2.Text = "Selun";
+            // 
+            // panelBeuaty
+            // 
+            this.panelBeuaty.Controls.Add(this.BtnBeauty);
+            this.panelBeuaty.Controls.Add(this.pictureBox2);
+            this.panelBeuaty.Controls.Add(this.guna2HtmlLabel3);
+            this.panelBeuaty.Location = new System.Drawing.Point(369, 94);
+            this.panelBeuaty.Name = "panelBeuaty";
+            this.panelBeuaty.Size = new System.Drawing.Size(248, 371);
+            this.panelBeuaty.TabIndex = 2;
             // 
             // BtnBeauty
             // 
@@ -138,15 +129,35 @@
             this.BtnBeauty.TabIndex = 2;
             this.BtnBeauty.Text = "View";
             // 
-            // guna2HtmlLabel4
+            // pictureBox2
             // 
-            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(83, 3);
-            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(98, 22);
-            this.guna2HtmlLabel4.TabIndex = 0;
-            this.guna2HtmlLabel4.Text = "Event Book";
+            this.pictureBox2.Image = global::Multi_Booking_System.Properties.Resources.WhatsApp_Image_2024_04_16_at_10_15_35_PM__1_;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 31);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(248, 304);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // guna2HtmlLabel3
+            // 
+            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(70, 3);
+            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(118, 22);
+            this.guna2HtmlLabel3.TabIndex = 0;
+            this.guna2HtmlLabel3.Text = "Bueaty Parlar";
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.BtnEvent);
+            this.panel3.Controls.Add(this.pictureBox3);
+            this.panel3.Controls.Add(this.guna2HtmlLabel4);
+            this.panel3.Location = new System.Drawing.Point(695, 94);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(248, 371);
+            this.panel3.TabIndex = 3;
             // 
             // BtnEvent
             // 
@@ -172,31 +183,37 @@
             this.pictureBox3.TabIndex = 1;
             this.pictureBox3.TabStop = false;
             // 
-            // pictureBox2
+            // guna2HtmlLabel4
             // 
-            this.pictureBox2.Image = global::Multi_Booking_System.Properties.Resources.WhatsApp_Image_2024_04_16_at_10_15_35_PM__1_;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 31);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(248, 304);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(83, 3);
+            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(98, 22);
+            this.guna2HtmlLabel4.TabIndex = 0;
+            this.guna2HtmlLabel4.Text = "Event Book";
             // 
-            // pictureBox1
+            // btnSerialdetail
             // 
-            this.pictureBox1.Image = global::Multi_Booking_System.Properties.Resources.images__4_;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 31);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(248, 304);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.btnSerialdetail.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSerialdetail.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSerialdetail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSerialdetail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSerialdetail.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSerialdetail.ForeColor = System.Drawing.Color.White;
+            this.btnSerialdetail.Location = new System.Drawing.Point(421, 507);
+            this.btnSerialdetail.Name = "btnSerialdetail";
+            this.btnSerialdetail.Size = new System.Drawing.Size(180, 45);
+            this.btnSerialdetail.TabIndex = 4;
+            this.btnSerialdetail.Text = "Serial Details";
+            this.btnSerialdetail.Click += new System.EventHandler(this.btnSerialdetail_Click);
             // 
             // UserDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1023, 539);
+            this.ClientSize = new System.Drawing.Size(1023, 579);
+            this.Controls.Add(this.btnSerialdetail);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panelBeuaty);
             this.Controls.Add(this.panelSelun);
@@ -205,13 +222,13 @@
             this.Text = "UserDashboard";
             this.panelSelun.ResumeLayout(false);
             this.panelSelun.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelBeuaty.ResumeLayout(false);
             this.panelBeuaty.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -232,5 +249,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private Guna.UI2.WinForms.Guna2Button BtnEvent;
+        private Guna.UI2.WinForms.Guna2Button btnSerialdetail;
     }
 }
