@@ -75,7 +75,7 @@
             this.gridViewTirthoStore.Name = "gridViewTirthoStore";
             this.gridViewTirthoStore.RowHeadersWidth = 51;
             this.gridViewTirthoStore.RowTemplate.Height = 24;
-            this.gridViewTirthoStore.Size = new System.Drawing.Size(341, 176);
+            this.gridViewTirthoStore.Size = new System.Drawing.Size(421, 176);
             this.gridViewTirthoStore.TabIndex = 2;
             // 
             // gridViewSelectedServices

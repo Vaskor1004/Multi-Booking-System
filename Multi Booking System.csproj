@@ -78,6 +78,18 @@
     <Compile Include="SelunList.Designer.cs">
       <DependentUpon>SelunList.cs</DependentUpon>
     </Compile>
+    <Compile Include="Shahriar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shahriar.Designer.cs">
+      <DependentUpon>Shahriar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShahriarApprove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShahriarApprove.Designer.cs">
+      <DependentUpon>ShahriarApprove.cs</DependentUpon>
+    </Compile>
     <Compile Include="ShahriarDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +107,18 @@
     </Compile>
     <Compile Include="Sompod Dashboard.Designer.cs">
       <DependentUpon>Sompod Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sompod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sompod.Designer.cs">
+      <DependentUpon>Sompod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SompodApprove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SompodApprove.Designer.cs">
+      <DependentUpon>SompodApprove.cs</DependentUpon>
     </Compile>
     <Compile Include="SompodSelun.cs">
       <SubType>Form</SubType>
@@ -154,6 +178,12 @@
     <EmbeddedResource Include="SelunList.resx">
       <DependentUpon>SelunList.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Shahriar.resx">
+      <DependentUpon>Shahriar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShahriarApprove.resx">
+      <DependentUpon>ShahriarApprove.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ShahriarDashboard.resx">
       <DependentUpon>ShahriarDashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -162,6 +192,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Sompod Dashboard.resx">
       <DependentUpon>Sompod Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sompod.resx">
+      <DependentUpon>Sompod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SompodApprove.resx">
+      <DependentUpon>SompodApprove.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SompodSelun.resx">
       <DependentUpon>SompodSelun.cs</DependentUpon>

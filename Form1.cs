@@ -38,7 +38,7 @@ namespace Multi_Booking_System
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            /* string ConnectionString = "Data Source=LAPTOP-ETFSEMF8;Initial Catalog=mydb;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
+             string ConnectionString = "Data Source=LAPTOP-ETFSEMF8;Initial Catalog=mydb;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
 
              SqlConnection con = new SqlConnection(ConnectionString);
              con.Open();
@@ -47,9 +47,9 @@ namespace Multi_Booking_System
              cmd.ExecuteNonQuery();
              con.Close();
 
-             MessageBox.Show("Data has been Saved");*/
+             MessageBox.Show("Data has been Saved");
 
-            string ConnectionString =
+           /* string ConnectionString =
         "Data Source=LAPTOP-ETFSEMF8;Initial Catalog=mydb;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
 
             using (SqlConnection con = new SqlConnection(ConnectionString))
@@ -87,7 +87,10 @@ namespace Multi_Booking_System
                 }
 
                 MessageBox.Show("Registration Successful!");
-            }
+            }*/
+           Login loginForm = new Login();
+           loginForm.Show();
+           this.Hide();
         }
     }
 }

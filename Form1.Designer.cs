@@ -44,8 +44,6 @@
             this.txtboxPass = new System.Windows.Forms.TextBox();
             this.txtboxUname = new System.Windows.Forms.TextBox();
             this.txtboxCType = new System.Windows.Forms.TextBox();
-            this.LabelShop = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtboxShopName = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // guna2HtmlLabel1
@@ -222,30 +220,11 @@
             this.txtboxCType.Size = new System.Drawing.Size(214, 22);
             this.txtboxCType.TabIndex = 19;
             // 
-            // LabelShop
-            // 
-            this.LabelShop.BackColor = System.Drawing.Color.Transparent;
-            this.LabelShop.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelShop.Location = new System.Drawing.Point(657, 312);
-            this.LabelShop.Name = "LabelShop";
-            this.LabelShop.Size = new System.Drawing.Size(147, 31);
-            this.LabelShop.TabIndex = 20;
-            this.LabelShop.Text = "Shop Name:";
-            // 
-            // txtboxShopName
-            // 
-            this.txtboxShopName.Location = new System.Drawing.Point(835, 321);
-            this.txtboxShopName.Name = "txtboxShopName";
-            this.txtboxShopName.Size = new System.Drawing.Size(214, 22);
-            this.txtboxShopName.TabIndex = 21;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1084, 579);
-            this.Controls.Add(this.txtboxShopName);
-            this.Controls.Add(this.LabelShop);
             this.Controls.Add(this.txtboxCType);
             this.Controls.Add(this.txtboxUname);
             this.Controls.Add(this.txtboxPass);
@@ -286,8 +265,6 @@
         private System.Windows.Forms.TextBox txtboxPass;
         private System.Windows.Forms.TextBox txtboxUname;
         private System.Windows.Forms.TextBox txtboxCType;
-        private Guna.UI2.WinForms.Guna2HtmlLabel LabelShop;
-        private System.Windows.Forms.TextBox txtboxShopName;
     }
 }
 

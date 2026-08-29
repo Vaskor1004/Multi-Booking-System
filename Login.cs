@@ -18,7 +18,7 @@ namespace Multi_Booking_System
             string ConnectionString =
                 "Data Source=LAPTOP-ETFSEMF8;Initial Catalog=mydb;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
 
-            string query = @"SELECT id, userType
+            string query = @"SELECT id, userType,username
                              FROM users
                              WHERE username = @name
                              AND password = @password";
@@ -31,6 +31,7 @@ namespace Multi_Booking_System
                 cmd.Parameters.AddWithValue("@password", txtboxPassl.Text);
 
                 con.Open();
+                string username = txtboxUsernml.Text;
                 string userType = null;
                 var reader = cmd.ExecuteReader();
                 
@@ -57,10 +58,24 @@ namespace Multi_Booking_System
                     {
                         MessageBox.Show("Shopkeeper Login Successful!");
 
-                         Tirtho t = new Tirtho();
-                         t.Show();
-
-                        this.Hide();
+                        if (username == "Shahriar123")
+                        {
+                            Shahriar shahriar = new Shahriar();
+                            shahriar.Show();
+                            this.Hide();
+                        }
+                        else if (username == "Sompod123")
+                        {
+                            Sompod sompod = new Sompod();
+                            sompod.Show();
+                            this.Hide();
+                        }
+                        else
+                        {
+                            Tirtho t = new Tirtho();
+                            t.Show();
+                            this.Hide();
+                        }
                     }
                 }
                 else

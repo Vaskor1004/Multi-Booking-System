@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.btnAddService = new Guna.UI2.WinForms.Guna2Button();
+            this.btnBookSerial = new Guna.UI2.WinForms.Guna2Button();
+            this.gridviewShowService = new System.Windows.Forms.DataGridView();
+            this.gridViewAddService = new System.Windows.Forms.DataGridView();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridviewShowService)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewAddService)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Button1
@@ -51,54 +51,57 @@
             this.guna2Button1.Size = new System.Drawing.Size(212, 45);
             this.guna2Button1.TabIndex = 0;
             this.guna2Button1.Text = "Show Service";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
-            // guna2Button2
+            // btnAddService
             // 
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Location = new System.Drawing.Point(22, 168);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(212, 45);
-            this.guna2Button2.TabIndex = 1;
-            this.guna2Button2.Text = "Add Service";
+            this.btnAddService.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddService.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAddService.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAddService.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAddService.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddService.ForeColor = System.Drawing.Color.White;
+            this.btnAddService.Location = new System.Drawing.Point(22, 168);
+            this.btnAddService.Name = "btnAddService";
+            this.btnAddService.Size = new System.Drawing.Size(212, 45);
+            this.btnAddService.TabIndex = 1;
+            this.btnAddService.Text = "Add Service";
+            this.btnAddService.Click += new System.EventHandler(this.btnAddService_Click);
             // 
-            // guna2Button3
+            // btnBookSerial
             // 
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Location = new System.Drawing.Point(22, 256);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(212, 45);
-            this.guna2Button3.TabIndex = 2;
-            this.guna2Button3.Text = "Book Serial";
+            this.btnBookSerial.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBookSerial.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBookSerial.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBookSerial.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBookSerial.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBookSerial.ForeColor = System.Drawing.Color.White;
+            this.btnBookSerial.Location = new System.Drawing.Point(22, 256);
+            this.btnBookSerial.Name = "btnBookSerial";
+            this.btnBookSerial.Size = new System.Drawing.Size(212, 45);
+            this.btnBookSerial.TabIndex = 2;
+            this.btnBookSerial.Text = "Book Serial";
+            this.btnBookSerial.Click += new System.EventHandler(this.btnBookSerial_Click);
             // 
-            // dataGridView1
+            // gridviewShowService
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(577, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(293, 150);
-            this.dataGridView1.TabIndex = 3;
+            this.gridviewShowService.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridviewShowService.Location = new System.Drawing.Point(419, 37);
+            this.gridviewShowService.Name = "gridviewShowService";
+            this.gridviewShowService.RowHeadersWidth = 51;
+            this.gridviewShowService.RowTemplate.Height = 24;
+            this.gridviewShowService.Size = new System.Drawing.Size(423, 176);
+            this.gridviewShowService.TabIndex = 3;
             // 
-            // dataGridView2
+            // gridViewAddService
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(419, 193);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(482, 245);
-            this.dataGridView2.TabIndex = 4;
+            this.gridViewAddService.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridViewAddService.Location = new System.Drawing.Point(419, 230);
+            this.gridViewAddService.Name = "gridViewAddService";
+            this.gridViewAddService.RowHeadersWidth = 51;
+            this.gridViewAddService.RowTemplate.Height = 24;
+            this.gridViewAddService.Size = new System.Drawing.Size(357, 208);
+            this.gridViewAddService.TabIndex = 4;
             // 
             // guna2Button4
             // 
@@ -121,15 +124,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(913, 450);
             this.Controls.Add(this.guna2Button4);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.guna2Button3);
-            this.Controls.Add(this.guna2Button2);
+            this.Controls.Add(this.gridViewAddService);
+            this.Controls.Add(this.gridviewShowService);
+            this.Controls.Add(this.btnBookSerial);
+            this.Controls.Add(this.btnAddService);
             this.Controls.Add(this.guna2Button1);
             this.Name = "Sompod_Dashboard";
             this.Text = "Sompod_Dashboard";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridviewShowService)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewAddService)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -137,10 +140,10 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private Guna.UI2.WinForms.Guna2Button btnAddService;
+        private Guna.UI2.WinForms.Guna2Button btnBookSerial;
+        private System.Windows.Forms.DataGridView gridviewShowService;
+        private System.Windows.Forms.DataGridView gridViewAddService;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
     }
 }
