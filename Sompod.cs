@@ -136,5 +136,12 @@ namespace Multi_Booking_System
             txtShompodUpdateprice.Clear();
             btnShowService_Click(null, null);
         }
+
+        private void ShompodNext_Click(object sender, EventArgs e)
+        {
+            SompodApprove sompodApprove = new SompodApprove();
+            sompodApprove.Show();
+            this.Hide();
+        }
     }
 }

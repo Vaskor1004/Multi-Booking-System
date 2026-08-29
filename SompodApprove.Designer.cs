@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.btnCustomerSerial = new Guna.UI2.WinForms.Guna2Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.gridViewCustomerSerial = new System.Windows.Forms.DataGridView();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtboxId = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewCustomerSerial)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCustomerSerial
@@ -49,16 +49,18 @@
             this.btnCustomerSerial.Size = new System.Drawing.Size(245, 45);
             this.btnCustomerSerial.TabIndex = 0;
             this.btnCustomerSerial.Text = "Customer Serial";
+            this.btnCustomerSerial.Click += new System.EventHandler(this.btnCustomerSerial_Click);
             // 
-            // dataGridView1
+            // gridViewCustomerSerial
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(401, 61);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(668, 237);
-            this.dataGridView1.TabIndex = 1;
+            this.gridViewCustomerSerial.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridViewCustomerSerial.Location = new System.Drawing.Point(401, 61);
+            this.gridViewCustomerSerial.Name = "gridViewCustomerSerial";
+            this.gridViewCustomerSerial.RowHeadersWidth = 51;
+            this.gridViewCustomerSerial.RowTemplate.Height = 24;
+            this.gridViewCustomerSerial.Size = new System.Drawing.Size(668, 237);
+            this.gridViewCustomerSerial.TabIndex = 1;
+            this.gridViewCustomerSerial.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridViewCustomerSerial_CellContentClick);
             // 
             // guna2Button1
             // 
@@ -73,6 +75,7 @@
             this.guna2Button1.Size = new System.Drawing.Size(153, 45);
             this.guna2Button1.TabIndex = 2;
             this.guna2Button1.Text = "Approve";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // label1
             // 
@@ -100,11 +103,11 @@
             this.Controls.Add(this.txtboxId);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2Button1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.gridViewCustomerSerial);
             this.Controls.Add(this.btnCustomerSerial);
             this.Name = "SompodApprove";
             this.Text = "SompodApprove";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewCustomerSerial)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -113,7 +116,7 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2Button btnCustomerSerial;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView gridViewCustomerSerial;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtboxId;

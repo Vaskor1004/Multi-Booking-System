@@ -212,6 +212,7 @@
             this.ShompodNext.Size = new System.Drawing.Size(149, 43);
             this.ShompodNext.TabIndex = 16;
             this.ShompodNext.Text = "Next";
+            this.ShompodNext.Click += new System.EventHandler(this.ShompodNext_Click);
             // 
             // gridViewSompodService
             // 
