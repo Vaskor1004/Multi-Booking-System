@@ -93,6 +93,16 @@ namespace Multi_Booking_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _event {
+            get {
+                object obj = ResourceManager.GetObject("event", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap a_hairdresser_with_a_beard_in_a_black_coat_cuts_a_client_s_hair_free_photo {
             get {
                 object obj = ResourceManager.GetObject("a-hairdresser-with-a-beard-in-a-black-coat-cuts-a-client-s-hair-free-photo", resourceCulture);
@@ -187,6 +197,26 @@ namespace Multi_Booking_System.Properties {
         internal static System.Drawing.Bitmap looks_live_unisex_salon_vijay_nagar_indore_salons_1zc4jsdqyd_shariar {
             get {
                 object obj = ResourceManager.GetObject("looks-live-unisex-salon-vijay-nagar-indore-salons-1zc4jsdqyd shariar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap view_beauty {
+            get {
+                object obj = ResourceManager.GetObject("view beauty", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap view_salon {
+            get {
+                object obj = ResourceManager.GetObject("view salon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
