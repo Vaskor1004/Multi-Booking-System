@@ -210,6 +210,7 @@ namespace Multi_Booking_System
             this.btn2ShahriarReview.Size = new System.Drawing.Size(240, 55);
             this.btn2ShahriarReview.TabIndex = 1;
             this.btn2ShahriarReview.Text = "Review";
+            this.btn2ShahriarReview.Click += new System.EventHandler(this.btn2ShahriarReview_Click);
             // 
             // btn3ShahriarLogout
             // 

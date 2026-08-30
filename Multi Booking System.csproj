@@ -90,11 +90,23 @@
     <Compile Include="ShahriarApprove.Designer.cs">
       <DependentUpon>ShahriarApprove.cs</DependentUpon>
     </Compile>
+    <Compile Include="ShahriarCustomerReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShahriarCustomerReview.Designer.cs">
+      <DependentUpon>ShahriarCustomerReview.cs</DependentUpon>
+    </Compile>
     <Compile Include="ShahriarDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ShahriarDashboard.Designer.cs">
       <DependentUpon>ShahriarDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShahriarReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShahriarReview.Designer.cs">
+      <DependentUpon>ShahriarReview.cs</DependentUpon>
     </Compile>
     <Compile Include="ShahriarSelun.cs">
       <SubType>Form</SubType>
@@ -119,6 +131,18 @@
     </Compile>
     <Compile Include="SompodApprove.Designer.cs">
       <DependentUpon>SompodApprove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SompodCustomerReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SompodCustomerReview.Designer.cs">
+      <DependentUpon>SompodCustomerReview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SompodReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SompodReview.Designer.cs">
+      <DependentUpon>SompodReview.cs</DependentUpon>
     </Compile>
     <Compile Include="SompodSelun.cs">
       <SubType>Form</SubType>

@@ -37,5 +37,12 @@ namespace Multi_Booking_System
             login.Show();
             this.Hide();
         }
+
+        private void btn2ShahriarReview_Click(object sender, EventArgs e)
+        {
+            SompodReview sompodReview = new SompodReview();
+            sompodReview.Show();
+            this.Hide();
+        }
     }
 }

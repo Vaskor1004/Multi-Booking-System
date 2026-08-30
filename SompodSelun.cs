@@ -26,7 +26,9 @@ namespace Multi_Booking_System
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            SompodReview sompodReview = new SompodReview();
+            sompodReview.Show();
+            this.Hide();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
