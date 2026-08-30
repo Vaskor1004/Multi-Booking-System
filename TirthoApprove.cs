@@ -116,5 +116,12 @@ namespace Multi_Booking_System
             );
             txtboxTirthoCustomerSerial.Text = bookingId.ToString();
         }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            TirthoCustomerSerial tirthoCustomerSerial = new TirthoCustomerSerial();
+            tirthoCustomerSerial.Show();
+            this.Hide();
+        }
     }
 }

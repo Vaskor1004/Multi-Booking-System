@@ -260,6 +260,7 @@ namespace Multi_Booking_System
             this.BtnReview.Text = "Review";
             this.BtnReview.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.BtnReview.TextOffset = new System.Drawing.Point(10, 0);
+            this.BtnReview.Click += new System.EventHandler(this.BtnReview_Click);
             // 
             // btn4TirthoBack
             // 

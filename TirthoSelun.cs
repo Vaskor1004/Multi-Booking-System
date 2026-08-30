@@ -37,5 +37,12 @@ namespace Multi_Booking_System
             login.Show();
             this.Hide();
         }
+
+        private void BtnReview_Click(object sender, EventArgs e)
+        {
+            TirthoReview tirthoReview = new TirthoReview();
+            tirthoReview.Show();
+            this.Hide();
+        }
     }
 }

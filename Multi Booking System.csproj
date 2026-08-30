@@ -138,11 +138,23 @@
     <Compile Include="TirthoApprove.Designer.cs">
       <DependentUpon>TirthoApprove.cs</DependentUpon>
     </Compile>
+    <Compile Include="TirthoCustomerSerial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TirthoCustomerSerial.Designer.cs">
+      <DependentUpon>TirthoCustomerSerial.cs</DependentUpon>
+    </Compile>
     <Compile Include="TirthoDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TirthoDashboard.Designer.cs">
       <DependentUpon>TirthoDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TirthoReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TirthoReview.Designer.cs">
+      <DependentUpon>TirthoReview.cs</DependentUpon>
     </Compile>
     <Compile Include="TirthoSelun.cs">
       <SubType>Form</SubType>
@@ -208,8 +220,14 @@
     <EmbeddedResource Include="TirthoApprove.resx">
       <DependentUpon>TirthoApprove.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TirthoCustomerSerial.resx">
+      <DependentUpon>TirthoCustomerSerial.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TirthoDashboard.resx">
       <DependentUpon>TirthoDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TirthoReview.resx">
+      <DependentUpon>TirthoReview.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TirthoSelun.resx">
       <DependentUpon>TirthoSelun.cs</DependentUpon>
