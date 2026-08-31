@@ -23,5 +23,12 @@ namespace Multi_Booking_System
             roxyOwnStore.Show();
             this.Hide();
         }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            RoxyCustomerReview roxyCustomerReview = new RoxyCustomerReview();
+            roxyCustomerReview.Show();
+            this.Hide();
+        }
     }
 }

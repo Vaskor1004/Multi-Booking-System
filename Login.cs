@@ -70,6 +70,12 @@ namespace Multi_Booking_System
                             sompod.Show();
                             this.Hide();
                         }
+                        else if (username == "Nusrat123")
+                        {
+                            RoxyOwnStore roxy = new RoxyOwnStore();
+                            roxy.Show();
+                            this.Hide();
+                        }
                         else
                         {
                             Tirtho t = new Tirtho();
