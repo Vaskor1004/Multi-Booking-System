@@ -123,5 +123,12 @@ namespace Multi_Booking_System
             tirthoCustomerSerial.Show();
             this.Hide();
         }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            Tirtho tirtho = new Tirtho();
+            tirtho.Show();
+            this.Hide();
+        }
     }
 }

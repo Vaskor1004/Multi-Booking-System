@@ -1,6 +1,6 @@
 ﻿//namespace Multi_Booking_System
 //{
-//    partial class TirthoCustomerSerial
+//    partial class DiyaCustomerReview
 //    {
 //        /// <summary>
 //        /// Required designer variable.
@@ -31,7 +31,7 @@
 //            this.components = new System.ComponentModel.Container();
 //            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 //            this.ClientSize = new System.Drawing.Size(800, 450);
-//            this.Text = "TirthoCustomerSerial";
+//            this.Text = "DiyaCustomerReview";
 //        }
 
 //        #endregion
@@ -41,7 +41,7 @@
 
 namespace Multi_Booking_System
 {
-    partial class TirthoCustomerSerial
+    partial class DiyaCustomerReview
     {
         /// <summary>
         /// Required designer variable.
@@ -99,9 +99,9 @@ namespace Multi_Booking_System
             this.lblSubtitle.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lblSubtitle.Location = new System.Drawing.Point(417, 75);
             this.lblSubtitle.Name = "lblSubtitle";
-            this.lblSubtitle.Size = new System.Drawing.Size(266, 23);
+            this.lblSubtitle.Size = new System.Drawing.Size(254, 23);
             this.lblSubtitle.TabIndex = 1;
-            this.lblSubtitle.Text = "Tirtho Store - Customer Feedback";
+            this.lblSubtitle.Text = "Diya Store - Customer Feedback";
             // 
             // dataGridViewReviews
             // 
@@ -130,7 +130,6 @@ namespace Multi_Booking_System
             this.btnShowService.TabIndex = 1;
             this.btnShowService.Text = "Show Reviews";
             this.btnShowService.UseVisualStyleBackColor = true;
-            this.btnShowService.Click += new System.EventHandler(this.btnShowService_Click);
             // 
             // btnClose
             // 
@@ -143,7 +142,7 @@ namespace Multi_Booking_System
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
-            // TirthoCustomerSerial
+            // DiyaCustomerReview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -153,9 +152,9 @@ namespace Multi_Booking_System
             this.Controls.Add(this.dataGridViewReviews);
             this.Controls.Add(this.btnShowService);
             this.Controls.Add(this.btnClose);
-            this.Name = "TirthoCustomerSerial";
+            this.Name = "DiyaCustomerReview";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Tirtho Store - Customer Reviews";
+            this.Text = "Diya Store - Customer Reviews";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewReviews)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -58,11 +58,29 @@
     <Compile Include="CustomerSerialDetails.Designer.cs">
       <DependentUpon>CustomerSerialDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="DiyaApprove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiyaApprove.Designer.cs">
+      <DependentUpon>DiyaApprove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiyaCustomerReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiyaCustomerReview.Designer.cs">
+      <DependentUpon>DiyaCustomerReview.cs</DependentUpon>
+    </Compile>
     <Compile Include="DiyaDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DiyaDashboard.Designer.cs">
       <DependentUpon>DiyaDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiyaOwnStore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiyaOwnStore.Designer.cs">
+      <DependentUpon>DiyaOwnStore.cs</DependentUpon>
     </Compile>
     <Compile Include="DiyaParlar.cs">
       <SubType>Form</SubType>
@@ -90,11 +108,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoxyApprove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoxyApprove.Designer.cs">
+      <DependentUpon>RoxyApprove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoxyCustomerReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoxyCustomerReview.Designer.cs">
+      <DependentUpon>RoxyCustomerReview.cs</DependentUpon>
+    </Compile>
     <Compile Include="RoxyDashBoard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="RoxyDashBoard.Designer.cs">
       <DependentUpon>RoxyDashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoxyOwnStore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoxyOwnStore.Designer.cs">
+      <DependentUpon>RoxyOwnStore.cs</DependentUpon>
     </Compile>
     <Compile Include="RoxyParler.cs">
       <SubType>Form</SubType>
@@ -108,11 +144,29 @@
     <Compile Include="SelunList.Designer.cs">
       <DependentUpon>SelunList.cs</DependentUpon>
     </Compile>
+    <Compile Include="ShahnazApprove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShahnazApprove.Designer.cs">
+      <DependentUpon>ShahnazApprove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShahnazCustomerReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShahnazCustomerReview.Designer.cs">
+      <DependentUpon>ShahnazCustomerReview.cs</DependentUpon>
+    </Compile>
     <Compile Include="ShahnazDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ShahnazDashboard.Designer.cs">
       <DependentUpon>ShahnazDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShahnazOwnStore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShahnazOwnStore.Designer.cs">
+      <DependentUpon>ShahnazOwnStore.cs</DependentUpon>
     </Compile>
     <Compile Include="ShahnazParlar.cs">
       <SubType>Form</SubType>
@@ -237,8 +291,17 @@
     <EmbeddedResource Include="CustomerSerialDetails.resx">
       <DependentUpon>CustomerSerialDetails.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DiyaApprove.resx">
+      <DependentUpon>DiyaApprove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiyaCustomerReview.resx">
+      <DependentUpon>DiyaCustomerReview.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DiyaDashboard.resx">
       <DependentUpon>DiyaDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiyaOwnStore.resx">
+      <DependentUpon>DiyaOwnStore.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DiyaParlar.resx">
       <DependentUpon>DiyaParlar.cs</DependentUpon>
@@ -262,8 +325,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RoxyApprove.resx">
+      <DependentUpon>RoxyApprove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoxyCustomerReview.resx">
+      <DependentUpon>RoxyCustomerReview.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RoxyDashBoard.resx">
       <DependentUpon>RoxyDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoxyOwnStore.resx">
+      <DependentUpon>RoxyOwnStore.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RoxyParler.resx">
       <DependentUpon>RoxyParler.cs</DependentUpon>
@@ -271,8 +343,17 @@
     <EmbeddedResource Include="SelunList.resx">
       <DependentUpon>SelunList.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ShahnazApprove.resx">
+      <DependentUpon>ShahnazApprove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShahnazCustomerReview.resx">
+      <DependentUpon>ShahnazCustomerReview.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ShahnazDashboard.resx">
       <DependentUpon>ShahnazDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShahnazOwnStore.resx">
+      <DependentUpon>ShahnazOwnStore.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ShahnazParlar.resx">
       <DependentUpon>ShahnazParlar.cs</DependentUpon>

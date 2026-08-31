@@ -67,5 +67,12 @@ namespace Multi_Booking_System
                 );
             }
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Tirtho tirtho = new Tirtho();
+            tirtho.Show();
+            this.Hide();
+        }
     }
 }
