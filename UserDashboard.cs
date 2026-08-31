@@ -90,5 +90,12 @@ namespace Multi_Booking_System
         {
 
         }
+
+        private void BtnBeauty_Click(object sender, EventArgs e)
+        {
+            ParlarList parlarList = new ParlarList();
+            parlarList.Show();
+            this.Hide();
+        }
     }
 }
