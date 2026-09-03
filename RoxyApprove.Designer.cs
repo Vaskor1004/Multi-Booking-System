@@ -166,6 +166,7 @@ namespace Multi_Booking_System
             this.btnRoxyCustomerSerial.Size = new System.Drawing.Size(240, 45);
             this.btnRoxyCustomerSerial.TabIndex = 3;
             this.btnRoxyCustomerSerial.Text = "Load / Refresh Serials";
+            this.btnRoxyCustomerSerial.Click += new System.EventHandler(this.btnRoxyCustomerSerial_Click);
             // 
             // gridViewRoxyCustomerSerial
             // 
@@ -214,6 +215,7 @@ namespace Multi_Booking_System
             this.gridViewRoxyCustomerSerial.ThemeStyle.RowsStyle.Height = 45;
             this.gridViewRoxyCustomerSerial.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(225)))), ((int)(((byte)(250)))));
             this.gridViewRoxyCustomerSerial.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.gridViewRoxyCustomerSerial.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridViewRoxyCustomerSerial_CellContentClick);
             // 
             // panelAction
             // 
@@ -301,6 +303,7 @@ namespace Multi_Booking_System
             this.btnRoxyApprove.Size = new System.Drawing.Size(180, 45);
             this.btnRoxyApprove.TabIndex = 9;
             this.btnRoxyApprove.Text = "Approve Serial";
+            this.btnRoxyApprove.Click += new System.EventHandler(this.btnRoxyApprove_Click);
             // 
             // btnNext
             // 
