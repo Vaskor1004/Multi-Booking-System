@@ -216,6 +216,7 @@ namespace Multi_Booking_System
             this.btnAddService.Size = new System.Drawing.Size(160, 45);
             this.btnAddService.TabIndex = 7;
             this.btnAddService.Text = "Add Service";
+            this.btnAddService.Click += new System.EventHandler(this.btnAddService_Click);
             // 
             // panelUpdateDelete
             // 
@@ -339,6 +340,7 @@ namespace Multi_Booking_System
             this.btnUpdate.Size = new System.Drawing.Size(160, 45);
             this.btnUpdate.TabIndex = 16;
             this.btnUpdate.Text = "Update";
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -354,6 +356,7 @@ namespace Multi_Booking_System
             this.btnDelete.Size = new System.Drawing.Size(160, 45);
             this.btnDelete.TabIndex = 17;
             this.btnDelete.Text = "Delete";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // panelGrid
             // 
@@ -431,6 +434,7 @@ namespace Multi_Booking_System
             this.gridviewShowService.ThemeStyle.RowsStyle.Height = 45;
             this.gridviewShowService.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(158)))), ((int)(((byte)(11)))));
             this.gridviewShowService.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.gridviewShowService.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridviewShowService_CellContentClick);
             // 
             // BtnShow
             // 
@@ -447,6 +451,7 @@ namespace Multi_Booking_System
             this.BtnShow.Size = new System.Drawing.Size(220, 45);
             this.BtnShow.TabIndex = 21;
             this.BtnShow.Text = "Show Service";
+            this.BtnShow.Click += new System.EventHandler(this.BtnShow_Click);
             // 
             // btnNext
             // 

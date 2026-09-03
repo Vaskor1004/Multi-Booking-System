@@ -166,6 +166,7 @@ namespace Multi_Booking_System
             this.btnDiyaCustomerSerial.Size = new System.Drawing.Size(240, 45);
             this.btnDiyaCustomerSerial.TabIndex = 3;
             this.btnDiyaCustomerSerial.Text = "Load / Refresh Serials";
+            this.btnDiyaCustomerSerial.Click += new System.EventHandler(this.btnDiyaCustomerSerial_Click);
             // 
             // gridViewDiyaCustomerSerial
             // 
@@ -214,6 +215,7 @@ namespace Multi_Booking_System
             this.gridViewDiyaCustomerSerial.ThemeStyle.RowsStyle.Height = 45;
             this.gridViewDiyaCustomerSerial.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(225)))), ((int)(((byte)(250)))));
             this.gridViewDiyaCustomerSerial.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.gridViewDiyaCustomerSerial.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridViewDiyaCustomerSerial_CellContentClick);
             // 
             // panelAction
             // 
@@ -301,6 +303,7 @@ namespace Multi_Booking_System
             this.btnDiyaApprove.Size = new System.Drawing.Size(180, 45);
             this.btnDiyaApprove.TabIndex = 9;
             this.btnDiyaApprove.Text = "Approve Serial";
+            this.btnDiyaApprove.Click += new System.EventHandler(this.btnDiyaApprove_Click);
             // 
             // btnNext
             // 

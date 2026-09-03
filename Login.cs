@@ -76,6 +76,18 @@ namespace Multi_Booking_System
                             roxy.Show();
                             this.Hide();
                         }
+                        else if (username == "Shahnaz123")
+                        {
+                           ShahnazOwnStore shahnaz = new ShahnazOwnStore();
+                           shahnaz.Show();
+                           this.Hide();
+                        }
+                        else if (username == "Diya123")
+                        {
+                            DiyaOwnStore diya = new DiyaOwnStore();
+                            diya.Show();
+                            this.Hide();
+                        }
                         else
                         {
                             Tirtho t = new Tirtho();

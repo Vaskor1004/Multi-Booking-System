@@ -166,6 +166,7 @@ namespace Multi_Booking_System
             this.btnShahnazCustomerSerial.Size = new System.Drawing.Size(240, 45);
             this.btnShahnazCustomerSerial.TabIndex = 3;
             this.btnShahnazCustomerSerial.Text = "Load / Refresh Serials";
+            this.btnShahnazCustomerSerial.Click += new System.EventHandler(this.btnShahnazCustomerSerial_Click);
             // 
             // gridViewShahnazCustomerSerial
             // 
@@ -214,6 +215,7 @@ namespace Multi_Booking_System
             this.gridViewShahnazCustomerSerial.ThemeStyle.RowsStyle.Height = 45;
             this.gridViewShahnazCustomerSerial.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(225)))), ((int)(((byte)(250)))));
             this.gridViewShahnazCustomerSerial.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.gridViewShahnazCustomerSerial.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridViewShahnazCustomerSerial_CellContentClick);
             // 
             // panelAction
             // 
@@ -301,6 +303,7 @@ namespace Multi_Booking_System
             this.btnShahnazApprove.Size = new System.Drawing.Size(180, 45);
             this.btnShahnazApprove.TabIndex = 9;
             this.btnShahnazApprove.Text = "Approve Serial";
+            this.btnShahnazApprove.Click += new System.EventHandler(this.btnShahnazApprove_Click);
             // 
             // btnNext
             // 

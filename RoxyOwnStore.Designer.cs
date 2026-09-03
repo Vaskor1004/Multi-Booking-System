@@ -335,7 +335,7 @@ namespace Multi_Booking_System
             this.btnUpdate.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
             this.btnUpdate.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(150)))), ((int)(((byte)(105)))));
-            this.btnUpdate.Location = new System.Drawing.Point(344, 177);
+            this.btnUpdate.Location = new System.Drawing.Point(320, 177);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(160, 45);
             this.btnUpdate.TabIndex = 16;
