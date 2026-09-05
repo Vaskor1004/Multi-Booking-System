@@ -204,6 +204,16 @@ namespace Multi_Booking_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap MimParlar {
+            get {
+                object obj = ResourceManager.GetObject("MimParlar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Parlar1 {
             get {
                 object obj = ResourceManager.GetObject("Parlar1", resourceCulture);
@@ -267,6 +277,16 @@ namespace Multi_Booking_System.Properties {
         internal static System.Drawing.Bitmap pnParlar6 {
             get {
                 object obj = ResourceManager.GetObject("pnParlar6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RadiaParlar {
+            get {
+                object obj = ResourceManager.GetObject("RadiaParlar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

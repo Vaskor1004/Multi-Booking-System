@@ -150,6 +150,18 @@
     <Compile Include="RoxyParler.Designer.cs">
       <DependentUpon>RoxyParler.cs</DependentUpon>
     </Compile>
+    <Compile Include="RoxyStoreMim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoxyStoreMim.Designer.cs">
+      <DependentUpon>RoxyStoreMim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoxyStoreRadia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoxyStoreRadia.Designer.cs">
+      <DependentUpon>RoxyStoreRadia.cs</DependentUpon>
+    </Compile>
     <Compile Include="RoxyStoreSadia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -364,6 +376,12 @@
     <EmbeddedResource Include="RoxyParler.resx">
       <DependentUpon>RoxyParler.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="RoxyStoreMim.resx">
+      <DependentUpon>RoxyStoreMim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoxyStoreRadia.resx">
+      <DependentUpon>RoxyStoreRadia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RoxyStoreSadia.resx">
       <DependentUpon>RoxyStoreSadia.cs</DependentUpon>
     </EmbeddedResource>
@@ -530,6 +548,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Sadiaparlar.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MimParlar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RadiaParlar.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

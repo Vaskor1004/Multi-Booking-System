@@ -478,6 +478,16 @@ namespace Multi_Booking_System
                 RoxyStoreSadia roxyStoreSadia = new RoxyStoreSadia();
                 roxyStoreSadia.Show();
             }
+            else if (WorkerId == 2)
+            {
+                RoxyStoreMim roxyStoreMim = new RoxyStoreMim();
+                roxyStoreMim.Show();
+            }
+            else if (WorkerId == 3)
+            {
+                RoxyStoreRadia roxyStoreRadia = new RoxyStoreRadia();
+                roxyStoreRadia.Show();
+            }
         }
     }
 }
