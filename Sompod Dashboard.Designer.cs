@@ -196,6 +196,7 @@ namespace Multi_Booking_System
             this.guna2ShadowPanel2 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.gridViewAddService = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.guna2ShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridviewShowService)).BeginInit();
@@ -220,7 +221,7 @@ namespace Multi_Booking_System
             this.guna2Button1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
             this.guna2Button1.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button1.Location = new System.Drawing.Point(20, 110);
+            this.guna2Button1.Location = new System.Drawing.Point(20, 175);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(220, 50);
             this.guna2Button1.TabIndex = 0;
@@ -242,13 +243,13 @@ namespace Multi_Booking_System
             this.btnAddService.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnAddService.FillColor = System.Drawing.Color.Transparent;
             this.btnAddService.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnAddService.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(117)))), ((int)(((byte)(134)))));
+            this.btnAddService.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.btnAddService.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
             this.btnAddService.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.btnAddService.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnAddService.Location = new System.Drawing.Point(20, 175);
+            this.btnAddService.Location = new System.Drawing.Point(467, 4);
             this.btnAddService.Name = "btnAddService";
-            this.btnAddService.Size = new System.Drawing.Size(220, 50);
+            this.btnAddService.Size = new System.Drawing.Size(163, 40);
             this.btnAddService.TabIndex = 1;
             this.btnAddService.Text = "Add Service";
             this.btnAddService.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -268,13 +269,13 @@ namespace Multi_Booking_System
             this.btnBookSerial.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnBookSerial.FillColor = System.Drawing.Color.Transparent;
             this.btnBookSerial.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnBookSerial.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(117)))), ((int)(((byte)(134)))));
+            this.btnBookSerial.ForeColor = System.Drawing.Color.Firebrick;
             this.btnBookSerial.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
             this.btnBookSerial.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.btnBookSerial.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnBookSerial.Location = new System.Drawing.Point(20, 240);
+            this.btnBookSerial.Location = new System.Drawing.Point(486, 3);
             this.btnBookSerial.Name = "btnBookSerial";
-            this.btnBookSerial.Size = new System.Drawing.Size(220, 50);
+            this.btnBookSerial.Size = new System.Drawing.Size(144, 50);
             this.btnBookSerial.TabIndex = 2;
             this.btnBookSerial.Text = "Book Serial";
             this.btnBookSerial.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -305,11 +306,10 @@ namespace Multi_Booking_System
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.White;
+            this.guna2Panel1.Controls.Add(this.btnDelete);
             this.guna2Panel1.Controls.Add(this.labelTitle);
             this.guna2Panel1.Controls.Add(this.guna2Button1);
-            this.guna2Panel1.Controls.Add(this.btnAddService);
             this.guna2Panel1.Controls.Add(this.guna2Button4);
-            this.guna2Panel1.Controls.Add(this.btnBookSerial);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
@@ -336,6 +336,7 @@ namespace Multi_Booking_System
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel1.Controls.Add(this.gridviewShowService);
             this.guna2ShadowPanel1.Controls.Add(this.label1);
+            this.guna2ShadowPanel1.Controls.Add(this.btnAddService);
             this.guna2ShadowPanel1.FillColor = System.Drawing.Color.White;
             this.guna2ShadowPanel1.Location = new System.Drawing.Point(290, 30);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
@@ -411,6 +412,7 @@ namespace Multi_Booking_System
             this.guna2ShadowPanel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel2.Controls.Add(this.gridViewAddService);
             this.guna2ShadowPanel2.Controls.Add(this.label2);
+            this.guna2ShadowPanel2.Controls.Add(this.btnBookSerial);
             this.guna2ShadowPanel2.FillColor = System.Drawing.Color.White;
             this.guna2ShadowPanel2.Location = new System.Drawing.Point(290, 300);
             this.guna2ShadowPanel2.Name = "guna2ShadowPanel2";
@@ -478,6 +480,27 @@ namespace Multi_Booking_System
             this.label2.TabIndex = 8;
             this.label2.Text = "Available Services";
             // 
+            // btnDelete
+            // 
+            this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnDelete.Animated = true;
+            this.btnDelete.BorderRadius = 10;
+            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDelete.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDelete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDelete.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDelete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDelete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(107)))), ((int)(((byte)(107)))));
+            this.btnDelete.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
+            this.btnDelete.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
+            this.btnDelete.Location = new System.Drawing.Point(20, 393);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(220, 50);
+            this.btnDelete.TabIndex = 7;
+            this.btnDelete.Text = "Delete Service";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
             // Sompod_Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -516,5 +539,6 @@ namespace Multi_Booking_System
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel2;
         private System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2Button btnDelete;
     }
 }

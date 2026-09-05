@@ -228,5 +228,38 @@ namespace Multi_Booking_System
                 }
             }
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (gridViewSelectedServices.CurrentRow == null)
+            {
+                MessageBox.Show("Please select a service to remove!");
+                return;
+            }
+
+            DialogResult result = MessageBox.Show(
+                "Are you sure you want to remove this service?",
+                "Confirm Delete",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            if (result == DialogResult.Yes)
+            {
+                int rowIndex =
+                    gridViewSelectedServices.CurrentRow.Index;
+
+                selectedServices.Rows.RemoveAt(rowIndex);
+
+                MessageBox.Show("Service Removed Successfully!");
+            }
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            RoxyHomeService roxyHomeService = new RoxyHomeService();
+            roxyHomeService.Show();
+            this.Hide();
+        }
     }
 }

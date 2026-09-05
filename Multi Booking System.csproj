@@ -126,6 +126,18 @@
     <Compile Include="RoxyDashBoard.Designer.cs">
       <DependentUpon>RoxyDashBoard.cs</DependentUpon>
     </Compile>
+    <Compile Include="RoxyHomeApprove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoxyHomeApprove.Designer.cs">
+      <DependentUpon>RoxyHomeApprove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoxyHomeService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoxyHomeService.Designer.cs">
+      <DependentUpon>RoxyHomeService.cs</DependentUpon>
+    </Compile>
     <Compile Include="RoxyOwnStore.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -334,6 +346,12 @@
     <EmbeddedResource Include="RoxyDashBoard.resx">
       <DependentUpon>RoxyDashBoard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="RoxyHomeApprove.resx">
+      <DependentUpon>RoxyHomeApprove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoxyHomeService.resx">
+      <DependentUpon>RoxyHomeService.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RoxyOwnStore.resx">
       <DependentUpon>RoxyOwnStore.cs</DependentUpon>
     </EmbeddedResource>
@@ -364,8 +382,14 @@
     <EmbeddedResource Include="ShahriarApprove.resx">
       <DependentUpon>ShahriarApprove.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ShahriarCustomerReview.resx">
+      <DependentUpon>ShahriarCustomerReview.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ShahriarDashboard.resx">
       <DependentUpon>ShahriarDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShahriarReview.resx">
+      <DependentUpon>ShahriarReview.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ShahriarSelun.resx">
       <DependentUpon>ShahriarSelun.cs</DependentUpon>
@@ -378,6 +402,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SompodApprove.resx">
       <DependentUpon>SompodApprove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SompodCustomerReview.resx">
+      <DependentUpon>SompodCustomerReview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SompodReview.resx">
+      <DependentUpon>SompodReview.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SompodSelun.resx">
       <DependentUpon>SompodSelun.cs</DependentUpon>

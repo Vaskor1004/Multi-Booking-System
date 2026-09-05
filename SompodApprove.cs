@@ -116,5 +116,12 @@ namespace Multi_Booking_System
            );
            txtboxId.Text = bookingId.ToString();
         }
+
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+            SompodCustomerReview sompodCustomerReview = new SompodCustomerReview();
+            sompodCustomerReview.Show();
+            this.Hide();
+        }
     }
 }

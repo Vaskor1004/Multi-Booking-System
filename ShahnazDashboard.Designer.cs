@@ -70,12 +70,12 @@ namespace Multi_Booking_System
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.labelTitle = new System.Windows.Forms.Label();
             this.BtnShowServiceShahnaz = new Guna.UI2.WinForms.Guna2Button();
@@ -90,6 +90,7 @@ namespace Multi_Booking_System
             this.gridViewSelectedServices = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panelHeader2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.guna2ShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewShahnazStore)).BeginInit();
@@ -101,10 +102,9 @@ namespace Multi_Booking_System
             // 
             // guna2Panel1
             // 
+            this.guna2Panel1.Controls.Add(this.btnDelete);
             this.guna2Panel1.Controls.Add(this.labelTitle);
             this.guna2Panel1.Controls.Add(this.BtnShowServiceShahnaz);
-            this.guna2Panel1.Controls.Add(this.btnAddService);
-            this.guna2Panel1.Controls.Add(this.btnBookSerial);
             this.guna2Panel1.Controls.Add(this.btnLogOut);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(50)))), ((int)(((byte)(60)))));
@@ -136,12 +136,12 @@ namespace Multi_Booking_System
             this.BtnShowServiceShahnaz.CheckedState.ForeColor = System.Drawing.Color.White;
             this.BtnShowServiceShahnaz.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnShowServiceShahnaz.FillColor = System.Drawing.Color.Transparent;
-            this.BtnShowServiceShahnaz.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.BtnShowServiceShahnaz.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnShowServiceShahnaz.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.BtnShowServiceShahnaz.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BtnShowServiceShahnaz.HoverState.ForeColor = System.Drawing.Color.White;
             this.BtnShowServiceShahnaz.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.BtnShowServiceShahnaz.Location = new System.Drawing.Point(20, 110);
+            this.BtnShowServiceShahnaz.Location = new System.Drawing.Point(20, 153);
             this.BtnShowServiceShahnaz.Name = "BtnShowServiceShahnaz";
             this.BtnShowServiceShahnaz.Size = new System.Drawing.Size(220, 50);
             this.BtnShowServiceShahnaz.TabIndex = 0;
@@ -164,9 +164,9 @@ namespace Multi_Booking_System
             this.btnAddService.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnAddService.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnAddService.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnAddService.Location = new System.Drawing.Point(20, 175);
+            this.btnAddService.Location = new System.Drawing.Point(504, 3);
             this.btnAddService.Name = "btnAddService";
-            this.btnAddService.Size = new System.Drawing.Size(220, 50);
+            this.btnAddService.Size = new System.Drawing.Size(146, 35);
             this.btnAddService.TabIndex = 1;
             this.btnAddService.Text = "Add Service";
             this.btnAddService.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -187,9 +187,9 @@ namespace Multi_Booking_System
             this.btnBookSerial.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnBookSerial.HoverState.ForeColor = System.Drawing.Color.White;
             this.btnBookSerial.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btnBookSerial.Location = new System.Drawing.Point(20, 240);
+            this.btnBookSerial.Location = new System.Drawing.Point(504, 7);
             this.btnBookSerial.Name = "btnBookSerial";
-            this.btnBookSerial.Size = new System.Drawing.Size(220, 50);
+            this.btnBookSerial.Size = new System.Drawing.Size(146, 35);
             this.btnBookSerial.TabIndex = 4;
             this.btnBookSerial.Text = "Book Serial";
             this.btnBookSerial.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -211,7 +211,7 @@ namespace Multi_Booking_System
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(220, 50);
             this.btnLogOut.TabIndex = 5;
-            this.btnLogOut.Text = "Log Out";
+            this.btnLogOut.Text = "Back";
             this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // guna2ShadowPanel1
@@ -235,29 +235,29 @@ namespace Multi_Booking_System
             // 
             this.gridViewShahnazStore.AllowUserToAddRows = false;
             this.gridViewShahnazStore.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            this.gridViewShahnazStore.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            this.gridViewShahnazStore.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.gridViewShahnazStore.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(235)))), ((int)(((byte)(245)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(235)))), ((int)(((byte)(245)))));
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridViewShahnazStore.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(235)))), ((int)(((byte)(245)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(235)))), ((int)(((byte)(245)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridViewShahnazStore.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gridViewShahnazStore.ColumnHeadersHeight = 45;
             this.gridViewShahnazStore.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(225)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridViewShahnazStore.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(225)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridViewShahnazStore.DefaultCellStyle = dataGridViewCellStyle3;
             this.gridViewShahnazStore.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(235)))), ((int)(((byte)(245)))));
             this.gridViewShahnazStore.Location = new System.Drawing.Point(20, 60);
             this.gridViewShahnazStore.Name = "gridViewShahnazStore";
@@ -284,6 +284,7 @@ namespace Multi_Booking_System
             // 
             this.panelHeader1.BorderRadius = 15;
             this.panelHeader1.Controls.Add(this.label1);
+            this.panelHeader1.Controls.Add(this.btnAddService);
             this.panelHeader1.CustomizableEdges.BottomLeft = false;
             this.panelHeader1.CustomizableEdges.BottomRight = false;
             this.panelHeader1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -328,29 +329,29 @@ namespace Multi_Booking_System
             // 
             this.gridViewSelectedServices.AllowUserToAddRows = false;
             this.gridViewSelectedServices.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(255)))), ((int)(((byte)(250)))));
-            this.gridViewSelectedServices.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(255)))), ((int)(((byte)(250)))));
+            this.gridViewSelectedServices.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.gridViewSelectedServices.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(245)))), ((int)(((byte)(235)))));
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(245)))), ((int)(((byte)(235)))));
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridViewSelectedServices.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(245)))), ((int)(((byte)(235)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(245)))), ((int)(((byte)(235)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridViewSelectedServices.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.gridViewSelectedServices.ColumnHeadersHeight = 45;
             this.gridViewSelectedServices.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI", 10.2F);
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(240)))), ((int)(((byte)(220)))));
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridViewSelectedServices.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.2F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(240)))), ((int)(((byte)(220)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridViewSelectedServices.DefaultCellStyle = dataGridViewCellStyle6;
             this.gridViewSelectedServices.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(245)))), ((int)(((byte)(235)))));
             this.gridViewSelectedServices.Location = new System.Drawing.Point(20, 60);
             this.gridViewSelectedServices.Name = "gridViewSelectedServices";
@@ -377,6 +378,7 @@ namespace Multi_Booking_System
             // 
             this.panelHeader2.BorderRadius = 15;
             this.panelHeader2.Controls.Add(this.label2);
+            this.panelHeader2.Controls.Add(this.btnBookSerial);
             this.panelHeader2.CustomizableEdges.BottomLeft = false;
             this.panelHeader2.CustomizableEdges.BottomRight = false;
             this.panelHeader2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -398,6 +400,24 @@ namespace Multi_Booking_System
             this.label2.Size = new System.Drawing.Size(197, 31);
             this.label2.TabIndex = 8;
             this.label2.Text = "Selected Services";
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnDelete.Animated = true;
+            this.btnDelete.BackColor = System.Drawing.Color.Transparent;
+            this.btnDelete.BorderRadius = 15;
+            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDelete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
+            this.btnDelete.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.btnDelete.Location = new System.Drawing.Point(20, 370);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(220, 50);
+            this.btnDelete.TabIndex = 7;
+            this.btnDelete.Text = "Delete Service";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // ShahnazDashboard
             // 
@@ -444,6 +464,7 @@ namespace Multi_Booking_System
         private Guna.UI2.WinForms.Guna2GradientPanel panelHeader2;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2DataGridView gridViewSelectedServices;
+        private Guna.UI2.WinForms.Guna2Button btnDelete;
     }
 }
 

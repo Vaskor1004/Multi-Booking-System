@@ -153,32 +153,28 @@ namespace Multi_Booking_System
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.labelMainTitle = new System.Windows.Forms.Label();
-            
             this.panelAction = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.headerAction = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.labelActionTitle = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtboxid = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2GradientButton();
-            
             this.panelGrid = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.headerGrid = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.labelGridTitle = new System.Windows.Forms.Label();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.gridviewCustomerSerial = new Guna.UI2.WinForms.Guna2DataGridView();
-
+            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panelAction.SuspendLayout();
             this.headerAction.SuspendLayout();
             this.panelGrid.SuspendLayout();
             this.headerGrid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridviewCustomerSerial)).BeginInit();
             this.SuspendLayout();
-
             // 
             // labelMainTitle
             // 
@@ -187,19 +183,18 @@ namespace Multi_Booking_System
             this.labelMainTitle.ForeColor = System.Drawing.Color.White;
             this.labelMainTitle.Location = new System.Drawing.Point(30, 20);
             this.labelMainTitle.Name = "labelMainTitle";
-            this.labelMainTitle.Size = new System.Drawing.Size(434, 54);
+            this.labelMainTitle.Size = new System.Drawing.Size(370, 54);
             this.labelMainTitle.TabIndex = 0;
             this.labelMainTitle.Text = "Approve Bookings";
-
             // 
-            // panelAction (Left Side Card)
+            // panelAction
             // 
             this.panelAction.BackColor = System.Drawing.Color.Transparent;
             this.panelAction.Controls.Add(this.headerAction);
             this.panelAction.Controls.Add(this.label1);
             this.panelAction.Controls.Add(this.txtboxid);
             this.panelAction.Controls.Add(this.guna2Button2);
-            this.panelAction.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59))))); // Slate 800
+            this.panelAction.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
             this.panelAction.Location = new System.Drawing.Point(30, 100);
             this.panelAction.Name = "panelAction";
             this.panelAction.Radius = 15;
@@ -208,22 +203,20 @@ namespace Multi_Booking_System
             this.panelAction.ShadowShift = 8;
             this.panelAction.Size = new System.Drawing.Size(350, 400);
             this.panelAction.TabIndex = 1;
-
             // 
             // headerAction
             // 
+            this.headerAction.BorderRadius = 15;
             this.headerAction.Controls.Add(this.labelActionTitle);
+            this.headerAction.CustomizableEdges.BottomLeft = false;
+            this.headerAction.CustomizableEdges.BottomRight = false;
             this.headerAction.Dock = System.Windows.Forms.DockStyle.Top;
-            this.headerAction.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(92)))), ((int)(((byte)(173))))); // Vibrant Pink
-            this.headerAction.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(127)))), ((int)(((byte)(80))))); // Coral
+            this.headerAction.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(92)))), ((int)(((byte)(173)))));
+            this.headerAction.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(127)))), ((int)(((byte)(80)))));
             this.headerAction.Location = new System.Drawing.Point(0, 0);
             this.headerAction.Name = "headerAction";
             this.headerAction.Size = new System.Drawing.Size(350, 60);
             this.headerAction.TabIndex = 5;
-            this.headerAction.BorderRadius = 15;
-            this.headerAction.CustomizableEdges.BottomLeft = false;
-            this.headerAction.CustomizableEdges.BottomRight = false;
-
             // 
             // labelActionTitle
             // 
@@ -233,50 +226,46 @@ namespace Multi_Booking_System
             this.labelActionTitle.ForeColor = System.Drawing.Color.White;
             this.labelActionTitle.Location = new System.Drawing.Point(20, 15);
             this.labelActionTitle.Name = "labelActionTitle";
-            this.labelActionTitle.Size = new System.Drawing.Size(161, 31);
+            this.labelActionTitle.Size = new System.Drawing.Size(139, 31);
             this.labelActionTitle.TabIndex = 2;
             this.labelActionTitle.Text = "Take Action";
-
             // 
-            // label1 (ID Label)
+            // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(163)))), ((int)(((byte)(184))))); // Slate 400
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(163)))), ((int)(((byte)(184)))));
             this.label1.Location = new System.Drawing.Point(30, 100);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(147, 28);
+            this.label1.Size = new System.Drawing.Size(153, 28);
             this.label1.TabIndex = 3;
             this.label1.Text = "Enter Serial ID:";
-
             // 
             // txtboxid
             // 
+            this.txtboxid.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105)))));
             this.txtboxid.BorderRadius = 8;
-            this.txtboxid.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(85)))), ((int)(((byte)(105))))); // Slate 600
             this.txtboxid.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtboxid.DefaultText = "";
-            this.txtboxid.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42))))); // Slate 900
+            this.txtboxid.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
             this.txtboxid.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.txtboxid.ForeColor = System.Drawing.Color.White;
             this.txtboxid.Location = new System.Drawing.Point(35, 140);
             this.txtboxid.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.txtboxid.Name = "txtboxid";
-            this.txtboxid.PasswordChar = '\0';
+            this.txtboxid.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(116)))), ((int)(((byte)(139)))));
             this.txtboxid.PlaceholderText = "e.g. 1024";
-            this.txtboxid.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(116)))), ((int)(((byte)(139))))); // Slate 500
             this.txtboxid.SelectedText = "";
             this.txtboxid.Size = new System.Drawing.Size(280, 50);
             this.txtboxid.TabIndex = 4;
-
             // 
-            // guna2Button2 (Approve Button)
+            // guna2Button2
             // 
             this.guna2Button2.Animated = true;
             this.guna2Button2.BorderRadius = 8;
             this.guna2Button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(92)))), ((int)(((byte)(173))))); // Vibrant Pink
-            this.guna2Button2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(127)))), ((int)(((byte)(80))))); // Coral
+            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(92)))), ((int)(((byte)(173)))));
+            this.guna2Button2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(127)))), ((int)(((byte)(80)))));
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.Location = new System.Drawing.Point(35, 300);
@@ -285,9 +274,8 @@ namespace Multi_Booking_System
             this.guna2Button2.TabIndex = 2;
             this.guna2Button2.Text = "Approve Booking";
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
-
             // 
-            // panelGrid (Right Side Card)
+            // panelGrid
             // 
             this.panelGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
@@ -295,7 +283,7 @@ namespace Multi_Booking_System
             this.panelGrid.BackColor = System.Drawing.Color.Transparent;
             this.panelGrid.Controls.Add(this.headerGrid);
             this.panelGrid.Controls.Add(this.gridviewCustomerSerial);
-            this.panelGrid.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59))))); // Slate 800
+            this.panelGrid.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
             this.panelGrid.Location = new System.Drawing.Point(410, 100);
             this.panelGrid.Name = "panelGrid";
             this.panelGrid.Radius = 15;
@@ -304,23 +292,21 @@ namespace Multi_Booking_System
             this.panelGrid.ShadowShift = 8;
             this.panelGrid.Size = new System.Drawing.Size(740, 520);
             this.panelGrid.TabIndex = 5;
-
             // 
             // headerGrid
             // 
+            this.headerGrid.BorderRadius = 15;
             this.headerGrid.Controls.Add(this.labelGridTitle);
             this.headerGrid.Controls.Add(this.guna2Button1);
+            this.headerGrid.CustomizableEdges.BottomLeft = false;
+            this.headerGrid.CustomizableEdges.BottomRight = false;
             this.headerGrid.Dock = System.Windows.Forms.DockStyle.Top;
-            this.headerGrid.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(255))))); // Vibrant Cyan
-            this.headerGrid.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(132)))), ((int)(((byte)(80))))); // Emerald
+            this.headerGrid.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(255)))));
+            this.headerGrid.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(132)))), ((int)(((byte)(80)))));
             this.headerGrid.Location = new System.Drawing.Point(0, 0);
             this.headerGrid.Name = "headerGrid";
             this.headerGrid.Size = new System.Drawing.Size(740, 80);
             this.headerGrid.TabIndex = 6;
-            this.headerGrid.BorderRadius = 15;
-            this.headerGrid.CustomizableEdges.BottomLeft = false;
-            this.headerGrid.CustomizableEdges.BottomRight = false;
-
             // 
             // labelGridTitle
             // 
@@ -333,16 +319,15 @@ namespace Multi_Booking_System
             this.labelGridTitle.Size = new System.Drawing.Size(236, 38);
             this.labelGridTitle.TabIndex = 2;
             this.labelGridTitle.Text = "Customer Serials";
-
             // 
-            // guna2Button1 (Load Button)
+            // guna2Button1
             // 
             this.guna2Button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Button1.Animated = true;
             this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Button1.BorderRadius = 8;
             this.guna2Button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42))))); // Dark slate
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
             this.guna2Button1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
@@ -352,81 +337,88 @@ namespace Multi_Booking_System
             this.guna2Button1.TabIndex = 0;
             this.guna2Button1.Text = "Load / Refresh Serials";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
-
             // 
             // gridviewCustomerSerial
             // 
             this.gridviewCustomerSerial.AllowUserToAddRows = false;
             this.gridviewCustomerSerial.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59))))); // Slate 800
-            this.gridviewCustomerSerial.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
+            this.gridviewCustomerSerial.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.gridviewCustomerSerial.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gridviewCustomerSerial.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42))))); // Slate 900
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridviewCustomerSerial.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridviewCustomerSerial.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.gridviewCustomerSerial.ColumnHeadersHeight = 50;
             this.gridviewCustomerSerial.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.8F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(213)))), ((int)(((byte)(225))))); // Slate 300
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(255))))); // Cyan Selection
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridviewCustomerSerial.DefaultCellStyle = dataGridViewCellStyle3;
-            this.gridviewCustomerSerial.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(65)))), ((int)(((byte)(85))))); // Slate 700 Grid lines
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.8F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(213)))), ((int)(((byte)(225)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridviewCustomerSerial.DefaultCellStyle = dataGridViewCellStyle6;
+            this.gridviewCustomerSerial.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(65)))), ((int)(((byte)(85)))));
             this.gridviewCustomerSerial.Location = new System.Drawing.Point(20, 100);
             this.gridviewCustomerSerial.Name = "gridviewCustomerSerial";
             this.gridviewCustomerSerial.ReadOnly = true;
             this.gridviewCustomerSerial.RowHeadersVisible = false;
+            this.gridviewCustomerSerial.RowHeadersWidth = 51;
             this.gridviewCustomerSerial.RowTemplate.Height = 45;
             this.gridviewCustomerSerial.Size = new System.Drawing.Size(700, 400);
             this.gridviewCustomerSerial.TabIndex = 1;
             this.gridviewCustomerSerial.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
-            this.gridviewCustomerSerial.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.gridviewCustomerSerial.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.gridviewCustomerSerial.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.gridviewCustomerSerial.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
             this.gridviewCustomerSerial.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
             this.gridviewCustomerSerial.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(65)))), ((int)(((byte)(85)))));
             this.gridviewCustomerSerial.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
-            this.gridviewCustomerSerial.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.gridviewCustomerSerial.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold);
-            this.gridviewCustomerSerial.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.gridviewCustomerSerial.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.gridviewCustomerSerial.ThemeStyle.HeaderStyle.Height = 50;
             this.gridviewCustomerSerial.ThemeStyle.ReadOnly = true;
             this.gridviewCustomerSerial.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
-            this.gridviewCustomerSerial.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gridviewCustomerSerial.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.8F);
             this.gridviewCustomerSerial.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(213)))), ((int)(((byte)(225)))));
             this.gridviewCustomerSerial.ThemeStyle.RowsStyle.Height = 45;
             this.gridviewCustomerSerial.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(157)))), ((int)(((byte)(255)))));
             this.gridviewCustomerSerial.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
             this.gridviewCustomerSerial.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridviewCustomerSerial_CellContentClick);
-
+            // 
+            // guna2GradientButton1
+            // 
+            this.guna2GradientButton1.Animated = true;
+            this.guna2GradientButton1.BorderRadius = 8;
+            this.guna2GradientButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2GradientButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(92)))), ((int)(((byte)(173)))));
+            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(127)))), ((int)(((byte)(80)))));
+            this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton1.Location = new System.Drawing.Point(1030, 34);
+            this.guna2GradientButton1.Name = "guna2GradientButton1";
+            this.guna2GradientButton1.Size = new System.Drawing.Size(91, 40);
+            this.guna2GradientButton1.TabIndex = 7;
+            this.guna2GradientButton1.Text = "Next";
+            this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
             // 
             // ShahriarApprove
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42))))); // Deep Navy Background
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
             this.ClientSize = new System.Drawing.Size(1180, 650);
+            this.Controls.Add(this.guna2GradientButton1);
             this.Controls.Add(this.panelGrid);
             this.Controls.Add(this.panelAction);
             this.Controls.Add(this.labelMainTitle);
             this.Name = "ShahriarApprove";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Shahriar Store - Approve Bookings";
-            
             this.panelAction.ResumeLayout(false);
             this.panelAction.PerformLayout();
             this.headerAction.ResumeLayout(false);
@@ -455,5 +447,6 @@ namespace Multi_Booking_System
         private System.Windows.Forms.Label labelGridTitle;
         private Guna.UI2.WinForms.Guna2GradientButton guna2Button1;
         private Guna.UI2.WinForms.Guna2DataGridView gridviewCustomerSerial;
+        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
     }
 }

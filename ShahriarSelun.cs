@@ -40,8 +40,8 @@ namespace Multi_Booking_System
 
         private void btn2ShahriarReview_Click(object sender, EventArgs e)
         {
-            SompodReview sompodReview = new SompodReview();
-            sompodReview.Show();
+            ShahriarReview shahriarReview = new ShahriarReview();
+            shahriarReview.Show();
             this.Hide();
         }
     }

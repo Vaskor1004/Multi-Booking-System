@@ -117,9 +117,6 @@ namespace Multi_Booking_System
                 serviceName,
                 price
             );
-
-            //gridViewSelectedServices.DataSource = selectedServices;
-
             MessageBox.Show(
                 "Service Added!"
             );
@@ -233,6 +230,26 @@ namespace Multi_Booking_System
             TirthoSelun tirthoSelect = new TirthoSelun();
             tirthoSelect.Show();
             this.Hide();
+        }
+        private void guna2Button2_Click_1(object sender, EventArgs e)
+        {
+            if (gridViewSelectedServices.CurrentRow == null)
+            {
+                MessageBox.Show("Please select a service to remove!");
+                return;
+            }
+            DialogResult result = MessageBox.Show(
+                "Are you sure you want to remove this service?",
+                "Confirm Delete",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+            if (result == DialogResult.Yes)
+            {
+                int rowIndex = gridViewSelectedServices.CurrentRow.Index;
+                selectedServices.Rows.RemoveAt(rowIndex);
+                MessageBox.Show("Service Removed Successfully!");
+            }
         }
     }
 }

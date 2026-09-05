@@ -83,166 +83,93 @@ namespace Multi_Booking_System
             this.txtReview = new System.Windows.Forms.TextBox();
             this.btnSubmitReview = new System.Windows.Forms.Button();
             this.SuspendLayout();
-
             // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font(
-                "Segoe UI",
-                20F,
-                System.Drawing.FontStyle.Bold
-            );
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
             this.lblTitle.Location = new System.Drawing.Point(309, 43);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(355, 46);
+            this.lblTitle.Size = new System.Drawing.Size(367, 46);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Shahriar Store Review";
-
             // 
             // lblRating
             // 
             this.lblRating.AutoSize = true;
-            this.lblRating.Font = new System.Drawing.Font(
-                "Segoe UI",
-                11F,
-                System.Drawing.FontStyle.Bold
-            );
+            this.lblRating.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.lblRating.Location = new System.Drawing.Point(206, 128);
             this.lblRating.Name = "lblRating";
             this.lblRating.Size = new System.Drawing.Size(75, 25);
             this.lblRating.TabIndex = 1;
             this.lblRating.Text = "Rating:";
-
             // 
             // ShahriarRating
             // 
-            this.ShahriarRating.DropDownStyle =
-                System.Windows.Forms.ComboBoxStyle.DropDownList;
-
-            this.ShahriarRating.Font =
-                new System.Drawing.Font("Segoe UI", 11F);
-
+            this.ShahriarRating.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ShahriarRating.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.ShahriarRating.FormattingEnabled = true;
-
-            this.ShahriarRating.Items.AddRange(new object[]
-            {
-                "1",
-                "2",
-                "3",
-                "4",
-                "5"
-            });
-
-            this.ShahriarRating.Location =
-                new System.Drawing.Point(320, 125);
-
+            this.ShahriarRating.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.ShahriarRating.Location = new System.Drawing.Point(320, 125);
             this.ShahriarRating.Name = "ShahriarRating";
-            this.ShahriarRating.Size =
-                new System.Drawing.Size(342, 33);
-
+            this.ShahriarRating.Size = new System.Drawing.Size(342, 33);
             this.ShahriarRating.TabIndex = 2;
-
             // 
             // lblReview
             // 
             this.lblReview.AutoSize = true;
-            this.lblReview.Font = new System.Drawing.Font(
-                "Segoe UI",
-                11F,
-                System.Drawing.FontStyle.Bold
-            );
-            this.lblReview.Location =
-                new System.Drawing.Point(206, 187);
-
+            this.lblReview.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.lblReview.Location = new System.Drawing.Point(206, 187);
             this.lblReview.Name = "lblReview";
-            this.lblReview.Size =
-                new System.Drawing.Size(126, 25);
-
+            this.lblReview.Size = new System.Drawing.Size(126, 25);
             this.lblReview.TabIndex = 3;
             this.lblReview.Text = "Your Review:";
-
             // 
             // txtReview
             // 
-            this.txtReview.Font =
-                new System.Drawing.Font("Segoe UI", 11F);
-
-            this.txtReview.Location =
-                new System.Drawing.Point(206, 224);
-
+            this.txtReview.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.txtReview.Location = new System.Drawing.Point(206, 224);
             this.txtReview.Multiline = true;
             this.txtReview.Name = "txtReview";
-
-            this.txtReview.ScrollBars =
-                System.Windows.Forms.ScrollBars.Vertical;
-
-            this.txtReview.Size =
-                new System.Drawing.Size(457, 106);
-
+            this.txtReview.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtReview.Size = new System.Drawing.Size(457, 106);
             this.txtReview.TabIndex = 4;
-
             // 
             // btnSubmitReview
             // 
-            this.btnSubmitReview.Font =
-                new System.Drawing.Font(
-                    "Segoe UI",
-                    11F,
-                    System.Drawing.FontStyle.Bold
-                );
-
-            this.btnSubmitReview.Location =
-                new System.Drawing.Point(320, 363);
-
+            this.btnSubmitReview.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.btnSubmitReview.Location = new System.Drawing.Point(320, 363);
             this.btnSubmitReview.Name = "btnSubmitReview";
-
-            this.btnSubmitReview.Size =
-                new System.Drawing.Size(229, 48);
-
+            this.btnSubmitReview.Size = new System.Drawing.Size(229, 48);
             this.btnSubmitReview.TabIndex = 5;
-
-            this.btnSubmitReview.Text =
-                "Submit Review";
-
+            this.btnSubmitReview.Text = "Submit Review";
             this.btnSubmitReview.UseVisualStyleBackColor = true;
-
-            //this.btnSubmitReview.Click +=
-            //    new System.EventHandler(this.btnSubmitReview_Click);
-
+            this.btnSubmitReview.Click += new System.EventHandler(this.btnSubmitReview_Click);
             // 
             // ShahriarReview
             // 
-            this.AutoScaleDimensions =
-                new System.Drawing.SizeF(8F, 16F);
-
-            this.AutoScaleMode =
-                System.Windows.Forms.AutoScaleMode.Font;
-
-            this.ClientSize =
-                new System.Drawing.Size(914, 480);
-
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(914, 480);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.lblRating);
             this.Controls.Add(this.ShahriarRating);
             this.Controls.Add(this.lblReview);
             this.Controls.Add(this.txtReview);
             this.Controls.Add(this.btnSubmitReview);
-
-            this.FormBorderStyle =
-                System.Windows.Forms.FormBorderStyle.FixedSingle;
-
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-
             this.Name = "ShahriarReview";
-
-            this.StartPosition =
-                System.Windows.Forms.FormStartPosition.CenterScreen;
-
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Shahriar Review";
-
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion

@@ -112,5 +112,12 @@ namespace Multi_Booking_System
             );
             txtboxid.Text = bookingId.ToString();
         }
+
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+            ShahriarCustomerReview reviewForm = new ShahriarCustomerReview();
+            reviewForm.Show();
+            this.Hide();
+        }
     }
 }

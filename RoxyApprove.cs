@@ -130,5 +130,12 @@ namespace Multi_Booking_System
            );
             txtboxRoxyCustomerSerial.Text = bookingId.ToString();
         }
+
+        private void btnHomeSerial_Click(object sender, EventArgs e)
+        {
+            RoxyHomeApprove roxyHomeApprove = new RoxyHomeApprove();
+            roxyHomeApprove.Show();
+            this.Hide();
+        }
     }
 }
