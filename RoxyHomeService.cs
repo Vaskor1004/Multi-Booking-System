@@ -454,5 +454,30 @@ namespace Multi_Booking_System
             }
         
     }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            RoxyDashBoard roxyDashBoard = new RoxyDashBoard();
+            roxyDashBoard.Show();
+            this.Hide();
+        }
+
+        private void gridViewAvailableWorkers_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0)
+                return;
+            int WorkerId =
+                Convert.ToInt32(
+                    gridViewAvailableWorkers
+                    .Rows[e.RowIndex]
+                    .Cells["WorkerId"]
+                    .Value
+                );
+            if (WorkerId == 1)
+            {
+                RoxyStoreSadia roxyStoreSadia = new RoxyStoreSadia();
+                roxyStoreSadia.Show();
+            }
+        }
     }
 }

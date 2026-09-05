@@ -43,7 +43,7 @@ namespace Multi_Booking_System
                     ON HB.bookingId = HBD.bookingId
                     INNER JOIN RoxyStore R
                     ON HBD.serviceId = R.id
-                ORDER BY HB.bookingId ASC";
+                    ORDER BY HB.bookingId ASC";
 
 
             using (SqlConnection con =
@@ -168,6 +168,13 @@ namespace Multi_Booking_System
                     );
                 }
             }
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            RoxyApprove roxyApproveForm = new RoxyApprove();
+            roxyApproveForm.Show();
+            this.Hide();
         }
     }
 }
