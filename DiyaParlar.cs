@@ -30,5 +30,19 @@ namespace Multi_Booking_System
             parlarList.Show();
             this.Hide();
         }
+
+        private void BtnReview_Click(object sender, EventArgs e)
+        {
+            DiyaReview diyaReview = new DiyaReview();
+            diyaReview.Show();
+            this.Hide();
+        }
+
+        private void BtnLogOut_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
+        }
     }
 }

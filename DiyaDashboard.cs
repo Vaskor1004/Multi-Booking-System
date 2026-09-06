@@ -45,8 +45,8 @@ namespace Multi_Booking_System
 
         private void btnLogOut_Click(object sender, EventArgs e)
         {
-            ParlarList parlarList = new ParlarList();
-            parlarList.Show();
+            DiyaParlar diyaParlar = new DiyaParlar();
+            diyaParlar.Show();
             this.Hide();
         }
 
@@ -227,6 +227,18 @@ namespace Multi_Booking_System
                     );
                 }
             }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            DiyaHomeService diyaHomeService = new DiyaHomeService();
+            diyaHomeService.Show();
+            this.Hide();
         }
     }
 }

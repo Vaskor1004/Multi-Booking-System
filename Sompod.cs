@@ -143,5 +143,12 @@ namespace Multi_Booking_System
             sompodApprove.Show();
             this.Hide();
         }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
+        }
     }
 }

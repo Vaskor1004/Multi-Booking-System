@@ -347,6 +347,7 @@ namespace Multi_Booking_System
             this.gridviewTirtho = new Guna.UI2.WinForms.Guna2DataGridView();
             this.BtnShow = new Guna.UI2.WinForms.Guna2Button();
             this.btnNext = new Guna.UI2.WinForms.Guna2Button();
+            this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
             this.panelAdd.SuspendLayout();
             this.panelUpdateDelete.SuspendLayout();
             this.panelGrid.SuspendLayout();
@@ -714,19 +715,38 @@ namespace Multi_Booking_System
             this.btnNext.ForeColor = System.Drawing.Color.White;
             this.btnNext.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(158)))), ((int)(((byte)(11)))));
             this.btnNext.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.btnNext.Location = new System.Drawing.Point(1137, 20);
+            this.btnNext.Location = new System.Drawing.Point(756, 787);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(111, 45);
             this.btnNext.TabIndex = 22;
             this.btnNext.Text = "Next";
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
+            // btnLogout
+            // 
+            this.btnLogout.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLogout.Animated = true;
+            this.btnLogout.BorderRadius = 8;
+            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogout.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(50)))), ((int)(((byte)(60)))));
+            this.btnLogout.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnLogout.ForeColor = System.Drawing.Color.White;
+            this.btnLogout.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(158)))), ((int)(((byte)(11)))));
+            this.btnLogout.HoverState.ForeColor = System.Drawing.Color.Black;
+            this.btnLogout.Location = new System.Drawing.Point(304, 787);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(111, 45);
+            this.btnLogout.TabIndex = 23;
+            this.btnLogout.Text = "Log Out";
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
             // Tirtho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(242)))), ((int)(((byte)(247)))));
-            this.ClientSize = new System.Drawing.Size(1290, 800);
+            this.ClientSize = new System.Drawing.Size(1290, 844);
+            this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.panelGrid);
             this.Controls.Add(this.panelUpdateDelete);
             this.Controls.Add(this.panelAdd);
@@ -775,5 +795,6 @@ namespace Multi_Booking_System
         private Guna.UI2.WinForms.Guna2Button BtnShow;
 
         private Guna.UI2.WinForms.Guna2Button btnNext;
+        private Guna.UI2.WinForms.Guna2Button btnLogout;
     }
 }

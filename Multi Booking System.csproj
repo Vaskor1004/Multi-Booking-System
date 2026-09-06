@@ -76,6 +76,18 @@
     <Compile Include="DiyaDashboard.Designer.cs">
       <DependentUpon>DiyaDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="DiyaHomeApprove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiyaHomeApprove.Designer.cs">
+      <DependentUpon>DiyaHomeApprove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiyaHomeService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiyaHomeService.Designer.cs">
+      <DependentUpon>DiyaHomeService.cs</DependentUpon>
+    </Compile>
     <Compile Include="DiyaOwnStore.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +99,30 @@
     </Compile>
     <Compile Include="DiyaParlar.Designer.cs">
       <DependentUpon>DiyaParlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiyaReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiyaReview.Designer.cs">
+      <DependentUpon>DiyaReview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiyaStoreArny.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiyaStoreArny.Designer.cs">
+      <DependentUpon>DiyaStoreArny.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiyaStoreNody.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiyaStoreNody.Designer.cs">
+      <DependentUpon>DiyaStoreNody.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiyaStorePayel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiyaStorePayel.Designer.cs">
+      <DependentUpon>DiyaStorePayel.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -150,6 +186,12 @@
     <Compile Include="RoxyParler.Designer.cs">
       <DependentUpon>RoxyParler.cs</DependentUpon>
     </Compile>
+    <Compile Include="RoxyReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoxyReview.Designer.cs">
+      <DependentUpon>RoxyReview.cs</DependentUpon>
+    </Compile>
     <Compile Include="RoxyStoreMim.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,6 +216,12 @@
     <Compile Include="SelunList.Designer.cs">
       <DependentUpon>SelunList.cs</DependentUpon>
     </Compile>
+    <Compile Include="ShahnaazStoreEsha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShahnaazStoreEsha.Designer.cs">
+      <DependentUpon>ShahnaazStoreEsha.cs</DependentUpon>
+    </Compile>
     <Compile Include="ShahnazApprove.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,6 +240,18 @@
     <Compile Include="ShahnazDashboard.Designer.cs">
       <DependentUpon>ShahnazDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="ShahnazHomeApprove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShahnazHomeApprove.Designer.cs">
+      <DependentUpon>ShahnazHomeApprove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShahnazHomeService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShahnazHomeService.Designer.cs">
+      <DependentUpon>ShahnazHomeService.cs</DependentUpon>
+    </Compile>
     <Compile Include="ShahnazOwnStore.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -203,6 +263,24 @@
     </Compile>
     <Compile Include="ShahnazParlar.Designer.cs">
       <DependentUpon>ShahnazParlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShahnazReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShahnazReview.Designer.cs">
+      <DependentUpon>ShahnazReview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShahnazStoreEma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShahnazStoreEma.Designer.cs">
+      <DependentUpon>ShahnazStoreEma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShahnazStoreShetu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShahnazStoreShetu.Designer.cs">
+      <DependentUpon>ShahnazStoreShetu.cs</DependentUpon>
     </Compile>
     <Compile Include="Shahriar.cs">
       <SubType>Form</SubType>
@@ -336,6 +414,9 @@
     <EmbeddedResource Include="DiyaParlar.resx">
       <DependentUpon>DiyaParlar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DiyaReview.resx">
+      <DependentUpon>DiyaReview.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -376,6 +457,9 @@
     <EmbeddedResource Include="RoxyParler.resx">
       <DependentUpon>RoxyParler.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="RoxyReview.resx">
+      <DependentUpon>RoxyReview.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RoxyStoreMim.resx">
       <DependentUpon>RoxyStoreMim.cs</DependentUpon>
     </EmbeddedResource>
@@ -402,6 +486,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ShahnazParlar.resx">
       <DependentUpon>ShahnazParlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShahnazReview.resx">
+      <DependentUpon>ShahnazReview.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Shahriar.resx">
       <DependentUpon>Shahriar.cs</DependentUpon>

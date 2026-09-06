@@ -81,6 +81,7 @@ namespace Multi_Booking_System
             this.lblReview = new System.Windows.Forms.Label();
             this.txtReview = new System.Windows.Forms.TextBox();
             this.btnSubmitReview = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -142,7 +143,7 @@ namespace Multi_Booking_System
             // btnSubmitReview
             // 
             this.btnSubmitReview.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.btnSubmitReview.Location = new System.Drawing.Point(320, 363);
+            this.btnSubmitReview.Location = new System.Drawing.Point(211, 363);
             this.btnSubmitReview.Name = "btnSubmitReview";
             this.btnSubmitReview.Size = new System.Drawing.Size(229, 48);
             this.btnSubmitReview.TabIndex = 3;
@@ -150,11 +151,23 @@ namespace Multi_Booking_System
             this.btnSubmitReview.UseVisualStyleBackColor = true;
             this.btnSubmitReview.Click += new System.EventHandler(this.btnSubmitReview_Click);
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.button1.Location = new System.Drawing.Point(496, 363);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(101, 48);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Close";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // TirthoReview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(914, 480);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.lblRating);
             this.Controls.Add(this.TirthoRating);
@@ -172,5 +185,7 @@ namespace Multi_Booking_System
         }
 
         #endregion
+
+        private System.Windows.Forms.Button button1;
     }
 }

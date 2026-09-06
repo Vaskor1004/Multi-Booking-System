@@ -352,6 +352,7 @@ namespace Multi_Booking_System
             this.ShahriarGridView = new Guna.UI2.WinForms.Guna2DataGridView();
             this.btnShahriarCustomerShow = new Guna.UI2.WinForms.Guna2Button();
             this.btnShahriarNext = new Guna.UI2.WinForms.Guna2Button();
+            this.btnLogOut = new Guna.UI2.WinForms.Guna2Button();
             this.panelAdd.SuspendLayout();
             this.panelUpdateDelete.SuspendLayout();
             this.panelGrid.SuspendLayout();
@@ -711,12 +712,30 @@ namespace Multi_Booking_System
             this.btnShahriarNext.Text = "Next Dashboard";
             this.btnShahriarNext.Click += new System.EventHandler(this.btnShahriarNext_Click);
             // 
+            // btnLogOut
+            // 
+            this.btnLogOut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLogOut.Animated = true;
+            this.btnLogOut.BorderRadius = 8;
+            this.btnLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogOut.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnLogOut.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnLogOut.ForeColor = System.Drawing.Color.White;
+            this.btnLogOut.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(65)))), ((int)(((byte)(150)))));
+            this.btnLogOut.Location = new System.Drawing.Point(867, 25);
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.Size = new System.Drawing.Size(142, 45);
+            this.btnLogOut.TabIndex = 23;
+            this.btnLogOut.Text = "Log Out";
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
+            // 
             // Shahriar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(253)))));
             this.ClientSize = new System.Drawing.Size(1290, 800);
+            this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.panelGrid);
             this.Controls.Add(this.panelUpdateDelete);
             this.Controls.Add(this.panelAdd);
@@ -764,5 +783,6 @@ namespace Multi_Booking_System
         private Guna.UI2.WinForms.Guna2Button btnShahriarCustomerShow;
 
         private Guna.UI2.WinForms.Guna2Button btnShahriarNext;
+        private Guna.UI2.WinForms.Guna2Button btnLogOut;
     }
 }

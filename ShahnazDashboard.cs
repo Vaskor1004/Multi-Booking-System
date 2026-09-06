@@ -44,8 +44,8 @@ namespace Multi_Booking_System
 
         private void btnLogOut_Click(object sender, EventArgs e)
         {
-            ParlarList parlarList = new ParlarList();
-            parlarList.Show();
+            ShahnazParlar shahnazParlar = new ShahnazParlar();
+            shahnazParlar.Show();
             this.Hide();
         }
 
@@ -252,6 +252,13 @@ namespace Multi_Booking_System
 
                 MessageBox.Show("Service Removed Successfully!");
             }
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            ShahnazHomeService shahnazHomeService = new ShahnazHomeService();
+            shahnazHomeService.Show();
+            this.Hide();
         }
     }
     

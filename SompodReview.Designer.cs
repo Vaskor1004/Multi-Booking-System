@@ -82,6 +82,7 @@ namespace Multi_Booking_System
             this.lblReview = new System.Windows.Forms.Label();
             this.txtReview = new System.Windows.Forms.TextBox();
             this.btnSubmitReview = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -143,7 +144,7 @@ namespace Multi_Booking_System
             // btnSubmitReview
             // 
             this.btnSubmitReview.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.btnSubmitReview.Location = new System.Drawing.Point(320, 363);
+            this.btnSubmitReview.Location = new System.Drawing.Point(206, 363);
             this.btnSubmitReview.Name = "btnSubmitReview";
             this.btnSubmitReview.Size = new System.Drawing.Size(229, 48);
             this.btnSubmitReview.TabIndex = 5;
@@ -151,11 +152,23 @@ namespace Multi_Booking_System
             this.btnSubmitReview.UseVisualStyleBackColor = true;
             this.btnSubmitReview.Click += new System.EventHandler(this.btnSubmitReview_Click);
             // 
+            // btnClose
+            // 
+            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.btnClose.Location = new System.Drawing.Point(493, 363);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(114, 48);
+            this.btnClose.TabIndex = 6;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // SompodReview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(914, 480);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.lblRating);
             this.Controls.Add(this.SompodRating);
@@ -173,5 +186,7 @@ namespace Multi_Booking_System
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnClose;
     }
 }

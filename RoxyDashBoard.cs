@@ -45,8 +45,8 @@ namespace Multi_Booking_System
 
         private void btnLogOut_Click(object sender, EventArgs e)
         {
-            ParlarList parlarList = new ParlarList();
-            parlarList.Show();
+            RoxyParler roxyParlar = new RoxyParler();
+            roxyParlar.Show();
             this.Hide();
         }
 

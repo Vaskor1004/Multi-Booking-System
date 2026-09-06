@@ -108,5 +108,12 @@ namespace Multi_Booking_System
                 );
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TirthoDashboard dashboard = new TirthoDashboard();
+            dashboard.Show();
+            this.Hide();
+        }
     }
 }

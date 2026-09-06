@@ -107,5 +107,12 @@ namespace Multi_Booking_System
                 );
             }
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            ShahriarDashboard dashboard = new ShahriarDashboard();
+            dashboard.Show();
+            this.Hide();
+        }
     }
 }

@@ -129,6 +129,7 @@ namespace Multi_Booking_System
             this.btnShowService.TabIndex = 1;
             this.btnShowService.Text = "Show Reviews";
             this.btnShowService.UseVisualStyleBackColor = true;
+            this.btnShowService.Click += new System.EventHandler(this.btnShowService_Click);
             // 
             // btnClose
             // 

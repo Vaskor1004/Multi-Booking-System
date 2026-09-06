@@ -11,12 +11,12 @@ using System.Windows.Forms;
 
 namespace Multi_Booking_System
 {
-    public partial class SompodReview : Form
+    public partial class RoxyReview : Form
     {
         string ConnectionString =
             "Data Source=LAPTOP-ETFSEMF8;Initial Catalog=mydb;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
         int customerId;
-        public SompodReview()
+        public RoxyReview()
         {
             InitializeComponent();
             customerId = Login.userId;
@@ -25,7 +25,7 @@ namespace Multi_Booking_System
         private void btnSubmitReview_Click(object sender, EventArgs e)
         {
             // Check Rating
-            if (SompodRating.SelectedIndex == -1)
+            if (RoxyRating.SelectedIndex == -1)
             {
                 MessageBox.Show("Please select a rating.");
                 return;
@@ -39,12 +39,12 @@ namespace Multi_Booking_System
             }
 
             // Get values
-            int rating = Convert.ToInt32(SompodRating.SelectedItem);
+            int rating = Convert.ToInt32(RoxyRating.SelectedItem);
             string reviewText = txtReview.Text.Trim();
 
             // SQL Query
             string query = @"
-                INSERT INTO ReviewsSompod
+                INSERT INTO ReviewsRoxy
                 (
                     CustomerID,
                     Rating,
@@ -94,7 +94,7 @@ namespace Multi_Booking_System
                 );
 
                 // Clear form
-                SompodRating.SelectedIndex = -1;
+                RoxyRating.SelectedIndex = -1;
                 txtReview.Clear();
             }
             catch (Exception ex)
@@ -108,11 +108,11 @@ namespace Multi_Booking_System
             }
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-           Sompod_Dashboard sompodDashboard = new Sompod_Dashboard();
-            sompodDashboard.Show();
-            this.Hide();    
+            RoxyParler roxyParler = new RoxyParler();
+            roxyParler.Show();
+            this.Hide();
         }
     }
 }

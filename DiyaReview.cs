@@ -11,12 +11,12 @@ using System.Windows.Forms;
 
 namespace Multi_Booking_System
 {
-    public partial class SompodReview : Form
+    public partial class DiyaReview : Form
     {
         string ConnectionString =
             "Data Source=LAPTOP-ETFSEMF8;Initial Catalog=mydb;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
         int customerId;
-        public SompodReview()
+        public DiyaReview()
         {
             InitializeComponent();
             customerId = Login.userId;
@@ -24,8 +24,7 @@ namespace Multi_Booking_System
 
         private void btnSubmitReview_Click(object sender, EventArgs e)
         {
-            // Check Rating
-            if (SompodRating.SelectedIndex == -1)
+            if (DiyaRating.SelectedIndex == -1)
             {
                 MessageBox.Show("Please select a rating.");
                 return;
@@ -39,12 +38,12 @@ namespace Multi_Booking_System
             }
 
             // Get values
-            int rating = Convert.ToInt32(SompodRating.SelectedItem);
+            int rating = Convert.ToInt32(DiyaRating.SelectedItem);
             string reviewText = txtReview.Text.Trim();
 
             // SQL Query
             string query = @"
-                INSERT INTO ReviewsSompod
+                INSERT INTO ReviewsDiya
                 (
                     CustomerID,
                     Rating,
@@ -94,7 +93,7 @@ namespace Multi_Booking_System
                 );
 
                 // Clear form
-                SompodRating.SelectedIndex = -1;
+                DiyaRating.SelectedIndex = -1;
                 txtReview.Clear();
             }
             catch (Exception ex)
@@ -108,11 +107,11 @@ namespace Multi_Booking_System
             }
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-           Sompod_Dashboard sompodDashboard = new Sompod_Dashboard();
-            sompodDashboard.Show();
-            this.Hide();    
+            DiyaParlar diyaParlour = new DiyaParlar();
+            diyaParlour.Show();
+            this.Hide();
         }
     }
 }

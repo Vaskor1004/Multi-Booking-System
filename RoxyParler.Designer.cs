@@ -153,6 +153,7 @@ namespace Multi_Booking_System
             this.BtnReview.Text = "Review";
             this.BtnReview.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.BtnReview.TextOffset = new System.Drawing.Point(10, 0);
+            this.BtnReview.Click += new System.EventHandler(this.BtnReview_Click);
             // 
             // btn4RoxyBack
             // 
@@ -188,6 +189,7 @@ namespace Multi_Booking_System
             this.BtnLogOut.Size = new System.Drawing.Size(220, 50);
             this.BtnLogOut.TabIndex = 2;
             this.BtnLogOut.Text = "Log Out";
+            this.BtnLogOut.Click += new System.EventHandler(this.BtnLogOut_Click);
             // 
             // guna2ShadowPanel1
             // 

@@ -1,6 +1,6 @@
 ﻿//namespace Multi_Booking_System
 //{
-//    partial class ShahriarReview
+//    partial class DiyaReview
 //    {
 //        /// <summary>
 //        /// Required designer variable.
@@ -31,17 +31,16 @@
 //            this.components = new System.ComponentModel.Container();
 //            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 //            this.ClientSize = new System.Drawing.Size(800, 450);
-//            this.Text = "ShahriarReview";
+//            this.Text = "DiyaReview";
 //        }
 
 //        #endregion
 //    }
 //}
 
-
 namespace Multi_Booking_System
 {
-    partial class ShahriarReview
+    partial class DiyaReview
     {
         /// <summary>
         /// Required designer variable.
@@ -50,10 +49,11 @@ namespace Multi_Booking_System
 
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label lblRating;
-        private System.Windows.Forms.ComboBox ShahriarRating;
+        private System.Windows.Forms.ComboBox DiyaRating;
         private System.Windows.Forms.Label lblReview;
         private System.Windows.Forms.TextBox txtReview;
         private System.Windows.Forms.Button btnSubmitReview;
+        private System.Windows.Forms.Button button1;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -78,11 +78,11 @@ namespace Multi_Booking_System
         {
             this.lblTitle = new System.Windows.Forms.Label();
             this.lblRating = new System.Windows.Forms.Label();
-            this.ShahriarRating = new System.Windows.Forms.ComboBox();
+            this.DiyaRating = new System.Windows.Forms.ComboBox();
             this.lblReview = new System.Windows.Forms.Label();
             this.txtReview = new System.Windows.Forms.TextBox();
             this.btnSubmitReview = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -91,9 +91,9 @@ namespace Multi_Booking_System
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
             this.lblTitle.Location = new System.Drawing.Point(309, 43);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(367, 46);
+            this.lblTitle.Size = new System.Drawing.Size(305, 46);
             this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Shahriar Store Review";
+            this.lblTitle.Text = "Diya Store Review";
             // 
             // lblRating
             // 
@@ -105,21 +105,21 @@ namespace Multi_Booking_System
             this.lblRating.TabIndex = 1;
             this.lblRating.Text = "Rating:";
             // 
-            // ShahriarRating
+            // DiyaRating
             // 
-            this.ShahriarRating.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ShahriarRating.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.ShahriarRating.FormattingEnabled = true;
-            this.ShahriarRating.Items.AddRange(new object[] {
+            this.DiyaRating.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.DiyaRating.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.DiyaRating.FormattingEnabled = true;
+            this.DiyaRating.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
             "4",
             "5"});
-            this.ShahriarRating.Location = new System.Drawing.Point(320, 125);
-            this.ShahriarRating.Name = "ShahriarRating";
-            this.ShahriarRating.Size = new System.Drawing.Size(342, 33);
-            this.ShahriarRating.TabIndex = 2;
+            this.DiyaRating.Location = new System.Drawing.Point(320, 125);
+            this.DiyaRating.Name = "DiyaRating";
+            this.DiyaRating.Size = new System.Drawing.Size(342, 33);
+            this.DiyaRating.TabIndex = 2;
             // 
             // lblReview
             // 
@@ -144,7 +144,7 @@ namespace Multi_Booking_System
             // btnSubmitReview
             // 
             this.btnSubmitReview.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.btnSubmitReview.Location = new System.Drawing.Point(206, 363);
+            this.btnSubmitReview.Location = new System.Drawing.Point(211, 363);
             this.btnSubmitReview.Name = "btnSubmitReview";
             this.btnSubmitReview.Size = new System.Drawing.Size(229, 48);
             this.btnSubmitReview.TabIndex = 5;
@@ -152,41 +152,40 @@ namespace Multi_Booking_System
             this.btnSubmitReview.UseVisualStyleBackColor = true;
             this.btnSubmitReview.Click += new System.EventHandler(this.btnSubmitReview_Click);
             // 
-            // btnClose
+            // button1
             // 
-            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.btnClose.Location = new System.Drawing.Point(467, 363);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(109, 48);
-            this.btnClose.TabIndex = 6;
-            this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.button1.Location = new System.Drawing.Point(496, 363);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(101, 48);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Close";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // ShahriarReview
+            // DiyaReview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(914, 480);
-            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.lblRating);
-            this.Controls.Add(this.ShahriarRating);
+            this.Controls.Add(this.DiyaRating);
             this.Controls.Add(this.lblReview);
             this.Controls.Add(this.txtReview);
             this.Controls.Add(this.btnSubmitReview);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.Name = "ShahriarReview";
+            this.Name = "DiyaReview";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Shahriar Review";
+            this.Text = "Diya Review";
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnClose;
     }
 }
+

@@ -1,6 +1,6 @@
 ﻿//namespace Multi_Booking_System
 //{
-//    partial class RoxyHomeApprove
+//    partial class DiyaHomeApprove
 //    {
 //        /// <summary>
 //        /// Required designer variable.
@@ -28,27 +28,19 @@
 //        /// </summary>
 //        private void InitializeComponent()
 //        {
-//            this.SuspendLayout();
-//            // 
-//            // RoxyHomeApprove
-//            // 
-//            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+//            this.components = new System.ComponentModel.Container();
 //            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-//            this.ClientSize = new System.Drawing.Size(1285, 605);
-//            this.Name = "RoxyHomeApprove";
-//            this.Text = "RoxyHomeApprove";
-//            this.ResumeLayout(false);
-
+//            this.ClientSize = new System.Drawing.Size(800, 450);
+//            this.Text = "DiyaHomeApprove";
 //        }
 
 //        #endregion
 //    }
 //}
 
-
 namespace Multi_Booking_System
 {
-    partial class RoxyHomeApprove
+    partial class DiyaHomeApprove
     {
         /// <summary>
         /// Required designer variable.
@@ -65,12 +57,15 @@ namespace Multi_Booking_System
             {
                 components.Dispose();
             }
-
             base.Dispose(disposing);
         }
 
         #region Windows Form Designer generated code
 
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -81,7 +76,7 @@ namespace Multi_Booking_System
             this.headerBookings = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.labelBookingsTitle = new System.Windows.Forms.Label();
             this.btnRefresh = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.gridViewRoxyHomeBooking = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.gridViewDiyaHomeBooking = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panelAction = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.headerAction = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.labelActionTitle = new System.Windows.Forms.Label();
@@ -92,7 +87,7 @@ namespace Multi_Booking_System
             this.btnNext = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panelBookings.SuspendLayout();
             this.headerBookings.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewRoxyHomeBooking)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewDiyaHomeBooking)).BeginInit();
             this.panelAction.SuspendLayout();
             this.headerAction.SuspendLayout();
             this.SuspendLayout();
@@ -101,7 +96,7 @@ namespace Multi_Booking_System
             // 
             this.labelMainTitle.AutoSize = true;
             this.labelMainTitle.Font = new System.Drawing.Font("Segoe UI Black", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelMainTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(0)))), ((int)(((byte)(224)))));
+            this.labelMainTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(72)))), ((int)(((byte)(153))))); // Pink Accent
             this.labelMainTitle.Location = new System.Drawing.Point(35, 25);
             this.labelMainTitle.Name = "labelMainTitle";
             this.labelMainTitle.Size = new System.Drawing.Size(548, 57);
@@ -110,17 +105,17 @@ namespace Multi_Booking_System
             // 
             // panelBookings
             // 
-            this.panelBookings.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.panelBookings.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelBookings.BackColor = System.Drawing.Color.Transparent;
             this.panelBookings.Controls.Add(this.headerBookings);
-            this.panelBookings.Controls.Add(this.gridViewRoxyHomeBooking);
+            this.panelBookings.Controls.Add(this.gridViewDiyaHomeBooking);
             this.panelBookings.FillColor = System.Drawing.Color.White;
             this.panelBookings.Location = new System.Drawing.Point(35, 105);
             this.panelBookings.Name = "panelBookings";
             this.panelBookings.Radius = 18;
-            this.panelBookings.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(190)))));
+            this.panelBookings.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(210)))), ((int)(((byte)(220)))));
             this.panelBookings.ShadowDepth = 35;
             this.panelBookings.ShadowShift = 6;
             this.panelBookings.Size = new System.Drawing.Size(1110, 405);
@@ -134,8 +129,8 @@ namespace Multi_Booking_System
             this.headerBookings.CustomizableEdges.BottomLeft = false;
             this.headerBookings.CustomizableEdges.BottomRight = false;
             this.headerBookings.Dock = System.Windows.Forms.DockStyle.Top;
-            this.headerBookings.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(45)))), ((int)(((byte)(226)))));
-            this.headerBookings.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(0)))), ((int)(((byte)(224)))));
+            this.headerBookings.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(72)))), ((int)(((byte)(153))))); // Pink Accent
+            this.headerBookings.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(114)))), ((int)(((byte)(182)))));
             this.headerBookings.Location = new System.Drawing.Point(0, 0);
             this.headerBookings.Name = "headerBookings";
             this.headerBookings.Size = new System.Drawing.Size(1110, 72);
@@ -159,8 +154,8 @@ namespace Multi_Booking_System
             this.btnRefresh.Animated = true;
             this.btnRefresh.BorderRadius = 9;
             this.btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRefresh.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(87)))), ((int)(((byte)(166)))));
-            this.btnRefresh.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(88)))), ((int)(((byte)(88)))));
+            this.btnRefresh.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(85)))), ((int)(((byte)(247))))); // Purple Accent
+            this.btnRefresh.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(132)))), ((int)(((byte)(252)))));
             this.btnRefresh.Font = new System.Drawing.Font("Segoe UI Semibold", 11.5F, System.Drawing.FontStyle.Bold);
             this.btnRefresh.ForeColor = System.Drawing.Color.White;
             this.btnRefresh.Location = new System.Drawing.Point(875, 13);
@@ -168,61 +163,59 @@ namespace Multi_Booking_System
             this.btnRefresh.Size = new System.Drawing.Size(210, 45);
             this.btnRefresh.TabIndex = 1;
             this.btnRefresh.Text = "↻ Serial Details";
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
-            // gridViewRoxyHomeBooking
+            // gridViewDiyaHomeBooking
             // 
-            this.gridViewRoxyHomeBooking.AllowUserToAddRows = false;
-            this.gridViewRoxyHomeBooking.AllowUserToDeleteRows = false;
-            this.gridViewRoxyHomeBooking.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.gridViewRoxyHomeBooking.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.gridViewRoxyHomeBooking.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.gridViewDiyaHomeBooking.AllowUserToAddRows = false;
+            this.gridViewDiyaHomeBooking.AllowUserToDeleteRows = false;
+            this.gridViewDiyaHomeBooking.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(242)))), ((int)(((byte)(248))))); // Very light pink
+            this.gridViewDiyaHomeBooking.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.gridViewDiyaHomeBooking.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(0)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(72)))), ((int)(((byte)(153))))); // Pink header
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(45)))), ((int)(((byte)(226)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(114)))), ((int)(((byte)(182)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridViewRoxyHomeBooking.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.gridViewRoxyHomeBooking.ColumnHeadersHeight = 52;
+            this.gridViewDiyaHomeBooking.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.gridViewDiyaHomeBooking.ColumnHeadersHeight = 52;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(220)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(211)))), ((int)(((byte)(228)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridViewRoxyHomeBooking.DefaultCellStyle = dataGridViewCellStyle3;
-            this.gridViewRoxyHomeBooking.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(232)))), ((int)(((byte)(245)))));
-            this.gridViewRoxyHomeBooking.Location = new System.Drawing.Point(25, 92);
-            this.gridViewRoxyHomeBooking.Name = "gridViewRoxyHomeBooking";
-            this.gridViewRoxyHomeBooking.ReadOnly = true;
-            this.gridViewRoxyHomeBooking.RowHeadersVisible = false;
-            this.gridViewRoxyHomeBooking.RowHeadersWidth = 51;
-            this.gridViewRoxyHomeBooking.RowTemplate.Height = 45;
-            this.gridViewRoxyHomeBooking.Size = new System.Drawing.Size(1060, 285);
-            this.gridViewRoxyHomeBooking.TabIndex = 3;
-            this.gridViewRoxyHomeBooking.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(255)))));
-            this.gridViewRoxyHomeBooking.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(232)))), ((int)(((byte)(245)))));
-            this.gridViewRoxyHomeBooking.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(0)))), ((int)(((byte)(224)))));
-            this.gridViewRoxyHomeBooking.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
-            this.gridViewRoxyHomeBooking.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.gridViewRoxyHomeBooking.ThemeStyle.HeaderStyle.Height = 52;
-            this.gridViewRoxyHomeBooking.ThemeStyle.ReadOnly = true;
-            this.gridViewRoxyHomeBooking.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.gridViewRoxyHomeBooking.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.gridViewRoxyHomeBooking.ThemeStyle.RowsStyle.Height = 45;
-            this.gridViewRoxyHomeBooking.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(220)))), ((int)(((byte)(250)))));
-            this.gridViewRoxyHomeBooking.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.gridViewRoxyHomeBooking.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridViewRoxyHomeBooking_CellContentClick);
+            this.gridViewDiyaHomeBooking.DefaultCellStyle = dataGridViewCellStyle3;
+            this.gridViewDiyaHomeBooking.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(231)))), ((int)(((byte)(243)))));
+            this.gridViewDiyaHomeBooking.Location = new System.Drawing.Point(25, 92);
+            this.gridViewDiyaHomeBooking.Name = "gridViewDiyaHomeBooking";
+            this.gridViewDiyaHomeBooking.ReadOnly = true;
+            this.gridViewDiyaHomeBooking.RowHeadersVisible = false;
+            this.gridViewDiyaHomeBooking.RowHeadersWidth = 51;
+            this.gridViewDiyaHomeBooking.RowTemplate.Height = 45;
+            this.gridViewDiyaHomeBooking.Size = new System.Drawing.Size(1060, 285);
+            this.gridViewDiyaHomeBooking.TabIndex = 3;
+            this.gridViewDiyaHomeBooking.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(242)))), ((int)(((byte)(248)))));
+            this.gridViewDiyaHomeBooking.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(231)))), ((int)(((byte)(243)))));
+            this.gridViewDiyaHomeBooking.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(72)))), ((int)(((byte)(153)))));
+            this.gridViewDiyaHomeBooking.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.gridViewDiyaHomeBooking.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.gridViewDiyaHomeBooking.ThemeStyle.HeaderStyle.Height = 52;
+            this.gridViewDiyaHomeBooking.ThemeStyle.ReadOnly = true;
+            this.gridViewDiyaHomeBooking.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.gridViewDiyaHomeBooking.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.gridViewDiyaHomeBooking.ThemeStyle.RowsStyle.Height = 45;
+            this.gridViewDiyaHomeBooking.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(211)))), ((int)(((byte)(228)))));
+            this.gridViewDiyaHomeBooking.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
             // 
             // panelAction
             // 
-            this.panelAction.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.panelAction.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelAction.BackColor = System.Drawing.Color.Transparent;
             this.panelAction.Controls.Add(this.headerAction);
@@ -233,7 +226,7 @@ namespace Multi_Booking_System
             this.panelAction.Location = new System.Drawing.Point(35, 530);
             this.panelAction.Name = "panelAction";
             this.panelAction.Radius = 18;
-            this.panelAction.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(190)))));
+            this.panelAction.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(210)))), ((int)(((byte)(220)))));
             this.panelAction.ShadowDepth = 35;
             this.panelAction.ShadowShift = 6;
             this.panelAction.Size = new System.Drawing.Size(1110, 145);
@@ -246,8 +239,8 @@ namespace Multi_Booking_System
             this.headerAction.CustomizableEdges.BottomLeft = false;
             this.headerAction.CustomizableEdges.BottomRight = false;
             this.headerAction.Dock = System.Windows.Forms.DockStyle.Top;
-            this.headerAction.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(219)))));
-            this.headerAction.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(131)))), ((int)(((byte)(176)))));
+            this.headerAction.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(165)))), ((int)(((byte)(233))))); // Sky Blue
+            this.headerAction.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(189)))), ((int)(((byte)(248)))));
             this.headerAction.Location = new System.Drawing.Point(0, 0);
             this.headerAction.Name = "headerAction";
             this.headerAction.Size = new System.Drawing.Size(1110, 48);
@@ -297,17 +290,16 @@ namespace Multi_Booking_System
             this.btnApprove.Animated = true;
             this.btnApprove.BorderRadius = 9;
             this.btnApprove.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnApprove.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(142)))));
-            this.btnApprove.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(239)))), ((int)(((byte)(125)))));
+            this.btnApprove.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(185)))), ((int)(((byte)(129))))); // Emerald Green
+            this.btnApprove.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(211)))), ((int)(((byte)(153)))));
             this.btnApprove.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btnApprove.ForeColor = System.Drawing.Color.White;
-            this.btnApprove.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(130)))), ((int)(((byte)(120)))));
+            this.btnApprove.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(150)))), ((int)(((byte)(105)))));
             this.btnApprove.Location = new System.Drawing.Point(490, 70);
             this.btnApprove.Name = "btnApprove";
             this.btnApprove.Size = new System.Drawing.Size(190, 45);
             this.btnApprove.TabIndex = 8;
             this.btnApprove.Text = "✓  Approve Booking";
-            this.btnApprove.Click += new System.EventHandler(this.btnApprove_Click);
             // 
             // btnBack
             // 
@@ -323,15 +315,14 @@ namespace Multi_Booking_System
             this.btnBack.Size = new System.Drawing.Size(90, 40);
             this.btnBack.TabIndex = 9;
             this.btnBack.Text = "← Back";
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // btnNext
             // 
             this.btnNext.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnNext.Animated = true;
             this.btnNext.BorderRadius = 8;
-            this.btnNext.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(0)))), ((int)(((byte)(224)))));
-            this.btnNext.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(45)))), ((int)(((byte)(226)))));
+            this.btnNext.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(72)))), ((int)(((byte)(153))))); // Pink Accent
+            this.btnNext.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(114)))), ((int)(((byte)(182)))));
             this.btnNext.Font = new System.Drawing.Font("Segoe UI Semibold", 10.5F, System.Drawing.FontStyle.Bold);
             this.btnNext.ForeColor = System.Drawing.Color.White;
             this.btnNext.Location = new System.Drawing.Point(1050, 700);
@@ -340,11 +331,11 @@ namespace Multi_Booking_System
             this.btnNext.TabIndex = 10;
             this.btnNext.Text = "Next →";
             // 
-            // RoxyHomeApprove
+            // DiyaHomeApprove
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(244)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(247)))), ((int)(((byte)(252))))); // Soft Grayish Blue
             this.ClientSize = new System.Drawing.Size(1180, 760);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnNext);
@@ -352,14 +343,14 @@ namespace Multi_Booking_System
             this.Controls.Add(this.panelBookings);
             this.Controls.Add(this.labelMainTitle);
             this.MinimumSize = new System.Drawing.Size(1000, 650);
-            this.Name = "RoxyHomeApprove";
+            this.Name = "DiyaHomeApprove";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Roxy Home Service - Approve Bookings";
+            this.Text = "Diya Home Service - Approve Bookings";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panelBookings.ResumeLayout(false);
             this.headerBookings.ResumeLayout(false);
             this.headerBookings.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridViewRoxyHomeBooking)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewDiyaHomeBooking)).EndInit();
             this.panelAction.ResumeLayout(false);
             this.panelAction.PerformLayout();
             this.headerAction.ResumeLayout(false);
@@ -371,33 +362,19 @@ namespace Multi_Booking_System
 
         #endregion
 
-
         private System.Windows.Forms.Label labelMainTitle;
-
         private Guna.UI2.WinForms.Guna2ShadowPanel panelBookings;
-
         private Guna.UI2.WinForms.Guna2GradientPanel headerBookings;
-
         private System.Windows.Forms.Label labelBookingsTitle;
-
         private Guna.UI2.WinForms.Guna2GradientButton btnRefresh;
-
-        private Guna.UI2.WinForms.Guna2DataGridView gridViewRoxyHomeBooking;
-
+        private Guna.UI2.WinForms.Guna2DataGridView gridViewDiyaHomeBooking;
         private Guna.UI2.WinForms.Guna2ShadowPanel panelAction;
-
         private Guna.UI2.WinForms.Guna2GradientPanel headerAction;
-
         private System.Windows.Forms.Label labelActionTitle;
-
         private System.Windows.Forms.Label labelBookingId;
-
         private Guna.UI2.WinForms.Guna2TextBox txtBookingId;
-
         private Guna.UI2.WinForms.Guna2GradientButton btnApprove;
-
         private Guna.UI2.WinForms.Guna2GradientButton btnBack;
-
         private Guna.UI2.WinForms.Guna2GradientButton btnNext;
     }
 }
