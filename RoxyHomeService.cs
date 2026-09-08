@@ -489,5 +489,10 @@ namespace Multi_Booking_System
                 roxyStoreRadia.Show();
             }
         }
+
+        private void gridViewHomeService_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

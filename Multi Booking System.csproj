@@ -481,6 +481,9 @@
     <EmbeddedResource Include="ShahnazDashboard.resx">
       <DependentUpon>ShahnazDashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ShahnazHomeService.resx">
+      <DependentUpon>ShahnazHomeService.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ShahnazOwnStore.resx">
       <DependentUpon>ShahnazOwnStore.cs</DependentUpon>
     </EmbeddedResource>
