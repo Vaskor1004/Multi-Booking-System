@@ -423,6 +423,15 @@
     <EmbeddedResource Include="DiyaReview.resx">
       <DependentUpon>DiyaReview.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DiyaStoreArny.resx">
+      <DependentUpon>DiyaStoreArny.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiyaStoreNody.resx">
+      <DependentUpon>DiyaStoreNody.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiyaStorePayel.resx">
+      <DependentUpon>DiyaStorePayel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -478,6 +487,9 @@
     <EmbeddedResource Include="SelunList.resx">
       <DependentUpon>SelunList.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ShahnaazStoreEsha.resx">
+      <DependentUpon>ShahnaazStoreEsha.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ShahnazApprove.resx">
       <DependentUpon>ShahnazApprove.cs</DependentUpon>
     </EmbeddedResource>
@@ -501,6 +513,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ShahnazReview.resx">
       <DependentUpon>ShahnazReview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShahnazStoreEma.resx">
+      <DependentUpon>ShahnazStoreEma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShahnazStoreShetu.resx">
+      <DependentUpon>ShahnazStoreShetu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Shahriar.resx">
       <DependentUpon>Shahriar.cs</DependentUpon>
@@ -653,6 +671,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\RadiaParlar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArneyParlar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NodiParlar.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Payel.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EshaParlar.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EshaaParlar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EmaParlar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShetuParlar.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

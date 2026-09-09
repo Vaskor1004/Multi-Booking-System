@@ -113,10 +113,50 @@ namespace Multi_Booking_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ArneyParlar {
+            get {
+                object obj = ResourceManager.GetObject("ArneyParlar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap barber_cutting_hair_in_modern_salon_with_round_mirrors_and_shelves_of_hair_products_free_photo {
             get {
                 object obj = ResourceManager.GetObject("barber-cutting-hair-in-modern-salon-with-round-mirrors-and-shelves-of-hair-produc" +
                         "ts-free-photo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EmaParlar {
+            get {
+                object obj = ResourceManager.GetObject("EmaParlar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EshaaParlar {
+            get {
+                object obj = ResourceManager.GetObject("EshaaParlar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EshaParlar {
+            get {
+                object obj = ResourceManager.GetObject("EshaParlar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -214,6 +254,16 @@ namespace Multi_Booking_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap NodiParlar {
+            get {
+                object obj = ResourceManager.GetObject("NodiParlar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Parlar1 {
             get {
                 object obj = ResourceManager.GetObject("Parlar1", resourceCulture);
@@ -274,6 +324,16 @@ namespace Multi_Booking_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Payel {
+            get {
+                object obj = ResourceManager.GetObject("Payel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pnParlar6 {
             get {
                 object obj = ResourceManager.GetObject("pnParlar6", resourceCulture);
@@ -297,6 +357,16 @@ namespace Multi_Booking_System.Properties {
         internal static System.Drawing.Bitmap Sadiaparlar {
             get {
                 object obj = ResourceManager.GetObject("Sadiaparlar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ShetuParlar {
+            get {
+                object obj = ResourceManager.GetObject("ShetuParlar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -75,19 +75,17 @@ namespace Multi_Booking_System
             this.labelExperienceValue = new System.Windows.Forms.Label();
             this.labelChargeTitle = new System.Windows.Forms.Label();
             this.labelChargeValue = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2ShadowPanel2 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.guna2ShadowPanel3 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2PanelRight = new Guna.UI2.WinForms.Guna2Panel();
-
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2ShadowPanel2.SuspendLayout();
             this.guna2ShadowPanel3.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
             this.guna2PanelRight.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-
             // 
             // labelTitle
             // 
@@ -100,33 +98,30 @@ namespace Multi_Booking_System
             this.labelTitle.Size = new System.Drawing.Size(305, 46);
             this.labelTitle.TabIndex = 0;
             this.labelTitle.Text = "Employee Profile";
-
             // 
             // labelNameTitle
             // 
             this.labelNameTitle.AutoSize = true;
             this.labelNameTitle.BackColor = System.Drawing.Color.Transparent;
             this.labelNameTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.labelNameTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(163)))), ((int)(((byte)(184))))); // Slate 400
+            this.labelNameTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(163)))), ((int)(((byte)(184)))));
             this.labelNameTitle.Location = new System.Drawing.Point(45, 140);
             this.labelNameTitle.Name = "labelNameTitle";
-            this.labelNameTitle.Size = new System.Drawing.Size(262, 28);
+            this.labelNameTitle.Size = new System.Drawing.Size(234, 28);
             this.labelNameTitle.TabIndex = 1;
             this.labelNameTitle.Text = "Senior Beautician & Stylist";
-
             // 
             // labelNameValue
             // 
             this.labelNameValue.AutoSize = true;
             this.labelNameValue.BackColor = System.Drawing.Color.Transparent;
             this.labelNameValue.Font = new System.Drawing.Font("Segoe UI Black", 28F, System.Drawing.FontStyle.Bold);
-            this.labelNameValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(204)))), ((int)(((byte)(21))))); // Yellow/Gold Accent
+            this.labelNameValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(204)))), ((int)(((byte)(21)))));
             this.labelNameValue.Location = new System.Drawing.Point(35, 170);
             this.labelNameValue.Name = "labelNameValue";
-            this.labelNameValue.Size = new System.Drawing.Size(342, 62);
+            this.labelNameValue.Size = new System.Drawing.Size(324, 62);
             this.labelNameValue.TabIndex = 2;
             this.labelNameValue.Text = "Ema Rahman";
-
             // 
             // labelExperienceTitle
             // 
@@ -138,7 +133,6 @@ namespace Multi_Booking_System
             this.labelExperienceTitle.Size = new System.Drawing.Size(121, 30);
             this.labelExperienceTitle.TabIndex = 3;
             this.labelExperienceTitle.Text = "Experience";
-
             // 
             // labelExperienceValue
             // 
@@ -147,10 +141,9 @@ namespace Multi_Booking_System
             this.labelExperienceValue.ForeColor = System.Drawing.Color.White;
             this.labelExperienceValue.Location = new System.Drawing.Point(20, 55);
             this.labelExperienceValue.Name = "labelExperienceValue";
-            this.labelExperienceValue.Size = new System.Drawing.Size(196, 54);
+            this.labelExperienceValue.Size = new System.Drawing.Size(202, 54);
             this.labelExperienceValue.TabIndex = 4;
             this.labelExperienceValue.Text = "4.5 Years";
-
             // 
             // labelChargeTitle
             // 
@@ -162,39 +155,24 @@ namespace Multi_Booking_System
             this.labelChargeTitle.Size = new System.Drawing.Size(150, 30);
             this.labelChargeTitle.TabIndex = 5;
             this.labelChargeTitle.Text = "Charge / Rate";
-
             // 
             // labelChargeValue
             // 
             this.labelChargeValue.AutoSize = true;
             this.labelChargeValue.Font = new System.Drawing.Font("Segoe UI Black", 24F, System.Drawing.FontStyle.Bold);
-            this.labelChargeValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(72)))), ((int)(((byte)(153))))); // Bright Pink Accent
+            this.labelChargeValue.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(72)))), ((int)(((byte)(153)))));
             this.labelChargeValue.Location = new System.Drawing.Point(20, 55);
             this.labelChargeValue.Name = "labelChargeValue";
-            this.labelChargeValue.Size = new System.Drawing.Size(199, 54);
+            this.labelChargeValue.Size = new System.Drawing.Size(200, 54);
             this.labelChargeValue.TabIndex = 6;
             this.labelChargeValue.Text = "400 Taka";
-
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::Multi_Booking_System.Properties.Resources.MimParlar; // Default/Placeholder image
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(550, 650);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
-
             // 
             // guna2ShadowPanel2
             // 
             this.guna2ShadowPanel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel2.Controls.Add(this.labelExperienceTitle);
             this.guna2ShadowPanel2.Controls.Add(this.labelExperienceValue);
-            this.guna2ShadowPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59))))); // Slate 800
+            this.guna2ShadowPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
             this.guna2ShadowPanel2.Location = new System.Drawing.Point(45, 280);
             this.guna2ShadowPanel2.Name = "guna2ShadowPanel2";
             this.guna2ShadowPanel2.Radius = 15;
@@ -203,14 +181,13 @@ namespace Multi_Booking_System
             this.guna2ShadowPanel2.ShadowShift = 6;
             this.guna2ShadowPanel2.Size = new System.Drawing.Size(400, 130);
             this.guna2ShadowPanel2.TabIndex = 9;
-
             // 
             // guna2ShadowPanel3
             // 
             this.guna2ShadowPanel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2ShadowPanel3.Controls.Add(this.labelChargeTitle);
             this.guna2ShadowPanel3.Controls.Add(this.labelChargeValue);
-            this.guna2ShadowPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59))))); // Slate 800
+            this.guna2ShadowPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(59)))));
             this.guna2ShadowPanel3.Location = new System.Drawing.Point(45, 440);
             this.guna2ShadowPanel3.Name = "guna2ShadowPanel3";
             this.guna2ShadowPanel3.Radius = 15;
@@ -219,7 +196,6 @@ namespace Multi_Booking_System
             this.guna2ShadowPanel3.ShadowShift = 6;
             this.guna2ShadowPanel3.Size = new System.Drawing.Size(400, 130);
             this.guna2ShadowPanel3.TabIndex = 10;
-
             // 
             // guna2GradientPanel1
             // 
@@ -229,7 +205,6 @@ namespace Multi_Booking_System
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.Size = new System.Drawing.Size(550, 650);
             this.guna2GradientPanel1.TabIndex = 12;
-
             // 
             // guna2PanelRight
             // 
@@ -239,12 +214,23 @@ namespace Multi_Booking_System
             this.guna2PanelRight.Controls.Add(this.guna2ShadowPanel2);
             this.guna2PanelRight.Controls.Add(this.guna2ShadowPanel3);
             this.guna2PanelRight.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2PanelRight.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42))))); // Slate 900 Background
+            this.guna2PanelRight.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(23)))), ((int)(((byte)(42)))));
             this.guna2PanelRight.Location = new System.Drawing.Point(550, 0);
             this.guna2PanelRight.Name = "guna2PanelRight";
             this.guna2PanelRight.Size = new System.Drawing.Size(490, 650);
             this.guna2PanelRight.TabIndex = 13;
-
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::Multi_Booking_System.Properties.Resources.EmaParlar;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(550, 650);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
             // 
             // ShahnazStoreEma
             // 
@@ -257,8 +243,6 @@ namespace Multi_Booking_System
             this.Name = "ShahnazStoreEma";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Shahnaz Store - Ema Details";
-
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.guna2ShadowPanel2.ResumeLayout(false);
             this.guna2ShadowPanel2.PerformLayout();
             this.guna2ShadowPanel3.ResumeLayout(false);
@@ -266,6 +250,7 @@ namespace Multi_Booking_System
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2PanelRight.ResumeLayout(false);
             this.guna2PanelRight.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
