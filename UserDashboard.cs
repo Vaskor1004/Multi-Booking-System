@@ -81,9 +81,9 @@ namespace Multi_Booking_System
 
         private void btnSerialdetail_Click(object sender, EventArgs e)
         {
-            CustomerSerialDetails customerSerialDetails = new CustomerSerialDetails();
-            customerSerialDetails.Show();
-            this.Hide();
+           CustomerSerial customerSerial = new CustomerSerial();
+              customerSerial.Show();
+                this.Hide();
         }
 
         private void BtnSelun_Click_1(object sender, EventArgs e)
