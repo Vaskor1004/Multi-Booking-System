@@ -408,6 +408,12 @@
     <EmbeddedResource Include="DiyaDashboard.resx">
       <DependentUpon>DiyaDashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DiyaHomeApprove.resx">
+      <DependentUpon>DiyaHomeApprove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiyaHomeService.resx">
+      <DependentUpon>DiyaHomeService.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DiyaOwnStore.resx">
       <DependentUpon>DiyaOwnStore.cs</DependentUpon>
     </EmbeddedResource>
@@ -480,6 +486,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ShahnazDashboard.resx">
       <DependentUpon>ShahnazDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShahnazHomeApprove.resx">
+      <DependentUpon>ShahnazHomeApprove.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ShahnazHomeService.resx">
       <DependentUpon>ShahnazHomeService.cs</DependentUpon>

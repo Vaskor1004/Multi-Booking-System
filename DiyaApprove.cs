@@ -130,5 +130,12 @@ namespace Multi_Booking_System
            );
             txtboxDiyaCustomerSerial.Text = bookingId.ToString();
         }
+
+        private void btnHomeSerial_Click(object sender, EventArgs e)
+        {
+            DiyaHomeApprove diyaHomeApprove = new DiyaHomeApprove();
+            diyaHomeApprove.Show();
+            this.Hide();
+        }
     }
 }

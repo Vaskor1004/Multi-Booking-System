@@ -130,6 +130,13 @@ namespace Multi_Booking_System
            );
             txtboxShahnazCustomerSerial.Text = bookingId.ToString();
         }
+
+        private void btnHomeSerial_Click(object sender, EventArgs e)
+        {
+            ShahnazHomeApprove shahnazHomeApprove = new ShahnazHomeApprove();
+            shahnazHomeApprove.Show();
+            this.Hide();
+        }
     }
     
 }
