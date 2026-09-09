@@ -170,6 +170,7 @@ namespace Multi_Booking_System
             this.btnTirthoApprove = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnLogOut = new System.Windows.Forms.Button();
+            this.btnComplete = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panelGrid.SuspendLayout();
             this.headerGrid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewTithoCustomerSerial)).BeginInit();
@@ -203,7 +204,7 @@ namespace Multi_Booking_System
             this.panelGrid.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(200)))));
             this.panelGrid.ShadowDepth = 40;
             this.panelGrid.ShadowShift = 6;
-            this.panelGrid.Size = new System.Drawing.Size(1066, 400);
+            this.panelGrid.Size = new System.Drawing.Size(1066, 395);
             this.panelGrid.TabIndex = 1;
             // 
             // headerGrid
@@ -286,7 +287,7 @@ namespace Multi_Booking_System
             this.gridViewTithoCustomerSerial.RowHeadersVisible = false;
             this.gridViewTithoCustomerSerial.RowHeadersWidth = 51;
             this.gridViewTithoCustomerSerial.RowTemplate.Height = 45;
-            this.gridViewTithoCustomerSerial.Size = new System.Drawing.Size(1020, 275);
+            this.gridViewTithoCustomerSerial.Size = new System.Drawing.Size(1020, 270);
             this.gridViewTithoCustomerSerial.TabIndex = 4;
             this.gridViewTithoCustomerSerial.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
             this.gridViewTithoCustomerSerial.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(235)))), ((int)(((byte)(250)))));
@@ -306,12 +307,13 @@ namespace Multi_Booking_System
             this.panelAction.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelAction.BackColor = System.Drawing.Color.Transparent;
+            this.panelAction.Controls.Add(this.btnComplete);
             this.panelAction.Controls.Add(this.headerAction);
             this.panelAction.Controls.Add(this.CustomerSerialIdTirtho);
             this.panelAction.Controls.Add(this.txtboxTirthoCustomerSerial);
             this.panelAction.Controls.Add(this.btnTirthoApprove);
             this.panelAction.FillColor = System.Drawing.Color.White;
-            this.panelAction.Location = new System.Drawing.Point(30, 510);
+            this.panelAction.Location = new System.Drawing.Point(30, 505);
             this.panelAction.Name = "panelAction";
             this.panelAction.Radius = 15;
             this.panelAction.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(200)))));
@@ -411,12 +413,29 @@ namespace Multi_Booking_System
             this.btnLogOut.UseVisualStyleBackColor = true;
             this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
+            // btnComplete
+            // 
+            this.btnComplete.Animated = true;
+            this.btnComplete.BorderRadius = 8;
+            this.btnComplete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnComplete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(142)))));
+            this.btnComplete.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(239)))), ((int)(((byte)(125)))));
+            this.btnComplete.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnComplete.ForeColor = System.Drawing.Color.White;
+            this.btnComplete.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(130)))), ((int)(((byte)(120)))));
+            this.btnComplete.Location = new System.Drawing.Point(779, 64);
+            this.btnComplete.Name = "btnComplete";
+            this.btnComplete.Size = new System.Drawing.Size(180, 45);
+            this.btnComplete.TabIndex = 11;
+            this.btnComplete.Text = "Complete";
+            this.btnComplete.Click += new System.EventHandler(this.btnComplete_Click);
+            // 
             // TirthoApprove
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(244)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1126, 680);
+            this.ClientSize = new System.Drawing.Size(1126, 675);
             this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.panelAction);
@@ -455,5 +474,6 @@ namespace Multi_Booking_System
         private Guna.UI2.WinForms.Guna2GradientButton btnTirthoApprove;
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnLogOut;
+        private Guna.UI2.WinForms.Guna2GradientButton btnComplete;
     }
 }

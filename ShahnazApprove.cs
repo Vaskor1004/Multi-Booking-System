@@ -137,6 +137,131 @@ namespace Multi_Booking_System
             shahnazHomeApprove.Show();
             this.Hide();
         }
+
+        private void btnComplete_Click(object sender, EventArgs e)
+        {
+            if (gridViewShahnazCustomerSerial.CurrentRow == null)
+            {
+                MessageBox.Show("Please select a booking first.");
+                return;
+            }
+            int bookingId = Convert.ToInt32(
+                gridViewShahnazCustomerSerial
+                .CurrentRow
+                .Cells["bookingId"]
+                .Value
+            );
+
+            string checkQuery = @"
+                SELECT status
+                FROM BookingsShahnaz
+                WHERE bookingId = @bookingId";
+
+            string status = "";
+
+            using (SqlConnection con = new SqlConnection(ConnectionString))
+            {
+                SqlCommand cmd = new SqlCommand(checkQuery, con);
+
+                cmd.Parameters.AddWithValue("@bookingId", bookingId);
+
+                con.Open();
+
+                object result = cmd.ExecuteScalar();
+
+                if (result != null)
+                {
+                    status = result.ToString();
+                }
+            }
+            if (status != "Approved")
+            {
+                MessageBox.Show(
+                    "This booking is Not Approved yet!",
+                    "Cannot Complete",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning
+                );
+
+                return;
+            }
+            string deleteDetailsQuery = @"
+                    DELETE FROM BookingDetailsShahnaz
+                    WHERE bookingId = @bookingId";
+
+            string deleteBookingQuery = @"
+                    DELETE FROM BookingsShahnaz
+                    WHERE bookingId = @bookingId
+                    AND status = 'Approved'";
+
+            using (SqlConnection con = new SqlConnection(ConnectionString))
+            {
+                con.Open();
+                SqlTransaction transaction = con.BeginTransaction();
+                try
+                {
+
+                    SqlCommand cmdDetails = new SqlCommand(
+                        deleteDetailsQuery,
+                        con,
+                        transaction
+                    );
+                    cmdDetails.Parameters.AddWithValue(
+                        "@bookingId",
+                        bookingId
+                    );
+                    cmdDetails.ExecuteNonQuery();
+                    SqlCommand cmdBooking = new SqlCommand(
+                        deleteBookingQuery,
+                        con,
+                        transaction
+                    );
+
+                    cmdBooking.Parameters.AddWithValue(
+                        "@bookingId",
+                        bookingId
+                    );
+
+                    int rowsAffected = cmdBooking.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
+                    {
+                        transaction.Commit();
+
+                        MessageBox.Show(
+                            "Booking Completed Successfully!",
+                            "Success",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Information
+                        );
+                        btnShahnazCustomerSerial_Click(null, null);
+                        txtboxShahnazCustomerSerial.Clear();
+                    }
+                    else
+                    {
+                        transaction.Rollback();
+
+                        MessageBox.Show(
+                            "Booking could not be completed.",
+                            "Error",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Error
+                        );
+                    }
+                }
+                catch (Exception ex)
+                {
+                    transaction.Rollback();
+
+                    MessageBox.Show(
+                        "Error: " + ex.Message,
+                        "Database Error",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error
+                    );
+                }
+            }
+        }
     }
     
 }

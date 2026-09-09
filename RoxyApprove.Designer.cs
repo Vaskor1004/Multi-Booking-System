@@ -69,9 +69,9 @@ namespace Multi_Booking_System
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.labelMainTitle = new System.Windows.Forms.Label();
             this.panelGrid = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.headerGrid = new Guna.UI2.WinForms.Guna2GradientPanel();
@@ -79,6 +79,7 @@ namespace Multi_Booking_System
             this.btnRoxyCustomerSerial = new Guna.UI2.WinForms.Guna2GradientButton();
             this.gridViewRoxyCustomerSerial = new Guna.UI2.WinForms.Guna2DataGridView();
             this.panelAction = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.btnHomeSerial = new Guna.UI2.WinForms.Guna2GradientButton();
             this.headerAction = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.labelActionTitle = new System.Windows.Forms.Label();
             this.CustomerSerialIdRoxy = new System.Windows.Forms.Label();
@@ -86,7 +87,7 @@ namespace Multi_Booking_System
             this.btnRoxyApprove = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
-            this.btnHomeSerial = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.btnComplete = new Guna.UI2.WinForms.Guna2GradientButton();
             this.panelGrid.SuspendLayout();
             this.headerGrid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewRoxyCustomerSerial)).BeginInit();
@@ -173,29 +174,29 @@ namespace Multi_Booking_System
             // 
             this.gridViewRoxyCustomerSerial.AllowUserToAddRows = false;
             this.gridViewRoxyCustomerSerial.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
-            this.gridViewRoxyCustomerSerial.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
+            this.gridViewRoxyCustomerSerial.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.gridViewRoxyCustomerSerial.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(0)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(45)))), ((int)(((byte)(226)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridViewRoxyCustomerSerial.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(0)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(45)))), ((int)(((byte)(226)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridViewRoxyCustomerSerial.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.gridViewRoxyCustomerSerial.ColumnHeadersHeight = 50;
             this.gridViewRoxyCustomerSerial.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.8F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(225)))), ((int)(((byte)(250)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridViewRoxyCustomerSerial.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.8F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(225)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridViewRoxyCustomerSerial.DefaultCellStyle = dataGridViewCellStyle6;
             this.gridViewRoxyCustomerSerial.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(235)))), ((int)(((byte)(250)))));
             this.gridViewRoxyCustomerSerial.Location = new System.Drawing.Point(26, 95);
             this.gridViewRoxyCustomerSerial.Name = "gridViewRoxyCustomerSerial";
@@ -223,6 +224,7 @@ namespace Multi_Booking_System
             this.panelAction.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelAction.BackColor = System.Drawing.Color.Transparent;
+            this.panelAction.Controls.Add(this.btnComplete);
             this.panelAction.Controls.Add(this.btnHomeSerial);
             this.panelAction.Controls.Add(this.headerAction);
             this.panelAction.Controls.Add(this.CustomerSerialIdRoxy);
@@ -237,6 +239,23 @@ namespace Multi_Booking_System
             this.panelAction.ShadowShift = 6;
             this.panelAction.Size = new System.Drawing.Size(1066, 140);
             this.panelAction.TabIndex = 5;
+            // 
+            // btnHomeSerial
+            // 
+            this.btnHomeSerial.Animated = true;
+            this.btnHomeSerial.BorderRadius = 8;
+            this.btnHomeSerial.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHomeSerial.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(142)))));
+            this.btnHomeSerial.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(239)))), ((int)(((byte)(125)))));
+            this.btnHomeSerial.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnHomeSerial.ForeColor = System.Drawing.Color.White;
+            this.btnHomeSerial.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(130)))), ((int)(((byte)(120)))));
+            this.btnHomeSerial.Location = new System.Drawing.Point(854, 64);
+            this.btnHomeSerial.Name = "btnHomeSerial";
+            this.btnHomeSerial.Size = new System.Drawing.Size(192, 45);
+            this.btnHomeSerial.TabIndex = 11;
+            this.btnHomeSerial.Text = "See Home Serial";
+            this.btnHomeSerial.Click += new System.EventHandler(this.btnHomeSerial_Click);
             // 
             // headerAction
             // 
@@ -302,7 +321,7 @@ namespace Multi_Booking_System
             this.btnRoxyApprove.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(130)))), ((int)(((byte)(120)))));
             this.btnRoxyApprove.Location = new System.Drawing.Point(480, 64);
             this.btnRoxyApprove.Name = "btnRoxyApprove";
-            this.btnRoxyApprove.Size = new System.Drawing.Size(180, 45);
+            this.btnRoxyApprove.Size = new System.Drawing.Size(167, 45);
             this.btnRoxyApprove.TabIndex = 9;
             this.btnRoxyApprove.Text = "Approve Serial";
             this.btnRoxyApprove.Click += new System.EventHandler(this.btnRoxyApprove_Click);
@@ -329,22 +348,22 @@ namespace Multi_Booking_System
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // btnHomeSerial
+            // btnComplete
             // 
-            this.btnHomeSerial.Animated = true;
-            this.btnHomeSerial.BorderRadius = 8;
-            this.btnHomeSerial.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHomeSerial.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(142)))));
-            this.btnHomeSerial.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(239)))), ((int)(((byte)(125)))));
-            this.btnHomeSerial.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.btnHomeSerial.ForeColor = System.Drawing.Color.White;
-            this.btnHomeSerial.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(130)))), ((int)(((byte)(120)))));
-            this.btnHomeSerial.Location = new System.Drawing.Point(820, 64);
-            this.btnHomeSerial.Name = "btnHomeSerial";
-            this.btnHomeSerial.Size = new System.Drawing.Size(192, 45);
-            this.btnHomeSerial.TabIndex = 11;
-            this.btnHomeSerial.Text = "See Home Serial";
-            this.btnHomeSerial.Click += new System.EventHandler(this.btnHomeSerial_Click);
+            this.btnComplete.Animated = true;
+            this.btnComplete.BorderRadius = 8;
+            this.btnComplete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnComplete.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(153)))), ((int)(((byte)(142)))));
+            this.btnComplete.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(239)))), ((int)(((byte)(125)))));
+            this.btnComplete.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnComplete.ForeColor = System.Drawing.Color.White;
+            this.btnComplete.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(130)))), ((int)(((byte)(120)))));
+            this.btnComplete.Location = new System.Drawing.Point(677, 64);
+            this.btnComplete.Name = "btnComplete";
+            this.btnComplete.Size = new System.Drawing.Size(140, 45);
+            this.btnComplete.TabIndex = 10;
+            this.btnComplete.Text = "Complete";
+            this.btnComplete.Click += new System.EventHandler(this.btnComplete_Click);
             // 
             // RoxyApprove
             // 
@@ -398,5 +417,6 @@ namespace Multi_Booking_System
         private System.Windows.Forms.Button btnNext;
         private System.Windows.Forms.Button btnBack;
         private Guna.UI2.WinForms.Guna2GradientButton btnHomeSerial;
+        private Guna.UI2.WinForms.Guna2GradientButton btnComplete;
     }
 }

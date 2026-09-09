@@ -123,5 +123,137 @@ namespace Multi_Booking_System
             sompodCustomerReview.Show();
             this.Hide();
         }
+
+        private void btnComplete_Click(object sender, EventArgs e)
+        {
+            if (gridViewCustomerSerial.CurrentRow == null)
+            {
+                MessageBox.Show("Please select a booking first.");
+                return;
+            }
+            int bookingId = Convert.ToInt32(
+                gridViewCustomerSerial
+                .CurrentRow
+                .Cells["bookingId"]
+                .Value
+            );
+
+            string checkQuery = @"
+                SELECT status
+                FROM BookingsSompod
+                WHERE bookingId = @bookingId";
+
+            string status = "";
+
+            using (SqlConnection con = new SqlConnection(ConnectionString))
+            {
+                SqlCommand cmd = new SqlCommand(checkQuery, con);
+
+                cmd.Parameters.AddWithValue("@bookingId", bookingId);
+
+                con.Open();
+
+                object result = cmd.ExecuteScalar();
+
+                if (result != null)
+                {
+                    status = result.ToString();
+                }
+            }
+            if (status != "Approved")
+            {
+                MessageBox.Show(
+                    "This booking is Not Approved yet!",
+                    "Cannot Complete",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning
+                );
+
+                return;
+            }
+            string deleteDetailsQuery = @"
+                    DELETE FROM BookingDetailsSompod
+                    WHERE bookingId = @bookingId";
+
+            string deleteBookingQuery = @"
+                    DELETE FROM BookingsSompod
+                    WHERE bookingId = @bookingId
+                    AND status = 'Approved'";
+
+            using (SqlConnection con = new SqlConnection(ConnectionString))
+            {
+                con.Open();
+                SqlTransaction transaction = con.BeginTransaction();
+                try
+                {
+
+                    SqlCommand cmdDetails = new SqlCommand(
+                        deleteDetailsQuery,
+                        con,
+                        transaction
+                    );
+                    cmdDetails.Parameters.AddWithValue(
+                        "@bookingId",
+                        bookingId
+                    );
+                    cmdDetails.ExecuteNonQuery();
+                    SqlCommand cmdBooking = new SqlCommand(
+                        deleteBookingQuery,
+                        con,
+                        transaction
+                    );
+
+                    cmdBooking.Parameters.AddWithValue(
+                        "@bookingId",
+                        bookingId
+                    );
+
+                    int rowsAffected = cmdBooking.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
+                    {
+                        transaction.Commit();
+
+                        MessageBox.Show(
+                            "Booking Completed Successfully!",
+                            "Success",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Information
+                        );
+                        btnCustomerSerial_Click(null, null);
+                        txtboxId.Clear();
+                    }
+                    else
+                    {
+                        transaction.Rollback();
+
+                        MessageBox.Show(
+                            "Booking could not be completed.",
+                            "Error",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Error
+                        );
+                    }
+                }
+                catch (Exception ex)
+                {
+                    transaction.Rollback();
+
+                    MessageBox.Show(
+                        "Error: " + ex.Message,
+                        "Database Error",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error
+                    );
+                }
+            }
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            Sompod sompod = new Sompod();
+            sompod.Show();
+            this.Hide();
+        }
     }
 }
