@@ -494,5 +494,47 @@ namespace Multi_Booking_System
         {
 
         }
+
+        private void btnDeleteService_Click(object sender, EventArgs e)
+        {
+            if (gridViewSelectedServices.CurrentRow == null)
+            {
+                MessageBox.Show("Please select a service to remove!");
+                return;
+            }
+            DialogResult result = MessageBox.Show(
+                "Are you sure you want to remove this service?",
+                "Confirm Delete",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+            if (result == DialogResult.Yes)
+            {
+                int rowIndex = gridViewSelectedServices.CurrentRow.Index;
+                selectedServices.Rows.RemoveAt(rowIndex);
+                MessageBox.Show("Service Removed Successfully!");
+            }
+        }
+
+        private void btnDeleteWorker_Click(object sender, EventArgs e)
+        {
+            if (gridViewSelectedWorker.CurrentRow == null)
+            {
+                MessageBox.Show("Please select a worker to remove!");
+                return;
+            }
+            DialogResult result = MessageBox.Show(
+                "Are you sure you want to remove this worker?",
+                "Confirm Delete",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+            if (result == DialogResult.Yes)
+            {
+                int rowIndex = gridViewSelectedWorker.CurrentRow.Index;
+                selectedWorkers.Rows.RemoveAt(rowIndex);
+                MessageBox.Show("Service Removed Successfully!");
+            }
+        }
     }
 }
