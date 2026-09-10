@@ -16,5 +16,10 @@ namespace Multi_Booking_System
         {
             InitializeComponent();
         }
+
+        private void labelExperienceValue_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

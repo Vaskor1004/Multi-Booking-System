@@ -78,13 +78,13 @@ namespace Multi_Booking_System
             this.guna2ShadowPanel2 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.guna2ShadowPanel3 = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2PanelRight = new Guna.UI2.WinForms.Guna2Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.guna2PanelRight = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ShadowPanel2.SuspendLayout();
             this.guna2ShadowPanel3.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
-            this.guna2PanelRight.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.guna2PanelRight.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelTitle
@@ -107,9 +107,9 @@ namespace Multi_Booking_System
             this.labelNameTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(163)))), ((int)(((byte)(184)))));
             this.labelNameTitle.Location = new System.Drawing.Point(45, 140);
             this.labelNameTitle.Name = "labelNameTitle";
-            this.labelNameTitle.Size = new System.Drawing.Size(246, 28);
+            this.labelNameTitle.Size = new System.Drawing.Size(251, 28);
             this.labelNameTitle.TabIndex = 1;
-            this.labelNameTitle.Text = "Senior Hair & Beauty Stylist";
+            this.labelNameTitle.Text = "Senior Mon & Beauty Stylist";
             // 
             // labelNameValue
             // 
@@ -141,9 +141,10 @@ namespace Multi_Booking_System
             this.labelExperienceValue.ForeColor = System.Drawing.Color.White;
             this.labelExperienceValue.Location = new System.Drawing.Point(20, 55);
             this.labelExperienceValue.Name = "labelExperienceValue";
-            this.labelExperienceValue.Size = new System.Drawing.Size(201, 54);
+            this.labelExperienceValue.Size = new System.Drawing.Size(164, 54);
             this.labelExperienceValue.TabIndex = 4;
-            this.labelExperienceValue.Text = "3.5 Years";
+            this.labelExperienceValue.Text = "3 Years";
+            this.labelExperienceValue.Click += new System.EventHandler(this.labelExperienceValue_Click);
             // 
             // labelChargeTitle
             // 
@@ -165,7 +166,7 @@ namespace Multi_Booking_System
             this.labelChargeValue.Name = "labelChargeValue";
             this.labelChargeValue.Size = new System.Drawing.Size(199, 54);
             this.labelChargeValue.TabIndex = 6;
-            this.labelChargeValue.Text = "350 Taka";
+            this.labelChargeValue.Text = "800 Taka";
             // 
             // guna2ShadowPanel2
             // 
@@ -206,6 +207,18 @@ namespace Multi_Booking_System
             this.guna2GradientPanel1.Size = new System.Drawing.Size(550, 650);
             this.guna2GradientPanel1.TabIndex = 12;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::Multi_Booking_System.Properties.Resources.Payel;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(550, 650);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
             // guna2PanelRight
             // 
             this.guna2PanelRight.Controls.Add(this.labelTitle);
@@ -219,18 +232,6 @@ namespace Multi_Booking_System
             this.guna2PanelRight.Name = "guna2PanelRight";
             this.guna2PanelRight.Size = new System.Drawing.Size(490, 650);
             this.guna2PanelRight.TabIndex = 13;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::Multi_Booking_System.Properties.Resources.Payel;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(550, 650);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
             // 
             // DiyaStorePayel
             // 
@@ -248,9 +249,9 @@ namespace Multi_Booking_System
             this.guna2ShadowPanel3.ResumeLayout(false);
             this.guna2ShadowPanel3.PerformLayout();
             this.guna2GradientPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.guna2PanelRight.ResumeLayout(false);
             this.guna2PanelRight.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
