@@ -149,7 +149,7 @@ namespace Multi_Booking_System
             this.panelGrid.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(160)))), ((int)(((byte)(180)))));
             this.panelGrid.ShadowDepth = 40;
             this.panelGrid.ShadowShift = 6;
-            this.panelGrid.Size = new System.Drawing.Size(840, 371);
+            this.panelGrid.Size = new System.Drawing.Size(840, 353);
             this.panelGrid.TabIndex = 1;
             // 
             // headerGrid
@@ -232,7 +232,7 @@ namespace Multi_Booking_System
             this.gridViewSerialDetails.RowHeadersVisible = false;
             this.gridViewSerialDetails.RowHeadersWidth = 51;
             this.gridViewSerialDetails.RowTemplate.Height = 45;
-            this.gridViewSerialDetails.Size = new System.Drawing.Size(784, 246);
+            this.gridViewSerialDetails.Size = new System.Drawing.Size(784, 228);
             this.gridViewSerialDetails.TabIndex = 5;
             this.gridViewSerialDetails.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(255)))));
             this.gridViewSerialDetails.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
@@ -251,7 +251,7 @@ namespace Multi_Booking_System
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(244)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(900, 491);
+            this.ClientSize = new System.Drawing.Size(900, 473);
             this.Controls.Add(this.panelGrid);
             this.Controls.Add(this.labelMainTitle);
             this.Name = "CustomerSerialDetails";
