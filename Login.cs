@@ -95,6 +95,12 @@ namespace Multi_Booking_System
                             this.Hide();
                         }
                     }
+                    else {  
+                       AdminMainPage admin = new AdminMainPage();
+                          admin.Show();
+                            this.Hide();
+                    }
+
                 }
                 else
                 {

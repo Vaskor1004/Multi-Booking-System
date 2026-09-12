@@ -52,6 +52,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminMainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMainPage.Designer.cs">
+      <DependentUpon>AdminMainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminShopkeeper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminShopkeeper.Designer.cs">
+      <DependentUpon>AdminShopkeeper.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomerSerial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -402,6 +414,12 @@
     <Compile Include="UserDashboard.Designer.cs">
       <DependentUpon>UserDashboard.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AdminMainPage.resx">
+      <DependentUpon>AdminMainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminShopkeeper.resx">
+      <DependentUpon>AdminShopkeeper.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomerSerial.resx">
       <DependentUpon>CustomerSerial.cs</DependentUpon>
     </EmbeddedResource>
