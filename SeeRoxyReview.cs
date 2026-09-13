@@ -11,36 +11,35 @@ using System.Windows.Forms;
 
 namespace Multi_Booking_System
 {
-    public partial class ShahriarCustomerReview : Form
+    public partial class SeeRoxyReview : Form
     {
         string ConnectionString =
-            "Data Source=LAPTOP-ETFSEMF8;Initial Catalog=mydb;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
-
-        public ShahriarCustomerReview()
+           "Data Source=LAPTOP-ETFSEMF8;Initial Catalog=mydb;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
+        public SeeRoxyReview()
         {
             InitializeComponent();
         }
 
-        private void btnShowService_Click(object sender, EventArgs e)
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            RoxyParler roxyParler = new RoxyParler();
+            roxyParler.Show();
+            this.Hide();
+        }
+
+        private void btnLoadReviews_Click(object sender, EventArgs e)
         {
             string query = @"
                 SELECT
-                    RS.ReviewID,
-
+                    RR.ReviewID,
                     U.id AS CustomerID,
-
                     U.name AS CustomerName,
-
-                    RS.Rating,
-
-                    RS.ReviewText
-
-                FROM ReviewsShahriar RS
-
+                    RR.Rating,
+                    RR.ReviewText
+                FROM ReviewsRoxy RR
                 INNER JOIN Users U
-                ON RS.CustomerID = U.id
-
-                ORDER BY RS.ReviewID ASC";
+                ON RR.CustomerID = U.id
+                ORDER BY RR.ReviewID ASC";
 
             try
             {
@@ -67,13 +66,6 @@ namespace Multi_Booking_System
                     MessageBoxIcon.Error
                 );
             }
-        }
-
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            Shahriar shahriar = new Shahriar();
-            shahriar.Show();
-            this.Hide();
         }
     }
 }

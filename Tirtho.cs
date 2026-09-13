@@ -58,10 +58,8 @@ namespace Multi_Booking_System
                 return;
             }
 
-            int id = Convert.ToInt32(
-                gridviewTirtho.CurrentRow.Cells["id"].Value
-            );
-           
+            int id = Convert.ToInt32(gridviewTirtho.CurrentRow.Cells["id"].Value);
+
             string query = @"UPDATE TirthoStore
                              SET serviceName = @serviceName,
                                  price = @price
@@ -71,24 +69,13 @@ namespace Multi_Booking_System
             {
                 SqlCommand cmd = new SqlCommand(query, con);
 
-                cmd.Parameters.AddWithValue(
-                    "@serviceName",
-                    txtboxUName.Text
-                );
-
-                cmd.Parameters.AddWithValue(
-                    "@price",
-                    decimal.Parse(txtboxUService.Text)
-                );
-
+                cmd.Parameters.AddWithValue("@serviceName", txtboxUName.Text);
+                cmd.Parameters.AddWithValue("@price", decimal.Parse(txtboxUService.Text));
                 cmd.Parameters.AddWithValue("@id", id);
-
                 con.Open();
                 cmd.ExecuteNonQuery();
             }
-
             MessageBox.Show("Data has been Updated");
-
             txtboxUD.Clear();
             txtboxUName.Clear();
             txtboxUService.Clear();

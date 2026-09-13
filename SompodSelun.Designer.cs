@@ -176,6 +176,7 @@ namespace Multi_Booking_System
             this.labelTitle = new System.Windows.Forms.Label();
             this.labelHeader = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -189,7 +190,7 @@ namespace Multi_Booking_System
             this.btn1sompodGetserail.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold);
             this.btn1sompodGetserail.ForeColor = System.Drawing.Color.White;
             this.btn1sompodGetserail.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
-            this.btn1sompodGetserail.Location = new System.Drawing.Point(520, 170);
+            this.btn1sompodGetserail.Location = new System.Drawing.Point(520, 153);
             this.btn1sompodGetserail.Name = "btn1sompodGetserail";
             this.btn1sompodGetserail.Size = new System.Drawing.Size(420, 65);
             this.btn1sompodGetserail.TabIndex = 0;
@@ -205,7 +206,7 @@ namespace Multi_Booking_System
             this.btn2SompodReview.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold);
             this.btn2SompodReview.ForeColor = System.Drawing.Color.White;
             this.btn2SompodReview.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(64)))), ((int)(((byte)(91)))));
-            this.btn2SompodReview.Location = new System.Drawing.Point(520, 260);
+            this.btn2SompodReview.Location = new System.Drawing.Point(521, 238);
             this.btn2SompodReview.Name = "btn2SompodReview";
             this.btn2SompodReview.Size = new System.Drawing.Size(420, 65);
             this.btn2SompodReview.TabIndex = 1;
@@ -247,6 +248,7 @@ namespace Multi_Booking_System
             // guna2ShadowPanel1
             // 
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ShadowPanel1.Controls.Add(this.guna2Button1);
             this.guna2ShadowPanel1.Controls.Add(this.btn3sompodLogout);
             this.guna2ShadowPanel1.Controls.Add(this.btn4SompodBack);
             this.guna2ShadowPanel1.Controls.Add(this.btn2SompodReview);
@@ -297,6 +299,22 @@ namespace Multi_Booking_System
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // guna2Button1
+            // 
+            this.guna2Button1.Animated = true;
+            this.guna2Button1.BorderRadius = 12;
+            this.guna2Button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(45)))), ((int)(((byte)(66)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(64)))), ((int)(((byte)(91)))));
+            this.guna2Button1.Location = new System.Drawing.Point(525, 323);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(420, 65);
+            this.guna2Button1.TabIndex = 7;
+            this.guna2Button1.Text = "See   Reviews";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
             // SompodSelun
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -324,5 +342,6 @@ namespace Multi_Booking_System
         private Guna.UI2.WinForms.Guna2Button btn4SompodBack;
         private System.Windows.Forms.Label labelTitle;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }

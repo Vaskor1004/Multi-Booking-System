@@ -447,7 +447,7 @@ namespace Multi_Booking_System
             this.btnShahriarAdd.Animated = true;
             this.btnShahriarAdd.BorderRadius = 8;
             this.btnShahriarAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnShahriarAdd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(87)))), ((int)(((byte)(166)))));
+            this.btnShahriarAdd.FillColor = System.Drawing.Color.Fuchsia;
             this.btnShahriarAdd.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btnShahriarAdd.ForeColor = System.Drawing.Color.White;
             this.btnShahriarAdd.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(88)))), ((int)(((byte)(88)))));
@@ -490,6 +490,7 @@ namespace Multi_Booking_System
             this.labelUpdateTitle.Size = new System.Drawing.Size(261, 31);
             this.labelUpdateTitle.TabIndex = 1;
             this.labelUpdateTitle.Text = "Update / Delete Service";
+            this.labelUpdateTitle.Click += new System.EventHandler(this.labelUpdateTitle_Click);
             // 
             // label4
             // 

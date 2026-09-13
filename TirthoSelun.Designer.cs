@@ -183,8 +183,9 @@ namespace Multi_Booking_System
             this.btn4TirthoBack = new Guna.UI2.WinForms.Guna2Button();
             this.BtnLogOut = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labelHeader = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnSeeReview = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.guna2ShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -192,6 +193,7 @@ namespace Multi_Booking_System
             // 
             // guna2Panel1
             // 
+            this.guna2Panel1.Controls.Add(this.btnSeeReview);
             this.guna2Panel1.Controls.Add(this.labelTitle);
             this.guna2Panel1.Controls.Add(this.BtnGetSerial);
             this.guna2Panel1.Controls.Add(this.BtnReview);
@@ -257,7 +259,7 @@ namespace Multi_Booking_System
             this.BtnReview.Name = "BtnReview";
             this.BtnReview.Size = new System.Drawing.Size(220, 50);
             this.BtnReview.TabIndex = 1;
-            this.BtnReview.Text = "Review";
+            this.BtnReview.Text = "Give Review";
             this.BtnReview.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.BtnReview.TextOffset = new System.Drawing.Point(10, 0);
             this.BtnReview.Click += new System.EventHandler(this.BtnReview_Click);
@@ -315,6 +317,17 @@ namespace Multi_Booking_System
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(780, 480);
             this.guna2ShadowPanel1.TabIndex = 7;
             // 
+            // labelHeader
+            // 
+            this.labelHeader.AutoSize = true;
+            this.labelHeader.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(50)))), ((int)(((byte)(60)))));
+            this.labelHeader.Location = new System.Drawing.Point(290, 20);
+            this.labelHeader.Name = "labelHeader";
+            this.labelHeader.Size = new System.Drawing.Size(484, 54);
+            this.labelHeader.TabIndex = 4;
+            this.labelHeader.Text = "Welcome to Tirtho Store";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -328,16 +341,27 @@ namespace Multi_Booking_System
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
-            // labelHeader
+            // btnSeeReview
             // 
-            this.labelHeader.AutoSize = true;
-            this.labelHeader.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(50)))), ((int)(((byte)(60)))));
-            this.labelHeader.Location = new System.Drawing.Point(290, 20);
-            this.labelHeader.Name = "labelHeader";
-            this.labelHeader.Size = new System.Drawing.Size(484, 54);
-            this.labelHeader.TabIndex = 4;
-            this.labelHeader.Text = "Welcome to Tirtho Store";
+            this.btnSeeReview.Animated = true;
+            this.btnSeeReview.BackColor = System.Drawing.Color.Transparent;
+            this.btnSeeReview.BorderRadius = 15;
+            this.btnSeeReview.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(40)))));
+            this.btnSeeReview.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSeeReview.FillColor = System.Drawing.Color.Transparent;
+            this.btnSeeReview.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnSeeReview.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnSeeReview.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(20)))));
+            this.btnSeeReview.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnSeeReview.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnSeeReview.Location = new System.Drawing.Point(20, 231);
+            this.btnSeeReview.Name = "btnSeeReview";
+            this.btnSeeReview.Size = new System.Drawing.Size(220, 50);
+            this.btnSeeReview.TabIndex = 7;
+            this.btnSeeReview.Text = "See Review";
+            this.btnSeeReview.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btnSeeReview.TextOffset = new System.Drawing.Point(10, 0);
+            this.btnSeeReview.Click += new System.EventHandler(this.btnSeeReview_Click);
             // 
             // TirthoSelun
             // 
@@ -371,5 +395,6 @@ namespace Multi_Booking_System
         private Guna.UI2.WinForms.Guna2GradientPanel guna2Panel1;
         private System.Windows.Forms.Label labelTitle;
         private Guna.UI2.WinForms.Guna2ShadowPanel guna2ShadowPanel1;
+        private Guna.UI2.WinForms.Guna2Button btnSeeReview;
     }
 }

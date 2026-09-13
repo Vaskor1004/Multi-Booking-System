@@ -45,5 +45,12 @@ namespace Multi_Booking_System
             this.Hide();
 
         }
+
+        private void btnSeeReview_Click(object sender, EventArgs e)
+        {
+            SeeShahnazReview seeShahnazReview = new SeeShahnazReview();
+            seeShahnazReview.Show();
+            this.Hide();
+        }
     }
 }

@@ -48,5 +48,43 @@ namespace Multi_Booking_System
             loginForm.Show();
             this.Hide();
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (gridViewUsers.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Please select a user first.");
+                return;
+            }
+
+            int userId = Convert.ToInt32(
+                gridViewUsers.SelectedRows[0].Cells["id"].Value
+            );
+
+            DialogResult result = MessageBox.Show(
+                "Are you sure you want to delete this user?",
+                "Confirm Delete",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Warning
+            );
+
+            if (result == DialogResult.Yes)
+            {
+                string query = "DELETE FROM Users WHERE id = @id";
+
+                using (SqlConnection con = new SqlConnection(ConnectionString))
+                {
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+                        cmd.Parameters.AddWithValue("@id", userId);
+
+                        con.Open();
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+                MessageBox.Show("User deleted successfully.");
+                btnShow.PerformClick();
+            }
+        }
     }
 }

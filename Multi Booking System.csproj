@@ -228,6 +228,42 @@
     <Compile Include="RoxyStoreSadia.Designer.cs">
       <DependentUpon>RoxyStoreSadia.cs</DependentUpon>
     </Compile>
+    <Compile Include="SeeDiyaReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeeDiyaReview.Designer.cs">
+      <DependentUpon>SeeDiyaReview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeeRoxyReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeeRoxyReview.Designer.cs">
+      <DependentUpon>SeeRoxyReview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeeShahnazReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeeShahnazReview.Designer.cs">
+      <DependentUpon>SeeShahnazReview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeeShahriarReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeeShahriarReview.Designer.cs">
+      <DependentUpon>SeeShahriarReview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeeSompodReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeeSompodReview.Designer.cs">
+      <DependentUpon>SeeSompodReview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeeTirthoReview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeeTirthoReview.Designer.cs">
+      <DependentUpon>SeeTirthoReview.cs</DependentUpon>
+    </Compile>
     <Compile Include="SelunList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -510,6 +546,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RoxyStoreSadia.resx">
       <DependentUpon>RoxyStoreSadia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeeDiyaReview.resx">
+      <DependentUpon>SeeDiyaReview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeeRoxyReview.resx">
+      <DependentUpon>SeeRoxyReview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeeShahnazReview.resx">
+      <DependentUpon>SeeShahnazReview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeeShahriarReview.resx">
+      <DependentUpon>SeeShahriarReview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeeSompodReview.resx">
+      <DependentUpon>SeeSompodReview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeeTirthoReview.resx">
+      <DependentUpon>SeeTirthoReview.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SelunList.resx">
       <DependentUpon>SelunList.cs</DependentUpon>

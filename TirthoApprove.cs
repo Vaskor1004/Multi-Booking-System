@@ -23,42 +23,31 @@ namespace Multi_Booking_System
         private void btnTirthoCustomerSerial_Click(object sender, EventArgs e)
         {
             string query = @"
-        SELECT
-            B.bookingId,
+                    SELECT
+                    B.bookingId,
+                    U.name AS CustomerName,
+                    U.phone AS CustomerPhone,
+                    T.serviceName,
+                    T.price,
+                    B.bookingDate,
+                    B.status
 
-            U.name AS CustomerName,
+                    FROM Bookings B
 
-            U.phone AS CustomerPhone,
+                    INNER JOIN Users U
+                    ON B.customerId = U.id
+                    INNER JOIN BookingDetails BD
+                    ON B.bookingId = BD.bookingId
+                    INNER JOIN TirthoStore T
+                    ON BD.serviceId = T.id
+                    ORDER BY B.bookingId ASC";
 
-            T.serviceName,
+            using (SqlConnection con = new SqlConnection(ConnectionString))
 
-            T.price,
-
-            B.bookingDate,
-
-            B.status
-
-        FROM Bookings B
-
-        INNER JOIN Users U
-        ON B.customerId = U.id
-        INNER JOIN BookingDetails BD
-        ON B.bookingId = BD.bookingId
-        INNER JOIN TirthoStore T
-        ON BD.serviceId = T.id
-        ORDER BY B.bookingId ASC";
-
-            using (SqlConnection con =
-                   new SqlConnection(ConnectionString))
             {
-                SqlDataAdapter adapter =
-                    new SqlDataAdapter(query, con);
-
-                DataTable table =
-                    new DataTable();
-
+                SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+                DataTable table = new DataTable();
                 adapter.Fill(table);
-
                 gridViewTithoCustomerSerial.DataSource = table;
             }
         }
@@ -80,29 +69,20 @@ namespace Multi_Booking_System
             txtboxTirthoCustomerSerial.Text = bookingId.ToString();
 
             string query = @"
-        UPDATE Bookings
-        SET status = 'Approved'
-        WHERE bookingId = @bookingId";
+                    UPDATE Bookings
+                    SET status = 'Approved'
+                    WHERE bookingId = @bookingId";
 
-            using (SqlConnection con =
-                   new SqlConnection(ConnectionString))
+            using (SqlConnection con = new SqlConnection(ConnectionString))
+
             {
-                SqlCommand cmd =
-                    new SqlCommand(query, con);
-
-                cmd.Parameters.AddWithValue(
-                    "@bookingId",
-                    bookingId
-                );
-
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@bookingId", bookingId);
                 con.Open();
-
                 cmd.ExecuteNonQuery();
             }
 
             MessageBox.Show("Booking Approved Successfully!");
-
-            // আবার GridView refresh হবে
             btnTirthoCustomerSerial_Click(null, null);
         }
 
@@ -200,10 +180,7 @@ namespace Multi_Booking_System
                         con,
                         transaction
                     );
-                    cmdDetails.Parameters.AddWithValue(
-                        "@bookingId",
-                        bookingId
-                    );
+                    cmdDetails.Parameters.AddWithValue("@bookingId", bookingId);
                     cmdDetails.ExecuteNonQuery();
                     SqlCommand cmdBooking = new SqlCommand(
                         deleteBookingQuery,
@@ -211,17 +188,12 @@ namespace Multi_Booking_System
                         transaction
                     );
 
-                    cmdBooking.Parameters.AddWithValue(
-                        "@bookingId",
-                        bookingId
-                    );
-
+                    cmdBooking.Parameters.AddWithValue("@bookingId", bookingId);
                     int rowsAffected = cmdBooking.ExecuteNonQuery();
 
                     if (rowsAffected > 0)
                     {
                         transaction.Commit();
-
                         MessageBox.Show(
                             "Booking Completed Successfully!",
                             "Success",

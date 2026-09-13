@@ -13,8 +13,7 @@ namespace Multi_Booking_System
 
         int customerId;
 
-        DataTable selectedServices =
-            new DataTable();
+        DataTable selectedServices = new DataTable();
 
         public TirthoDashboard()
         {
@@ -22,28 +21,14 @@ namespace Multi_Booking_System
 
             customerId = Login.userId;
 
-            selectedServices.Columns.Add(
-                "id",
-                typeof(int)
-            );
+            selectedServices.Columns.Add("id", typeof(int));
+            selectedServices.Columns.Add("serviceName", typeof(string));
+            selectedServices.Columns.Add("price", typeof(decimal));
+            gridViewSelectedServices.DataSource = selectedServices;
 
-            selectedServices.Columns.Add(
-                "serviceName",
-                typeof(string)
-            );
-
-            selectedServices.Columns.Add(
-                "price",
-                typeof(decimal)
-            );
-
-            gridViewSelectedServices.DataSource =
-                selectedServices;
         }
 
-        private void guna2Button1_Click(
-            object sender,
-            EventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
             string query =
                 "SELECT * FROM TirthoStore";
@@ -51,16 +36,11 @@ namespace Multi_Booking_System
             using (SqlConnection con =
                    new SqlConnection(ConnectionString))
             {
-                SqlDataAdapter adapter =
-                    new SqlDataAdapter(query, con);
-
-                DataTable table =
-                    new DataTable();
-
+                SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+                DataTable table = new DataTable();
                 adapter.Fill(table);
+                gridViewTirthoStore.DataSource = table;
 
-                gridViewTirthoStore.DataSource =
-                    table;
             }
         }
        
@@ -68,10 +48,7 @@ namespace Multi_Booking_System
         {
             if (gridViewTirthoStore.CurrentRow == null)
             {
-                MessageBox.Show(
-                    "Please select a service first!"
-                );
-
+                MessageBox.Show("Please select a service first!");
                 return;
             }
 
@@ -97,29 +74,19 @@ namespace Multi_Booking_System
                     .Cells["price"]
                     .Value
                 );
-            foreach (DataRow row
-                     in selectedServices.Rows)
+            foreach (DataRow row in selectedServices.Rows)
+
             {
                 if (Convert.ToInt32(row["id"])
                     == serviceId)
                 {
-                    MessageBox.Show(
-                        "This service is already selected!"
-                    );
-
+                    MessageBox.Show("This service is already selected!");
                     return;
                 }
             }
 
-
-            selectedServices.Rows.Add(
-                serviceId,
-                serviceName,
-                price
-            );
-            MessageBox.Show(
-                "Service Added!"
-            );
+            selectedServices.Rows.Add(serviceId, serviceName, price);
+            MessageBox.Show("Service Added!");
         }
        
 
@@ -132,65 +99,38 @@ namespace Multi_Booking_System
         {
             if (selectedServices.Rows.Count == 0)
             {
-                MessageBox.Show(
-                    "Please select at least one service!"
-                );
-
+                MessageBox.Show("Please select at least one service!");
                 return;
             }
 
-            using (SqlConnection con =
-                   new SqlConnection(ConnectionString))
+            using (SqlConnection con = new SqlConnection(ConnectionString))
             {
                 con.Open();
 
-                SqlTransaction transaction =
-                    con.BeginTransaction();
-
+                SqlTransaction transaction = con.BeginTransaction();
                 try
                 {
                     string bookingQuery = @"
                         INSERT INTO Bookings
                         (customerId, status)
-
                         OUTPUT INSERTED.bookingId
-
                         VALUES
                         (@customerId, 'Pending')";
 
-                    SqlCommand bookingCmd =
-                        new SqlCommand(
-                            bookingQuery,
-                            con,
-                            transaction
-                        );
+                    SqlCommand bookingCmd = new SqlCommand(bookingQuery, con, transaction);
+                    bookingCmd.Parameters.AddWithValue("@customerId", customerId);
 
-                    bookingCmd.Parameters.AddWithValue(
-                        "@customerId",
-                        customerId
-                    );
-
-                    int bookingId =
-                        Convert.ToInt32(
-                            bookingCmd.ExecuteScalar()
-                        );
+                    int bookingId = Convert.ToInt32(bookingCmd.ExecuteScalar());
                     foreach (DataRow row
                              in selectedServices.Rows)
                     {
                         string detailQuery = @"
                             INSERT INTO BookingDetails
                             (bookingId, serviceId)
-
                             VALUES
                             (@bookingId, @serviceId)";
 
-                        SqlCommand detailCmd =
-                            new SqlCommand(
-                                detailQuery,
-                                con,
-                                transaction
-                            );
-
+                        SqlCommand detailCmd = new SqlCommand(detailQuery, con, transaction);
                         detailCmd.Parameters.AddWithValue(
                             "@bookingId",
                             bookingId
@@ -207,9 +147,7 @@ namespace Multi_Booking_System
                     }
                     transaction.Commit();
 
-                    MessageBox.Show(
-                        "Serial Booked Successfully!"
-                    );
+                    MessageBox.Show("Serial Booked Successfully!");
 
                     selectedServices.Rows.Clear();
                 }
@@ -217,10 +155,7 @@ namespace Multi_Booking_System
                 {
                     transaction.Rollback();
 
-                    MessageBox.Show(
-                        "Booking Failed: "
-                        + ex.Message
-                    );
+                    MessageBox.Show("Booking Failed: " + ex.Message);
                 }
             }
         }

@@ -11,36 +11,42 @@ using System.Windows.Forms;
 
 namespace Multi_Booking_System
 {
-    public partial class ShahriarCustomerReview : Form
+    public partial class SeeDiyaReview : Form
     {
         string ConnectionString =
             "Data Source=LAPTOP-ETFSEMF8;Initial Catalog=mydb;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
-
-        public ShahriarCustomerReview()
+        public SeeDiyaReview()
         {
             InitializeComponent();
         }
 
-        private void btnShowService_Click(object sender, EventArgs e)
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            DiyaParlar diyaParlar = new DiyaParlar();
+            diyaParlar.Show();
+            this.Hide();
+        }
+
+        private void btnLoadReviews_Click(object sender, EventArgs e)
         {
             string query = @"
                 SELECT
-                    RS.ReviewID,
+                    RD.ReviewID,
 
                     U.id AS CustomerID,
 
                     U.name AS CustomerName,
 
-                    RS.Rating,
+                    RD.Rating,
 
-                    RS.ReviewText
+                    RD.ReviewText
 
-                FROM ReviewsShahriar RS
+                FROM ReviewsDiya RD
 
                 INNER JOIN Users U
-                ON RS.CustomerID = U.id
+                ON RD.CustomerID = U.id
 
-                ORDER BY RS.ReviewID ASC";
+                ORDER BY RD.ReviewID ASC";
 
             try
             {
@@ -54,7 +60,7 @@ namespace Multi_Booking_System
 
                         da.Fill(dt);
 
-                        dataGridViewReviews.DataSource = dt;
+                        gridViewReviews.DataSource = dt;
                     }
                 }
             }
@@ -68,12 +74,6 @@ namespace Multi_Booking_System
                 );
             }
         }
-
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            Shahriar shahriar = new Shahriar();
-            shahriar.Show();
-            this.Hide();
-        }
     }
+    
 }

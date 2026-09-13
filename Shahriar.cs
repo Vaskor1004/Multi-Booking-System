@@ -167,5 +167,10 @@ namespace Multi_Booking_System
             login.Show();
             this.Hide();
         }
+
+        private void labelUpdateTitle_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

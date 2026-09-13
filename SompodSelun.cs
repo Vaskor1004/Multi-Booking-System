@@ -49,5 +49,12 @@ namespace Multi_Booking_System
             login.Show();
             this.Hide();
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            SeeSompodReview seeSompodReview = new SeeSompodReview();
+            seeSompodReview.Show();
+            this.Hide();
+        }
     }
 }

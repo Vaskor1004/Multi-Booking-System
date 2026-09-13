@@ -11,17 +11,23 @@ using System.Windows.Forms;
 
 namespace Multi_Booking_System
 {
-    public partial class ShahriarCustomerReview : Form
+    public partial class SeeShahriarReview : Form
     {
         string ConnectionString =
-            "Data Source=LAPTOP-ETFSEMF8;Initial Catalog=mydb;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
-
-        public ShahriarCustomerReview()
+           "Data Source=LAPTOP-ETFSEMF8;Initial Catalog=mydb;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
+        public SeeShahriarReview()
         {
             InitializeComponent();
         }
 
-        private void btnShowService_Click(object sender, EventArgs e)
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            ShahriarSelun shahriarSelun = new ShahriarSelun();
+            shahriarSelun.Show();
+            this.Hide();
+        }
+
+        private void btnLoadReviews_Click(object sender, EventArgs e)
         {
             string query = @"
                 SELECT
@@ -67,13 +73,6 @@ namespace Multi_Booking_System
                     MessageBoxIcon.Error
                 );
             }
-        }
-
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            Shahriar shahriar = new Shahriar();
-            shahriar.Show();
-            this.Hide();
         }
     }
 }

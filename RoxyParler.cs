@@ -44,5 +44,12 @@ namespace Multi_Booking_System
             login.Show();
             this.Hide();
         }
+
+        private void btnSeeReview_Click(object sender, EventArgs e)
+        {
+            SeeRoxyReview seeRoxyReview = new SeeRoxyReview();
+            seeRoxyReview.Show();
+            this.Hide();
+        }
     }
 }

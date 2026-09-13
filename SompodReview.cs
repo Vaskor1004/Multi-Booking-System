@@ -112,7 +112,7 @@ namespace Multi_Booking_System
         {
            Sompod_Dashboard sompodDashboard = new Sompod_Dashboard();
             sompodDashboard.Show();
-            this.Hide();    
+            this.Hide();
         }
     }
 }

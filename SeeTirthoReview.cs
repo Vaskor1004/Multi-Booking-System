@@ -11,49 +11,47 @@ using System.Windows.Forms;
 
 namespace Multi_Booking_System
 {
-    public partial class ShahriarCustomerReview : Form
+    public partial class SeeTirthoReview : Form
     {
         string ConnectionString =
-            "Data Source=LAPTOP-ETFSEMF8;Initial Catalog=mydb;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
-
-        public ShahriarCustomerReview()
+           "Data Source=LAPTOP-ETFSEMF8;Initial Catalog=mydb;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
+        public SeeTirthoReview()
         {
             InitializeComponent();
         }
 
-        private void btnShowService_Click(object sender, EventArgs e)
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            TirthoSelun tirthoSelun = new TirthoSelun();
+            tirthoSelun.Show();
+            this.Hide();
+        }
+
+        private void btnLoadReviews_Click(object sender, EventArgs e)
         {
             string query = @"
                 SELECT
-                    RS.ReviewID,
-
+                    R.ReviewID,
                     U.id AS CustomerID,
-
                     U.name AS CustomerName,
+                    R.Rating,
+                    R.ReviewText
 
-                    RS.Rating,
-
-                    RS.ReviewText
-
-                FROM ReviewsShahriar RS
+                FROM ReviewsTirtho R
 
                 INNER JOIN Users U
-                ON RS.CustomerID = U.id
+                ON R.CustomerID = U.id
 
-                ORDER BY RS.ReviewID ASC";
+                ORDER BY R.ReviewID ASC";
 
             try
             {
-                using (SqlConnection con =
-                    new SqlConnection(ConnectionString))
+                using (SqlConnection con = new SqlConnection(ConnectionString))
                 {
-                    using (SqlDataAdapter da =
-                        new SqlDataAdapter(query, con))
+                    using (SqlDataAdapter da = new SqlDataAdapter(query, con))
                     {
                         DataTable dt = new DataTable();
-
                         da.Fill(dt);
-
                         dataGridViewReviews.DataSource = dt;
                     }
                 }
@@ -67,13 +65,6 @@ namespace Multi_Booking_System
                     MessageBoxIcon.Error
                 );
             }
-        }
-
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            Shahriar shahriar = new Shahriar();
-            shahriar.Show();
-            this.Hide();
         }
     }
 }

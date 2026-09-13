@@ -44,5 +44,12 @@ namespace Multi_Booking_System
             tirthoReview.Show();
             this.Hide();
         }
+
+        private void btnSeeReview_Click(object sender, EventArgs e)
+        {
+            SeeTirthoReview seeTirthoReview = new SeeTirthoReview();
+            seeTirthoReview.Show();
+            this.Hide();
+        }
     }
 }

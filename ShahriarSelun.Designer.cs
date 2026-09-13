@@ -173,6 +173,7 @@ namespace Multi_Booking_System
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelSidebar = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.panelImage = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.btnSeeReview = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelSidebar.SuspendLayout();
             this.panelImage.SuspendLayout();
@@ -209,7 +210,7 @@ namespace Multi_Booking_System
             this.btn2ShahriarReview.Name = "btn2ShahriarReview";
             this.btn2ShahriarReview.Size = new System.Drawing.Size(240, 55);
             this.btn2ShahriarReview.TabIndex = 1;
-            this.btn2ShahriarReview.Text = "Review";
+            this.btn2ShahriarReview.Text = "Give Review";
             this.btn2ShahriarReview.Click += new System.EventHandler(this.btn2ShahriarReview_Click);
             // 
             // btn3ShahriarLogout
@@ -274,6 +275,7 @@ namespace Multi_Booking_System
             // panelSidebar
             // 
             this.panelSidebar.BackColor = System.Drawing.Color.Transparent;
+            this.panelSidebar.Controls.Add(this.btnSeeReview);
             this.panelSidebar.Controls.Add(this.btn1ShahriarGetSerial);
             this.panelSidebar.Controls.Add(this.btn2ShahriarReview);
             this.panelSidebar.Controls.Add(this.btn4ShahriarBack);
@@ -305,6 +307,23 @@ namespace Multi_Booking_System
             this.panelImage.Size = new System.Drawing.Size(810, 480);
             this.panelImage.TabIndex = 6;
             // 
+            // btnSeeReview
+            // 
+            this.btnSeeReview.Animated = true;
+            this.btnSeeReview.BorderRadius = 10;
+            this.btnSeeReview.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSeeReview.FillColor = System.Drawing.Color.Transparent;
+            this.btnSeeReview.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold);
+            this.btnSeeReview.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(213)))), ((int)(((byte)(225)))));
+            this.btnSeeReview.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(182)))), ((int)(((byte)(212)))));
+            this.btnSeeReview.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btnSeeReview.Location = new System.Drawing.Point(20, 166);
+            this.btnSeeReview.Name = "btnSeeReview";
+            this.btnSeeReview.Size = new System.Drawing.Size(240, 55);
+            this.btnSeeReview.TabIndex = 7;
+            this.btnSeeReview.Text = "See Review";
+            this.btnSeeReview.Click += new System.EventHandler(this.btnSeeReview_Click);
+            // 
             // ShahriarSelun
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -335,6 +354,7 @@ namespace Multi_Booking_System
         private Guna.UI2.WinForms.Guna2Button btn4ShahriarBack;
         private Guna.UI2.WinForms.Guna2ShadowPanel panelSidebar;
         private Guna.UI2.WinForms.Guna2ShadowPanel panelImage;
+        private Guna.UI2.WinForms.Guna2Button btnSeeReview;
     }
 }
 

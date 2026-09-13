@@ -44,5 +44,12 @@ namespace Multi_Booking_System
             login.Show();
             this.Hide();
         }
+
+        private void btnSeeReview_Click(object sender, EventArgs e)
+        {
+            SeeDiyaReview seeDiyaReview = new SeeDiyaReview();
+            seeDiyaReview.Show();
+            this.Hide();
+        }
     }
 }
