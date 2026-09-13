@@ -293,17 +293,12 @@ namespace Multi_Booking_System
             this.BtnBeauty = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.guna2HtmlLabel3 = new System.Windows.Forms.Label();
-            this.panel3 = new Guna.UI2.WinForms.Guna2ShadowPanel();
-            this.BtnEvent = new Guna.UI2.WinForms.Guna2Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.guna2HtmlLabel4 = new System.Windows.Forms.Label();
             this.btnSerialdetail = new Guna.UI2.WinForms.Guna2Button();
+            this.btnLogOut = new Guna.UI2.WinForms.Guna2Button();
             this.panelSelun.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelBeuaty.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2HtmlLabel1
@@ -429,61 +424,6 @@ namespace Multi_Booking_System
             this.guna2HtmlLabel3.TabIndex = 0;
             this.guna2HtmlLabel3.Text = "Beauty Parlour";
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.Controls.Add(this.BtnEvent);
-            this.panel3.Controls.Add(this.pictureBox3);
-            this.panel3.Controls.Add(this.guna2HtmlLabel4);
-            this.panel3.FillColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(680, 120);
-            this.panel3.Name = "panel3";
-            this.panel3.Radius = 15;
-            this.panel3.ShadowColor = System.Drawing.Color.Black;
-            this.panel3.ShadowDepth = 30;
-            this.panel3.ShadowShift = 8;
-            this.panel3.Size = new System.Drawing.Size(280, 420);
-            this.panel3.TabIndex = 3;
-            // 
-            // BtnEvent
-            // 
-            this.BtnEvent.Animated = true;
-            this.BtnEvent.BorderRadius = 8;
-            this.BtnEvent.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnEvent.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.BtnEvent.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.BtnEvent.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.BtnEvent.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.BtnEvent.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
-            this.BtnEvent.ForeColor = System.Drawing.Color.White;
-            this.BtnEvent.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(120)))), ((int)(((byte)(240)))));
-            this.BtnEvent.Location = new System.Drawing.Point(20, 355);
-            this.BtnEvent.Name = "BtnEvent";
-            this.BtnEvent.Size = new System.Drawing.Size(240, 45);
-            this.BtnEvent.TabIndex = 2;
-            this.BtnEvent.Text = "View Events";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Multi_Booking_System.Properties.Resources.images__5_;
-            this.pictureBox3.Location = new System.Drawing.Point(20, 60);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(240, 275);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 1;
-            this.pictureBox3.TabStop = false;
-            // 
-            // guna2HtmlLabel4
-            // 
-            this.guna2HtmlLabel4.AutoSize = true;
-            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(15, 15);
-            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(166, 38);
-            this.guna2HtmlLabel4.TabIndex = 0;
-            this.guna2HtmlLabel4.Text = "Event Book";
-            // 
             // btnSerialdetail
             // 
             this.btnSerialdetail.Animated = true;
@@ -497,12 +437,32 @@ namespace Multi_Booking_System
             this.btnSerialdetail.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btnSerialdetail.ForeColor = System.Drawing.Color.White;
             this.btnSerialdetail.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(163)))), ((int)(((byte)(74)))));
-            this.btnSerialdetail.Location = new System.Drawing.Point(740, 30);
+            this.btnSerialdetail.Location = new System.Drawing.Point(718, 303);
             this.btnSerialdetail.Name = "btnSerialdetail";
             this.btnSerialdetail.Size = new System.Drawing.Size(220, 50);
             this.btnSerialdetail.TabIndex = 4;
             this.btnSerialdetail.Text = "My Serial Details";
             this.btnSerialdetail.Click += new System.EventHandler(this.btnSerialdetail_Click);
+            // 
+            // btnLogOut
+            // 
+            this.btnLogOut.Animated = true;
+            this.btnLogOut.BorderRadius = 10;
+            this.btnLogOut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogOut.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLogOut.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLogOut.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLogOut.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLogOut.FillColor = System.Drawing.Color.Maroon;
+            this.btnLogOut.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnLogOut.ForeColor = System.Drawing.Color.White;
+            this.btnLogOut.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(163)))), ((int)(((byte)(74)))));
+            this.btnLogOut.Location = new System.Drawing.Point(747, 415);
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.Size = new System.Drawing.Size(169, 50);
+            this.btnLogOut.TabIndex = 5;
+            this.btnLogOut.Text = "Log Out";
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // UserDashboard
             // 
@@ -510,8 +470,8 @@ namespace Multi_Booking_System
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(253)))));
             this.ClientSize = new System.Drawing.Size(1000, 600);
+            this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.btnSerialdetail);
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panelBeuaty);
             this.Controls.Add(this.panelSelun);
             this.Controls.Add(this.guna2HtmlLabel1);
@@ -524,9 +484,6 @@ namespace Multi_Booking_System
             this.panelBeuaty.ResumeLayout(false);
             this.panelBeuaty.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -537,17 +494,14 @@ namespace Multi_Booking_System
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2ShadowPanel panelSelun;
         private Guna.UI2.WinForms.Guna2ShadowPanel panelBeuaty;
-        private Guna.UI2.WinForms.Guna2ShadowPanel panel3;
         private System.Windows.Forms.Label guna2HtmlLabel2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2Button BtnSelun;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2Button BtnBeauty;
-        private System.Windows.Forms.Label guna2HtmlLabel4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private Guna.UI2.WinForms.Guna2Button BtnEvent;
         private Guna.UI2.WinForms.Guna2Button btnSerialdetail;
+        private Guna.UI2.WinForms.Guna2Button btnLogOut;
     }
 }
 

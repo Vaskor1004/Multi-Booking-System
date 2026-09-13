@@ -30,11 +30,8 @@ namespace Multi_Booking_System
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            string query =
-                "SELECT * FROM TirthoStore";
-
-            using (SqlConnection con =
-                   new SqlConnection(ConnectionString))
+            string query = "SELECT * FROM TirthoStore";
+            using (SqlConnection con = new SqlConnection(ConnectionString))
             {
                 SqlDataAdapter adapter = new SqlDataAdapter(query, con);
                 DataTable table = new DataTable();

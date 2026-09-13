@@ -42,7 +42,7 @@ namespace Multi_Booking_System
             int totalWidth =
                 panelSelun.Width +
                 panelBeuaty.Width +
-                panel3.Width +
+                //panel3.Width +
                 (gap * 2);
 
             // পুরো group screen-এর center এ
@@ -56,10 +56,10 @@ namespace Multi_Booking_System
                 120
             );
 
-            panel3.Location = new Point(
-                panelBeuaty.Right + gap,
-                120
-            );
+            //panel3.Location = new Point(
+            //    panelBeuaty.Right + gap,
+            //    120
+            //);
 
             // Dashboard title center
             guna2HtmlLabel1.Left =
@@ -95,6 +95,13 @@ namespace Multi_Booking_System
         {
             ParlarList parlarList = new ParlarList();
             parlarList.Show();
+            this.Hide();
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
             this.Hide();
         }
     }

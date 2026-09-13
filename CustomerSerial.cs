@@ -45,23 +45,16 @@ namespace Multi_Booking_System
 
         ORDER BY B.bookingId ASC";
 
-            using (SqlConnection con =
-                   new SqlConnection(ConnectionString))
+            using (SqlConnection con = new SqlConnection(ConnectionString))
             {
-                SqlCommand cmd =
-                    new SqlCommand(query, con);
-
+                SqlCommand cmd = new SqlCommand(query, con);
                 cmd.Parameters.AddWithValue(
                     "@customerId",
                     customerId
                 );
 
-                SqlDataAdapter adapter =
-                    new SqlDataAdapter(cmd);
-
-                DataTable table =
-                    new DataTable();
-
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                DataTable table = new DataTable();
                 adapter.Fill(table);
 
                 if (table.Rows.Count == 0)
@@ -108,23 +101,16 @@ namespace Multi_Booking_System
 
         ORDER BY B.bookingId ASC";
 
-            using (SqlConnection con =
-                   new SqlConnection(ConnectionString))
+            using (SqlConnection con = new SqlConnection(ConnectionString))
             {
-                SqlCommand cmd =
-                    new SqlCommand(query, con);
-
+                SqlCommand cmd = new SqlCommand(query, con);
                 cmd.Parameters.AddWithValue(
                     "@customerId",
                     customerId
                 );
 
-                SqlDataAdapter adapter =
-                    new SqlDataAdapter(cmd);
-
-                DataTable table =
-                    new DataTable();
-
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                DataTable table = new DataTable();
                 adapter.Fill(table);
 
                 if (table.Rows.Count == 0)
@@ -394,6 +380,13 @@ namespace Multi_Booking_System
                 gridViewSerial.DataSource =
                     table;
             }
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            UserDashboard userDashboard = new UserDashboard();
+            userDashboard.Show();
+            this.Hide();
         }
     }
 }

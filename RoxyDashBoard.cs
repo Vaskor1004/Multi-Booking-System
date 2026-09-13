@@ -55,19 +55,13 @@ namespace Multi_Booking_System
             string query =
                 "SELECT * FROM RoxyStore";
 
-            using (SqlConnection con =
-                   new SqlConnection(ConnectionString))
+            using (SqlConnection con = new SqlConnection(ConnectionString))
             {
-                SqlDataAdapter adapter =
-                    new SqlDataAdapter(query, con);
-
-                DataTable table =
-                    new DataTable();
-
+                SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+                DataTable table = new DataTable();
                 adapter.Fill(table);
+                gridViewRoxyStore.DataSource = table;
 
-                gridViewRoxyStore.DataSource =
-                    table;
             }
         }
 

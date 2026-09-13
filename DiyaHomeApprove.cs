@@ -47,21 +47,15 @@ namespace Multi_Booking_System
                     ORDER BY HBD.bookingId ASC";
 
 
-            using (SqlConnection con =
-                   new SqlConnection(ConnectionString))
+            using (SqlConnection con = new SqlConnection(ConnectionString))
             {
                 try
                 {
-                    SqlDataAdapter adapter =
-                        new SqlDataAdapter(query, con);
-
-                    DataTable table =
-                        new DataTable();
-
+                    SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+                    DataTable table = new DataTable();
                     adapter.Fill(table);
+                    gridViewDiyaHomeBooking.DataSource = table;
 
-                    gridViewDiyaHomeBooking.DataSource =
-                        table;
                 }
                 catch (Exception ex)
                 {
@@ -83,8 +77,6 @@ namespace Multi_Booking_System
 
                 return;
             }
-
-
             int bookingId =
                 Convert.ToInt32(
                      gridViewDiyaHomeBooking
@@ -92,58 +84,27 @@ namespace Multi_Booking_System
                     .Cells["bookingId"]
                     .Value
                 );
-
-
-            txtBookingId.Text =
-                bookingId.ToString();
-
-
-            // ==========================================
-            // UPDATE BOOKING STATUS
-            // ==========================================
-
+            txtBookingId.Text = bookingId.ToString();
             string query = @"
                 UPDATE HomeBookingsDiya
-
                 SET status = 'Approved'
-
                 WHERE bookingId = @bookingId";
 
-
-            using (SqlConnection con =
-                   new SqlConnection(ConnectionString))
+            using (SqlConnection con = new SqlConnection(ConnectionString))
             {
                 try
                 {
-                    SqlCommand cmd =
-                        new SqlCommand(
-                            query,
-                            con
-                        );
-
-
+                    SqlCommand cmd = new SqlCommand(query, con);
                     cmd.Parameters.AddWithValue(
                         "@bookingId",
                         bookingId
                     );
-
-
                     con.Open();
-
-
-                    int rows =
-                        cmd.ExecuteNonQuery();
-
-
+                    int rows = cmd.ExecuteNonQuery();
                     if (rows > 0)
                     {
-                        MessageBox.Show(
-                            "Home Service Booking Approved Successfully!"
-                        );
+                        MessageBox.Show("Home Service Booking Approved Successfully!");
                     }
-
-                    // Refresh GridView
-
                     btnRefresh_Click(null, null);
                 }
                 catch (Exception ex)
@@ -167,8 +128,7 @@ namespace Multi_Booking_System
                     .Cells["bookingId"]
                     .Value
                 );
-            txtBookingId.Text =
-                bookingId.ToString();
+            txtBookingId.Text = bookingId.ToString();
         }
 
         private void btnBack_Click(object sender, EventArgs e)
