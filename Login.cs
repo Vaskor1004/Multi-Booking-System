@@ -22,7 +22,6 @@ namespace Multi_Booking_System
                              FROM users
                              WHERE username = @name
                              AND password = @password";
-
             using (SqlConnection con = new SqlConnection(ConnectionString))
             {
                 SqlCommand cmd = new SqlCommand(query, con);
@@ -34,8 +33,6 @@ namespace Multi_Booking_System
                 string username = txtboxUsernml.Text;
                 string userType = null;
                 var reader = cmd.ExecuteReader();
-                
-
                 while (reader.Read())
                 {
                     userId = reader.GetInt32(0);

@@ -46,21 +46,16 @@ namespace Multi_Booking_System
                     ORDER BY HB.bookingId ASC";
 
 
-            using (SqlConnection con =
-                   new SqlConnection(ConnectionString))
+            using (SqlConnection con = new SqlConnection(ConnectionString))
+
             {
                 try
                 {
-                    SqlDataAdapter adapter =
-                        new SqlDataAdapter(query, con);
-
-                    DataTable table =
-                        new DataTable();
-
+                    SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+                    DataTable table = new DataTable();
                     adapter.Fill(table);
+                    gridViewRoxyHomeBooking.DataSource = table;
 
-                    gridViewRoxyHomeBooking.DataSource =
-                        table;
                 }
                 catch (Exception ex)
                 {
@@ -83,18 +78,14 @@ namespace Multi_Booking_System
                     .Cells["bookingId"]
                     .Value
                 );
-            txtBookingId.Text =
-                bookingId.ToString();
+            txtBookingId.Text = bookingId.ToString();
         }
 
         private void btnApprove_Click(object sender, EventArgs e)
         {
             if (gridViewRoxyHomeBooking.CurrentRow == null)
             {
-                MessageBox.Show(
-                    "Please select a booking first."
-                );
-
+                MessageBox.Show("Please select a booking first.");
                 return;
             }
             int bookingId =
@@ -104,8 +95,7 @@ namespace Multi_Booking_System
                     .Cells["bookingId"]
                     .Value
                 );
-            txtBookingId.Text =
-                bookingId.ToString();
+            txtBookingId.Text = bookingId.ToString();
             string query = @"
                 UPDATE HomeBookingsRoxy
 
@@ -114,29 +104,19 @@ namespace Multi_Booking_System
                 WHERE bookingId = @bookingId";
 
 
-            using (SqlConnection con =
-                   new SqlConnection(ConnectionString))
+            using (SqlConnection con = new SqlConnection(ConnectionString))
+
             {
                 try
                 {
-                    SqlCommand cmd =
-                        new SqlCommand(
-                            query,
-                            con
-                        );
-
-
+                    SqlCommand cmd = new SqlCommand(query, con);
                     cmd.Parameters.AddWithValue(
                         "@bookingId",
                         bookingId
                     );
-
-
                     con.Open();
+                    int rows = cmd.ExecuteNonQuery();
 
-
-                    int rows =
-                        cmd.ExecuteNonQuery();
 
 
                     if (rows > 0)

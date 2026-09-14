@@ -53,12 +53,10 @@ namespace Multi_Booking_System
                 "workerName",
                 typeof(string)
             );
-
             selectedWorkers.Columns.Add(
                 "phone",
                 typeof(string)
             );
-
             selectedWorkers.Columns.Add(
                 "status",
                 typeof(string)
@@ -259,8 +257,6 @@ namespace Multi_Booking_System
                                 @serviceId
                             );
                         ";
-
-
                     foreach (DataRow row in selectedServices.Rows)
                     {
                         int serviceId =

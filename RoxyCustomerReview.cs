@@ -40,9 +40,7 @@ namespace Multi_Booking_System
                     RR.Rating,
 
                     RR.ReviewText
-
                 FROM ReviewsRoxy RR
-
                 INNER JOIN Users U
                 ON RR.CustomerID = U.id
 
@@ -50,11 +48,9 @@ namespace Multi_Booking_System
 
             try
             {
-                using (SqlConnection con =
-                    new SqlConnection(ConnectionString))
+                using (SqlConnection con = new SqlConnection(ConnectionString))
                 {
-                    using (SqlDataAdapter da =
-                        new SqlDataAdapter(query, con))
+                    using (SqlDataAdapter da = new SqlDataAdapter(query, con))
                     {
                         DataTable dt = new DataTable();
 
