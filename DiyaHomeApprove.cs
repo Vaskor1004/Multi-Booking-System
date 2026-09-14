@@ -46,7 +46,6 @@ namespace Multi_Booking_System
                     ON HBDD.serviceId = D.id
                     ORDER BY HBD.bookingId ASC";
 
-
             using (SqlConnection con = new SqlConnection(ConnectionString))
             {
                 try

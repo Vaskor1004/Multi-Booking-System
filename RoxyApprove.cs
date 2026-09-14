@@ -115,8 +115,6 @@ namespace Multi_Booking_System
             }
 
             MessageBox.Show("Booking Approved Successfully!");
-
-            // আবার GridView refresh হবে
             btnRoxyCustomerSerial_Click(null, null);
         }
 

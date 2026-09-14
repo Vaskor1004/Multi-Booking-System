@@ -24,25 +24,19 @@ namespace Multi_Booking_System
 
         private void btnSubmitReview_Click(object sender, EventArgs e)
         {
-            // Check Rating
+            
             if (SompodRating.SelectedIndex == -1)
             {
                 MessageBox.Show("Please select a rating.");
                 return;
             }
-
-            // Check Review
             if (string.IsNullOrWhiteSpace(txtReview.Text))
             {
                 MessageBox.Show("Please write your review.");
                 return;
             }
-
-            // Get values
             int rating = Convert.ToInt32(SompodRating.SelectedItem);
             string reviewText = txtReview.Text.Trim();
-
-            // SQL Query
             string query = @"
                 INSERT INTO ReviewsSompod
                 (
@@ -59,11 +53,9 @@ namespace Multi_Booking_System
 
             try
             {
-                using (SqlConnection con =
-                    new SqlConnection(ConnectionString))
+                using (SqlConnection con = new SqlConnection(ConnectionString))
                 {
-                    using (SqlCommand cmd =
-                        new SqlCommand(query, con))
+                    using (SqlCommand cmd = new SqlCommand(query, con))
                     {
                         cmd.Parameters.AddWithValue(
                             "@CustomerID",
@@ -92,8 +84,6 @@ namespace Multi_Booking_System
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information
                 );
-
-                // Clear form
                 SompodRating.SelectedIndex = -1;
                 txtReview.Clear();
             }
@@ -107,7 +97,6 @@ namespace Multi_Booking_System
                 );
             }
         }
-
         private void btnClose_Click(object sender, EventArgs e)
         {
            Sompod_Dashboard sompodDashboard = new Sompod_Dashboard();

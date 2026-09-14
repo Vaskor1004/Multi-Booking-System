@@ -90,12 +90,7 @@ namespace Multi_Booking_System
                     .Cells["bookingId"]
                     .Value
                 );
-            txtBookingId.Text =
-                bookingId.ToString();
-            // ==========================================
-            // UPDATE BOOKING STATUS
-            // ==========================================
-
+            txtBookingId.Text = bookingId.ToString();
             string query = @"
                 UPDATE HomeBookingsShahnaz
                 SET status = 'Approved'
@@ -124,8 +119,6 @@ namespace Multi_Booking_System
                             "Home Service Booking Approved Successfully!"
                         );
                     }
-
-                    // Refresh GridView
                     btnRefresh_Click(null, null);
                 }
                 catch (Exception ex)

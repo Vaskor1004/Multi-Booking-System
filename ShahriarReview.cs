@@ -24,25 +24,18 @@ namespace Multi_Booking_System
 
         private void btnSubmitReview_Click(object sender, EventArgs e)
         {
-            // Check Rating
             if (ShahriarRating.SelectedIndex == -1)
             {
                 MessageBox.Show("Please select a rating.");
                 return;
             }
-
-            // Check Review
             if (string.IsNullOrWhiteSpace(txtReview.Text))
             {
                 MessageBox.Show("Please write your review.");
                 return;
             }
-
-            // Get values
             int rating = Convert.ToInt32(ShahriarRating.SelectedItem);
             string reviewText = txtReview.Text.Trim();
-
-            // SQL Query
             string query = @"
                 INSERT INTO ReviewsShahriar
                 (
@@ -92,8 +85,6 @@ namespace Multi_Booking_System
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information
                 );
-
-                // Clear form
                 ShahriarRating.SelectedIndex = -1;
                 txtReview.Clear();
             }
@@ -107,7 +98,6 @@ namespace Multi_Booking_System
                 );
             }
         }
-
         private void btnClose_Click(object sender, EventArgs e)
         {
             ShahriarDashboard dashboard = new ShahriarDashboard();

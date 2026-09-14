@@ -97,8 +97,6 @@ namespace Multi_Booking_System
 
                 return;
             }
-
-
             int bookingId =
                 Convert.ToInt32(
                     gridViewRoxyHomeBooking
@@ -106,16 +104,8 @@ namespace Multi_Booking_System
                     .Cells["bookingId"]
                     .Value
                 );
-
-
             txtBookingId.Text =
                 bookingId.ToString();
-
-
-            // ==========================================
-            // UPDATE BOOKING STATUS
-            // ==========================================
-
             string query = @"
                 UPDATE HomeBookingsRoxy
 
@@ -155,9 +145,6 @@ namespace Multi_Booking_System
                             "Home Service Booking Approved Successfully!"
                         );
                     }
-
-                    // Refresh GridView
-
                     btnRefresh_Click(null, null);
                 }
                 catch (Exception ex)

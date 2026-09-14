@@ -138,11 +138,8 @@ namespace Multi_Booking_System
                 SqlCommand cmd = new SqlCommand(checkQuery, con);
 
                 cmd.Parameters.AddWithValue("@bookingId", bookingId);
-
                 con.Open();
-
                 object result = cmd.ExecuteScalar();
-
                 if (result != null)
                 {
                     status = result.ToString();
@@ -156,7 +153,6 @@ namespace Multi_Booking_System
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Warning
                 );
-
                 return;
             }
             string deleteDetailsQuery = @"

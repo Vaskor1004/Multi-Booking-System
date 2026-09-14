@@ -158,7 +158,6 @@ namespace Multi_Booking_System
                 serviceName,
                 price
             );
-            //gridViewSelectedServices.DataSource = selectedServices;
             MessageBox.Show(
                 "Service Added!"
             );
@@ -174,7 +173,6 @@ namespace Multi_Booking_System
 
                 return;
             }
-            // Get Worker ID
             int workerId =
                 Convert.ToInt32(
                     gridViewAvailableWorkers
@@ -182,28 +180,24 @@ namespace Multi_Booking_System
                     .Cells["workerId"]
                     .Value
                 );
-            // Get Worker Name
             string workerName =
                 gridViewAvailableWorkers
                 .CurrentRow
                 .Cells["workerName"]
                 .Value
                 .ToString();
-            // Get Phone
             string phone =
                 gridViewAvailableWorkers
                 .CurrentRow
                 .Cells["phone"]
                 .Value
                 .ToString();
-            // Get Status
             string status =
                 gridViewAvailableWorkers
                 .CurrentRow
                 .Cells["status"]
                 .Value
                 .ToString();
-            // Check if worker already selected
             foreach (DataRow row
                      in selectedWorkers.Rows)
             {
@@ -217,7 +211,6 @@ namespace Multi_Booking_System
                     return;
                 }
             }
-            // Add worker to Selected Worker table
             selectedWorkers.Rows.Add(
                 workerId,
                 workerName,
@@ -231,79 +224,31 @@ namespace Multi_Booking_System
 
         private void btnBookSerial_Click(object sender, EventArgs e)
         {
-            // ==========================================
-            // CHECK CUSTOMER
-            // ==========================================
-
+            
             if (customerId <= 0)
             {
                 MessageBox.Show("Customer not found!");
                 return;
             }
-
-
-            // ==========================================
-            // CHECK WORKER
-            // ==========================================
-
             if (selectedWorkers.Rows.Count == 0)
             {
                 MessageBox.Show("Please select a worker first!");
                 return;
             }
-
-
-            // ==========================================
-            // CHECK SERVICE
-            // ==========================================
-
             if (selectedServices.Rows.Count == 0)
             {
                 MessageBox.Show("Please select at least one service!");
                 return;
             }
-
-
-            // ==========================================
-            // GET SELECTED WORKER
-            // ==========================================
-
             int workerId =
                 Convert.ToInt32(
                     selectedWorkers.Rows[0]["workerId"]
                 );
-
-
-            // ==========================================
-            // GET DATE AND TIME
-            // ==========================================
-
             DateTime bookingDate =
                 dateTimePicker2.Value.Date;
 
             TimeSpan bookingTime =
                 dateTimePicker1.Value.TimeOfDay;
-
-
-            // ==========================================
-            // GET ADDRESS
-            // ==========================================
-
-            //string customerAddress =
-            //    txtAddress.Text.Trim();
-
-
-            //if (customerAddress == "")
-            //{
-            //    MessageBox.Show("Please enter your address!");
-            //    return;
-            //}
-
-
-            // ==========================================
-            // DATABASE OPERATION
-            // ==========================================
-
             using (SqlConnection con =
                    new SqlConnection(ConnectionString))
             {
@@ -314,10 +259,6 @@ namespace Multi_Booking_System
 
                 try
                 {
-                    // ==========================================
-                    // STEP 1: INSERT INTO HomeBookingsRoxy
-                    // ==========================================
-
                     string bookingQuery = @"
                 INSERT INTO HomeBookingsShahnaz
                 (
@@ -375,12 +316,6 @@ namespace Multi_Booking_System
                                 cmd.ExecuteScalar()
                             );
                     }
-
-
-                    // ==========================================
-                    // STEP 2: INSERT SELECTED SERVICES
-                    // ==========================================
-
                     string detailQuery = @"
                 INSERT INTO HomeBookingDetailsShahnaz
                 (
@@ -394,9 +329,7 @@ namespace Multi_Booking_System
                 );
             ";
 
-
-                    foreach (DataRow row
-                             in selectedServices.Rows)
+                    foreach (DataRow row in selectedServices.Rows)
                     {
                         int serviceId =
                             Convert.ToInt32(
@@ -422,19 +355,11 @@ namespace Multi_Booking_System
                     }
                     transaction.Commit();
                     MessageBox.Show("Appointment booked successfully!");
-
-                    // ==========================================
-                    // CLEAR SELECTED DATA
-                    // ==========================================
-
                     selectedServices.Clear();
                     selectedWorkers.Clear();
                 }
                 catch (Exception ex)
                 {
-                    // If anything goes wrong,
-                    // undo all database changes
-
                     transaction.Rollback();
 
                     MessageBox.Show(

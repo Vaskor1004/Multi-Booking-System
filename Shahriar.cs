@@ -110,13 +110,6 @@ namespace Multi_Booking_System
             btnShahriarCustomerShow_Click(null, null);
         }
 
-       /* private void ShahriarGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            txtId.Text = ShahriarGridView.CurrentRow.Cells["id"].Value.ToString();
-            txtUpdateServiceName.Text = ShahriarGridView.CurrentRow.Cells["serviceName"].Value.ToString();
-            txtUpdatePrice.Text = ShahriarGridView.CurrentRow.Cells["price"].Value.ToString();
-        }
-       */
         private void btnShahriarDelete_Click(object sender, EventArgs e)
         {
             if (txtId.Text == "")

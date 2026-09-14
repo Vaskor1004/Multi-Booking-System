@@ -437,7 +437,7 @@ namespace Multi_Booking_System
             this.btnSerialdetail.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btnSerialdetail.ForeColor = System.Drawing.Color.White;
             this.btnSerialdetail.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(163)))), ((int)(((byte)(74)))));
-            this.btnSerialdetail.Location = new System.Drawing.Point(718, 303);
+            this.btnSerialdetail.Location = new System.Drawing.Point(759, 335);
             this.btnSerialdetail.Name = "btnSerialdetail";
             this.btnSerialdetail.Size = new System.Drawing.Size(220, 50);
             this.btnSerialdetail.TabIndex = 4;
@@ -457,7 +457,7 @@ namespace Multi_Booking_System
             this.btnLogOut.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.btnLogOut.ForeColor = System.Drawing.Color.White;
             this.btnLogOut.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(163)))), ((int)(((byte)(74)))));
-            this.btnLogOut.Location = new System.Drawing.Point(747, 415);
+            this.btnLogOut.Location = new System.Drawing.Point(679, 538);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(169, 50);
             this.btnLogOut.TabIndex = 5;

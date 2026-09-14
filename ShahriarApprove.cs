@@ -96,8 +96,6 @@ namespace Multi_Booking_System
             }
 
             MessageBox.Show("Booking Approved Successfully!");
-
-            // আবার GridView refresh হবে
             txtboxid.Clear();
             guna2Button1_Click(null, null);
         }

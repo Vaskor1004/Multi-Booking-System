@@ -29,19 +29,13 @@ namespace Multi_Booking_System
                 MessageBox.Show("Please select a rating.");
                 return;
             }
-
-            // Check Review
             if (string.IsNullOrWhiteSpace(txtReview.Text))
             {
                 MessageBox.Show("Please write your review.");
                 return;
             }
-
-            // Get values
             int rating = Convert.ToInt32(DiyaRating.SelectedItem);
             string reviewText = txtReview.Text.Trim();
-
-            // SQL Query
             string query = @"
                 INSERT INTO ReviewsDiya
                 (
@@ -91,8 +85,6 @@ namespace Multi_Booking_System
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information
                 );
-
-                // Clear form
                 DiyaRating.SelectedIndex = -1;
                 txtReview.Clear();
             }

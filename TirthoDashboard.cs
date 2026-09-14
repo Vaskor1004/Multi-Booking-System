@@ -40,7 +40,6 @@ namespace Multi_Booking_System
 
             }
         }
-       
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             if (gridViewTirthoStore.CurrentRow == null)

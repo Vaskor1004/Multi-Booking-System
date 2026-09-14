@@ -51,9 +51,9 @@ namespace Multi_Booking_System
             txtboxShahnazCustomerSerial.Text = bookingId.ToString();
 
             string query = @"
-        UPDATE BookingsShahnaz
-        SET status = 'Approved'
-        WHERE bookingId = @bookingId";
+                UPDATE BookingsShahnaz
+                SET status = 'Approved'
+                WHERE bookingId = @bookingId";
 
             using (SqlConnection con =
                    new SqlConnection(ConnectionString))
@@ -72,38 +72,36 @@ namespace Multi_Booking_System
             }
 
             MessageBox.Show("Booking Approved Successfully!");
-
-            // আবার GridView refresh হবে
             btnShahnazCustomerSerial_Click(null, null);
         }
 
         private void btnShahnazCustomerSerial_Click(object sender, EventArgs e)
         {
             string query = @"
-        SELECT
-            BS.bookingId,
+                    SELECT
+                        BS.bookingId,
 
-            U.name AS CustomerName,
+                        U.name AS CustomerName,
 
-            U.phone AS CustomerPhone,
+                        U.phone AS CustomerPhone,
 
-            S.serviceName,
+                        S.serviceName,
 
-            S.price,
+                        S.price,
 
-            BS.bookingDate,
+                        BS.bookingDate,
 
-            BS.status
+                        BS.status
 
-        FROM BookingsShahnaz BS
+                    FROM BookingsShahnaz BS
 
-        INNER JOIN Users U
-        ON BS.customerId = U.id
-        INNER JOIN BookingDetailsShahnaz BDS
-        ON BS.bookingId = BDS.bookingId
-        INNER JOIN ShahnazStore S
-        ON BDS.serviceId = S.id
-        ORDER BY BS.bookingId ASC";
+                    INNER JOIN Users U
+                    ON BS.customerId = U.id
+                    INNER JOIN BookingDetailsShahnaz BDS
+                    ON BS.bookingId = BDS.bookingId
+                    INNER JOIN ShahnazStore S
+                    ON BDS.serviceId = S.id
+                    ORDER BY BS.bookingId ASC";
 
             using (SqlConnection con =
                    new SqlConnection(ConnectionString))

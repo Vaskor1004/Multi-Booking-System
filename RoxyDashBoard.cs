@@ -118,9 +118,6 @@ namespace Multi_Booking_System
                 serviceName,
                 price
             );
-
-            //gridViewSelectedServices.DataSource = selectedServices;
-
             MessageBox.Show(
                 "Service Added!"
             );

@@ -81,7 +81,6 @@ namespace Multi_Booking_System
             txtboxUService.Clear();
             BtnShow_Click(null, null);
         }
-
         private void gridviewTirtho_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             txtboxUD.Text = gridviewTirtho.CurrentRow.Cells["id"].Value.ToString();
@@ -118,16 +117,12 @@ namespace Multi_Booking_System
             txtboxUService.Clear();
             BtnShow_Click(null, null);
         }
-
-      
-
         private void btnNext_Click(object sender, EventArgs e)
         {
             TirthoApprove tirthoApprove = new TirthoApprove();
             tirthoApprove.Show();
             this.Hide();
         }
-
         private void btnLogout_Click(object sender, EventArgs e)
         {
             Login login = new Login();
