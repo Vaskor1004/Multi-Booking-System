@@ -129,7 +129,6 @@ namespace Multi_Booking_System
                             "@bookingId",
                             bookingId
                         );
-
                         detailCmd.Parameters.AddWithValue(
                             "@serviceId",
                             Convert.ToInt32(
@@ -140,15 +139,12 @@ namespace Multi_Booking_System
                         detailCmd.ExecuteNonQuery();
                     }
                     transaction.Commit();
-
                     MessageBox.Show("Serial Booked Successfully!");
-
                     selectedServices.Rows.Clear();
                 }
                 catch (Exception ex)
                 {
                     transaction.Rollback();
-
                     MessageBox.Show("Booking Failed: " + ex.Message);
                 }
             }
