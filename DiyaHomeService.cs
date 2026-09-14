@@ -71,7 +71,7 @@ namespace Multi_Booking_System
         private void btnShowServices_Click(object sender, EventArgs e)
         {
             string query =
-                "SELECT * FROM DiyaStore";
+                "SELECT * FROM DiyaStore";  
 
             using (SqlConnection con = new SqlConnection(ConnectionString))
             {
@@ -86,7 +86,6 @@ namespace Multi_Booking_System
         {
             string query =
                "SELECT * FROM  DiyaWorkers";
-
             using (SqlConnection con = new SqlConnection(ConnectionString))
             {
                 SqlDataAdapter adapter = new SqlDataAdapter(query, con);
@@ -95,7 +94,6 @@ namespace Multi_Booking_System
                 gridViewAvailableWorkers.DataSource = table;
             }
         }
-
         private void btnAddService_Click(object sender, EventArgs e)
         {
             if (gridViewHomeService.CurrentRow == null)
@@ -134,13 +132,11 @@ namespace Multi_Booking_System
                     MessageBox.Show(
                         "This service is already selected!"
                     );
-
                     return;
                 }
             }
             selectedServices.Rows.Add(serviceId, serviceName, price);
             MessageBox.Show("Service Added!");
-
         }
 
         private void btnSelectWorker_Click(object sender, EventArgs e)
@@ -245,22 +241,10 @@ namespace Multi_Booking_System
                     using (SqlCommand cmd = new SqlCommand(bookingQuery, con, transaction))
 
                     {
-                        cmd.Parameters.AddWithValue(
-                            "@customerId",
-                            customerId
-                        );
-                        cmd.Parameters.AddWithValue(
-                            "@workerId",
-                            workerId
-                        );
-                        cmd.Parameters.AddWithValue(
-                            "@bookingDate",
-                            bookingDate
-                        );
-                        cmd.Parameters.AddWithValue(
-                            "@bookingTime",
-                            bookingTime
-                        );
+                        cmd.Parameters.AddWithValue("@customerId", customerId);
+                        cmd.Parameters.AddWithValue("@workerId", workerId);
+                        cmd.Parameters.AddWithValue("@bookingDate", bookingDate);
+                        cmd.Parameters.AddWithValue("@bookingTime", bookingTime);
                         bookingId = Convert.ToInt32(cmd.ExecuteScalar());
                     }
                     string detailQuery = @"
@@ -285,15 +269,8 @@ namespace Multi_Booking_System
                             );
                         using (SqlCommand cmd = new SqlCommand(detailQuery, con, transaction))
                         {
-                            cmd.Parameters.AddWithValue(
-                                "@bookingId",
-                                bookingId
-                            );
-
-                            cmd.Parameters.AddWithValue(
-                                "@serviceId",
-                                serviceId
-                            );
+                            cmd.Parameters.AddWithValue("@bookingId", bookingId);
+                            cmd.Parameters.AddWithValue("@serviceId", serviceId);
                             cmd.ExecuteNonQuery();
                         }
                     }
@@ -346,7 +323,6 @@ namespace Multi_Booking_System
                 diyaStorePayel.Show();
             }
         }
-
         private void btnDeleteService_Click(object sender, EventArgs e)
         {
             if (gridViewSelectedServices.CurrentRow == null)

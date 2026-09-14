@@ -80,7 +80,6 @@ namespace Multi_Booking_System
                     return;
                 }
             }
-
             selectedServices.Rows.Add(serviceId, serviceName, price);
             MessageBox.Show("Service Added!");
         }
@@ -90,7 +89,6 @@ namespace Multi_Booking_System
         {
 
         }
-
         private void btnBookSerial_Click_1(object sender, EventArgs e)
         {
             if (selectedServices.Rows.Count == 0)

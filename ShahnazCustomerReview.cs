@@ -40,7 +40,6 @@ namespace Multi_Booking_System
                     RS.Rating,
 
                     RS.ReviewText
-
                 FROM ReviewsShahnaz RS
 
                 INNER JOIN Users U
@@ -50,11 +49,9 @@ namespace Multi_Booking_System
 
             try
             {
-                using (SqlConnection con =
-                    new SqlConnection(ConnectionString))
+                using (SqlConnection con = new SqlConnection(ConnectionString))
                 {
-                    using (SqlDataAdapter da =
-                        new SqlDataAdapter(query, con))
+                    using (SqlDataAdapter da = new SqlDataAdapter(query, con))
                     {
                         DataTable dt = new DataTable();
 

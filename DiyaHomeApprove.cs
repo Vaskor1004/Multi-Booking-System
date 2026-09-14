@@ -65,7 +65,6 @@ namespace Multi_Booking_System
                 }
             }
         }
-
         private void btnApprove_Click(object sender, EventArgs e)
         {
             if (gridViewDiyaHomeBooking.CurrentRow == null)

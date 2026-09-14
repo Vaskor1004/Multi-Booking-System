@@ -55,19 +55,13 @@ namespace Multi_Booking_System
             string query =
                "SELECT * FROM DiyaStore";
 
-            using (SqlConnection con =
-                   new SqlConnection(ConnectionString))
+            using (SqlConnection con = new SqlConnection(ConnectionString))
+
             {
-                SqlDataAdapter adapter =
-                    new SqlDataAdapter(query, con);
-
-                DataTable table =
-                    new DataTable();
-
+                SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+                DataTable table = new DataTable();
                 adapter.Fill(table);
-
-                gridViewDiyaStore.DataSource =
-                    table;
+                gridViewDiyaStore.DataSource = table;
             }
         }
 
@@ -89,7 +83,6 @@ namespace Multi_Booking_System
                     .Cells["id"]
                     .Value
                 );
-
             string serviceName =
                 gridViewDiyaStore
                 .CurrentRow
@@ -117,15 +110,11 @@ namespace Multi_Booking_System
                     return;
                 }
             }
+            selectedServices.Rows.Add(serviceId, serviceName, price);
 
 
-            selectedServices.Rows.Add(
-                serviceId,
-                serviceName,
-                price
-            );
 
-            //gridViewSelectedServices.DataSource = selectedServices;
+
 
             MessageBox.Show(
                 "Service Added!"
@@ -188,17 +177,8 @@ namespace Multi_Booking_System
                             VALUES
                             (@bookingId, @serviceId)";
 
-                        SqlCommand detailCmd =
-                            new SqlCommand(
-                                detailQuery,
-                                con,
-                                transaction
-                            );
-
-                        detailCmd.Parameters.AddWithValue(
-                            "@bookingId",
-                            bookingId
-                        );
+                        SqlCommand detailCmd = new SqlCommand(detailQuery, con, transaction);
+                        detailCmd.Parameters.AddWithValue("@bookingId", bookingId);
 
                         detailCmd.Parameters.AddWithValue(
                             "@serviceId",
